@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/EesunMoon/leetcode/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/EesunMoon/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 ## Binary Search
@@ -13,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/EesunMoon/leetcode/tree/master/0088-merge-sorted-array) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 ## Prefix Sum
 |  |
@@ -26,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/EesunMoon/leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [0088-merge-sorted-array](https://github.com/EesunMoon/leetcode/tree/master/0088-merge-sorted-array) |
 | [0151-reverse-words-in-a-string](https://github.com/EesunMoon/leetcode/tree/master/0151-reverse-words-in-a-string) |
 ## String
 |  |
