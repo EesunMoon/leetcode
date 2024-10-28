@@ -5,6 +5,24 @@ class Solution(object):
         :rtype: bool
         """
 
+        # Solution 2
+
+        stack = []
+        for c in s:
+
+            if c in "({[": # open bracket
+                stack.append(c)
+
+            else: # close bracket
+                if not stack or (c==')' and stack[-1]!='(') or (c==']' and stack[-1]!='[') or (c=='}' and stack[-1]!='{'):
+                    return False
+                stack.pop()
+        
+        return not stack
+
+        """
+        # Solution 1
+
         if len(s)%2 !=0:
             return False
 
@@ -24,4 +42,4 @@ class Solution(object):
                 stack.append(bracket)
         
         return not stack
-        
+        """
