@@ -14,6 +14,6 @@ class Solution(object):
             if node.val <= low or node.val >= high:
                 return False
             
-            return validate(node.right, node.val, high) and validate(node.left, low, node.val)
+            return validate(node.left, low, node.val) and validate(node.right, node.val, high)
         
         return validate(root)
