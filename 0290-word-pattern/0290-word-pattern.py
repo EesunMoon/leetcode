@@ -5,6 +5,22 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
+        s, pattern = s.split(), list(pattern)
+        print(map(s.index, s))
+        print(map(pattern.index, pattern))
+        
+        return map(s.index, s) == map(pattern.index, pattern)
+    
+    
+    
+    '''
+    # Using Hash Map
+    def wordPattern(self, pattern, s):
+        """
+        :type pattern: str
+        :type s: str
+        :rtype: bool
+        """
         
         map_char = {}
         map_word = {}
@@ -27,4 +43,5 @@ class Solution(object):
                     return False
         
         return True
+    '''
         
