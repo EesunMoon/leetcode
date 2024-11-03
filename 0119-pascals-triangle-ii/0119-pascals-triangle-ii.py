@@ -1,28 +1,17 @@
 class Solution(object):
-    def __init__(self):
-        self.cache = {}
-    def Pascal(self, i, j):
-        
-        if (i, j) in self.cache:
-            return self.cache[(i, j)]
-
-        # base case
-        if j == 0 or j==i:
-            return 1
-        else:
-            result = self.Pascal(i-1, j-1) + self.Pascal(i-1, j)
-        
-        self.cache[(i, j)] = result
-        return self.cache[(i, j)]
-        
     def getRow(self, rowIndex):
-        """
-        :type rowIndex: int
-        :rtype: List[int]
-        """
+        cache = {}
+        def Pascal(i, j):
+            # base case
+            if j == 0 or j==i:
+                return 1
+            if (i, j) not in cache:
+                cache[(i, j)] = Pascal(i-1, j-1) + Pascal(i-1, j)
+            
+            return cache[(i, j)]
+        
         answer = []
-
         for i in range(rowIndex+1):
-            answer.append(self.Pascal(rowIndex,i))
+            answer.append(Pascal(rowIndex,i))
         
         return answer
