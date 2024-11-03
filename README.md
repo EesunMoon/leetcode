@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0392-is-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0392-is-subsequence) |
 | [0747-min-cost-climbing-stairs](https://github.com/EesunMoon/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/EesunMoon/leetcode/tree/master/1013-fibonacci-number) |
+| [1236-n-th-tribonacci-number](https://github.com/EesunMoon/leetcode/tree/master/1236-n-th-tribonacci-number) |
 ## Two Pointers
 |  |
 | ------- |
@@ -79,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/EesunMoon/leetcode/tree/master/0013-roman-to-integer) |
 | [0070-climbing-stairs](https://github.com/EesunMoon/leetcode/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/EesunMoon/leetcode/tree/master/1013-fibonacci-number) |
+| [1236-n-th-tribonacci-number](https://github.com/EesunMoon/leetcode/tree/master/1236-n-th-tribonacci-number) |
 ## Tree
 |  |
 | ------- |
@@ -158,4 +160,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0070-climbing-stairs](https://github.com/EesunMoon/leetcode/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/EesunMoon/leetcode/tree/master/1013-fibonacci-number) |
+| [1236-n-th-tribonacci-number](https://github.com/EesunMoon/leetcode/tree/master/1236-n-th-tribonacci-number) |
 <!---LeetCode Topics End-->
