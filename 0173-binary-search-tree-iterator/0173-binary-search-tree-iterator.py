@@ -10,15 +10,16 @@ class BSTIterator(object):
         """
         :type root: Optional[TreeNode]
         """
-        self.nodes_sorted=[]
+        self.sorted_node = []
         self.index = -1
         self._inorder(root)
     
     def _inorder(self, root):
         if not root:
             return
+        
         self._inorder(root.left)
-        self.nodes_sorted.append(root.val)
+        self.sorted_node.append(root.val)
         self._inorder(root.right)
         
 
@@ -26,15 +27,16 @@ class BSTIterator(object):
         """
         :rtype: int
         """
-        self.index += 1
-        return self.nodes_sorted[self.index]
+        self.index +=1
+        return self.sorted_node[self.index]
         
-        
+
+
     def hasNext(self):
         """
         :rtype: bool
         """
-        return self.index +1 < len(self.nodes_sorted)
+        return self.index + 1 < len(self.sorted_node)
         
 
 
