@@ -1,27 +1,3 @@
-class UnionFind():
-    def __init__(self, n, edges):
-        self.size = n
-        self.edges = edges
-        self.root = [i for i in range(self.size)]
-        self.rank = [0] * n
-    def find(self, i):
-        if self.root[i] != i:
-            self.root[i] = self.find(self.root[i])
-        return self.root[i]
-    def union(self, x, y):
-        rootx = self.find(x)
-        rooty = self.find(y)
-        if rootx!=rooty:
-            if self.rank[rootx] > self.rank[rooty]:
-                self.root[rooty] = rootx
-            elif self.rank[rootx] < self.rank[rooty]:
-                self.root[rootx] = rooty
-            else:
-                self.root[rootx] = rooty
-                self.rank[rooty] += 1
-    def isSameRoot(self, x, y):
-        return self.find(x)==self.find(y)
-        
 class Solution(object):
     def validPath(self, n, edges, source, destination):
         """
@@ -31,11 +7,25 @@ class Solution(object):
         :type destination: int
         :rtype: bool
         """
-        uf = UnionFind(n, edges)
-        
-        for x, y in edges:
-            uf.union(x, y)
-        
-        return uf.isSameRoot(source, destination)
 
+        # initialization: store all edges in graph
+        graph = defaultdict(list)
+        for a, b in edges:
+            graph[a].append(b)
+            graph[b].append(a)
         
+        seen = [False] * n
+        seen[source] = True # start with the source
+        queue = deque([source])
+
+        while queue:
+            curr_node = queue.popleft()
+            if curr_node == destination:
+                return True
+            
+            for next_node in graph[curr_node]:
+                if not seen[next_node]:
+                    seen[next_node] = True
+                    queue.append(next_node)
+
+        return False
