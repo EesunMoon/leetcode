@@ -8,16 +8,20 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        # initialize DP
-        dp = [float("inf")]*n
-        dp[src] = 0
+        graph = defaultdict(list)
+        for start, end, weight in flights:
+            graph[start].append((end, weight))
         
-        for i in range(k+1):
-            temp = dp[:]
-            for start, end, weight in flights:
-                if dp[start] != float("inf"):
-                    # recurrence relation
-                    temp[end] = min(temp[end], dp[start]+weight)
-            dp = temp
+        queue = [(0, 0, src)] # (cost, k, src)
+        visited = {}
+
+        while queue:
+            weight, cnt, start = heapq.heappop(queue)
+            if start == dst and cnt-1 <= k:
+                return weight
+            if start not in visited or visited[start] > cnt:
+                visited[start] = cnt
+                for new_end, new_weight in graph[start]:
+                    heapq.heappush(queue, (weight+new_weight, cnt+1, new_end))
         
-        return dp[dst] if dp[dst] != float("inf") else -1
+        return -1
