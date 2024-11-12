@@ -5,12 +5,15 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        # build max heap
-        heap = []
-        for num in nums:
-            heapq.heappush(heap, -num)
+        # kth largest element - construct min heap 
+        min_heap = []
         
-        for _ in range(k):
-            element = heapq.heappop(heap)
+        for num in nums:
+            if len(min_heap) == k:
+                if num > min_heap[0]:
+                    heapq.heappop(min_heap)
+                    heapq.heappush(min_heap, num)
+            else:
+                heapq.heappush(min_heap, num)
 
-        return -element
+        return min_heap[0]
