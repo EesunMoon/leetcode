@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0747-min-cost-climbing-stairs](https://github.com/EesunMoon/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0753-open-the-lock](https://github.com/EesunMoon/leetcode/tree/master/0753-open-the-lock) |
 | [0860-design-circular-queue](https://github.com/EesunMoon/leetcode/tree/master/0860-design-circular-queue) |
+| [1137-height-checker](https://github.com/EesunMoon/leetcode/tree/master/1137-height-checker) |
 | [1706-min-cost-to-connect-all-points](https://github.com/EesunMoon/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/EesunMoon/leetcode/tree/master/0088-merge-sorted-array) |
+| [1137-height-checker](https://github.com/EesunMoon/leetcode/tree/master/1137-height-checker) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 ## Prefix Sum
 |  |
@@ -251,4 +253,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0210-course-schedule-ii](https://github.com/EesunMoon/leetcode/tree/master/0210-course-schedule-ii) |
+## Counting Sort
+|  |
+| ------- |
+| [1137-height-checker](https://github.com/EesunMoon/leetcode/tree/master/1137-height-checker) |
 <!---LeetCode Topics End-->
