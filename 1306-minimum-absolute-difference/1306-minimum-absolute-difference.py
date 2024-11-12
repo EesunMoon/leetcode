@@ -6,24 +6,22 @@ class Solution(object):
         """
         min_element = min(arr)
         max_element = max(arr)
-        shift = -min_element
+        count = [0] * (max_element - min_element + 1)
 
-        counts = [0] * (max_element - min_element +1)
-        answer = []
-
-        for e in arr:
-            counts[e+shift] += 1
-
-        min_pair_diff = max_element - min_element
+        for ele in arr:
+            count[ele-min_element] += 1
+        
         prev = 0
-
-        for curr in range(1, max_element+shift +1):
-            if counts[curr] == 0:
+        min_diff = max_element - min_element
+        answer = []
+        for curr in range(1, len(count)):
+            if count[curr] == 0:
                 continue
-            if curr - prev == min_pair_diff:
-                answer.append([prev-shift, curr-shift])
-            elif curr-prev < min_pair_diff:
-                answer = [[prev-shift, curr-shift]]
-                min_pair_diff = curr-prev
+            if curr- prev == min_diff:
+                answer.append([prev+min_element, curr+min_element])
+            elif curr-prev < min_diff:
+                min_diff = curr- prev
+                answer = [[prev+min_element, curr+min_element]]
+        
             prev = curr
         return answer
