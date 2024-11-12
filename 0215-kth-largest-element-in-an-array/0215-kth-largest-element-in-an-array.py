@@ -9,11 +9,8 @@ class Solution(object):
         min_heap = []
         
         for num in nums:
-            if len(min_heap) == k:
-                if num > min_heap[0]:
-                    heapq.heappop(min_heap)
-                    heapq.heappush(min_heap, num)
-            else:
-                heapq.heappush(min_heap, num)
+            heapq.heappush(min_heap, num)
+            if len(min_heap) > k:
+                heapq.heappop(min_heap)
 
         return min_heap[0]
