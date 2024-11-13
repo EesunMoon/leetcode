@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/EesunMoon/leetcode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/EesunMoon/leetcode/tree/master/0200-number-of-islands) |
 | [0215-kth-largest-element-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0240-search-a-2d-matrix-ii](https://github.com/EesunMoon/leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0286-walls-and-gates](https://github.com/EesunMoon/leetcode/tree/master/0286-walls-and-gates) |
 | [0346-moving-average-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0346-moving-average-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/EesunMoon/leetcode/tree/master/0347-top-k-frequent-elements) |
@@ -29,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [0240-search-a-2d-matrix-ii](https://github.com/EesunMoon/leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 ## Sorting
@@ -244,6 +246,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/EesunMoon/leetcode/tree/master/0200-number-of-islands) |
+| [0240-search-a-2d-matrix-ii](https://github.com/EesunMoon/leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0286-walls-and-gates](https://github.com/EesunMoon/leetcode/tree/master/0286-walls-and-gates) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 ## Backtracking
@@ -282,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0240-search-a-2d-matrix-ii](https://github.com/EesunMoon/leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0347-top-k-frequent-elements](https://github.com/EesunMoon/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0948-sort-an-array](https://github.com/EesunMoon/leetcode/tree/master/0948-sort-an-array) |
 ## Quickselect
