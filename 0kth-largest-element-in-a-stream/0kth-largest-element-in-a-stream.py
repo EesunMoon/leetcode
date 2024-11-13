@@ -6,35 +6,21 @@ class KthLargest(object):
         :type nums: List[int]
         """
         self.k = k
-        self.stream = nums
-        self.stream.sort()
+        self.min_heap = []
+        for num in nums:
+            self.add(num)
 
     def add(self, val):
         """
         :type val: int
         :rtype: int
         """
-        idx = self.getIndex(val)
-        self.stream.insert(idx, val)
-        return self.stream[-self.k]
+        heapq.heappush(self.min_heap, val)
         
-        return self.min_heap[0]
-    
-    def getIndex(self, val):
-        left, right = 0, len(self.stream)-1
-
-        while left <= right:
-            mid = (left+right)//2
-            mid_ele = self.stream[mid]
+        if len(self.min_heap) > self.k:
+            heapq.heappop(self.min_heap)
             
-            if mid_ele == val:
-                return mid
-            elif mid_ele > val:
-                right = mid-1
-            else:
-                left = mid+1
-
-        return left
+        return self.min_heap[0]
         
         
 
