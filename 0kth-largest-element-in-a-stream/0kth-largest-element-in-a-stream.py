@@ -15,10 +15,11 @@ class KthLargest(object):
         :type val: int
         :rtype: int
         """
-        heapq.heappush(self.min_heap, val)
+        if len(self.min_heap) < self.k or self.min_heap[0] < val:
+            heapq.heappush(self.min_heap, val)
         
-        if len(self.min_heap) > self.k:
-            heapq.heappop(self.min_heap)
+            if len(self.min_heap) > self.k:
+                heapq.heappop(self.min_heap)
             
         return self.min_heap[0]
         
