@@ -121,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0173-binary-search-tree-iterator](https://github.com/EesunMoon/leetcode/tree/master/0173-binary-search-tree-iterator) |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0285-inorder-successor-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0285-inorder-successor-in-bst) |
 | [0450-delete-node-in-a-bst](https://github.com/EesunMoon/leetcode/tree/master/0450-delete-node-in-a-bst) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -133,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0098-validate-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0200-number-of-islands](https://github.com/EesunMoon/leetcode/tree/master/0200-number-of-islands) |
 | [0210-course-schedule-ii](https://github.com/EesunMoon/leetcode/tree/master/0210-course-schedule-ii) |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0261-graph-valid-tree](https://github.com/EesunMoon/leetcode/tree/master/0261-graph-valid-tree) |
 | [0285-inorder-successor-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0285-inorder-successor-in-bst) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -163,6 +165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0173-binary-search-tree-iterator](https://github.com/EesunMoon/leetcode/tree/master/0173-binary-search-tree-iterator) |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0285-inorder-successor-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0285-inorder-successor-in-bst) |
 | [0450-delete-node-in-a-bst](https://github.com/EesunMoon/leetcode/tree/master/0450-delete-node-in-a-bst) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -174,6 +177,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0173-binary-search-tree-iterator](https://github.com/EesunMoon/leetcode/tree/master/0173-binary-search-tree-iterator) |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0285-inorder-successor-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0285-inorder-successor-in-bst) |
 | [0450-delete-node-in-a-bst](https://github.com/EesunMoon/leetcode/tree/master/0450-delete-node-in-a-bst) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
