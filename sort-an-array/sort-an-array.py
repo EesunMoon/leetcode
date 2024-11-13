@@ -4,26 +4,25 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        def heapify(heapsize, idx):
-            largest = idx
-            left = 2*idx+1
-            right = 2*idx+2
-
-            if left<heapsize and nums[left] > nums[largest]:
-                largest = left
-            if right <heapsize and nums[right] > nums[largest]:
-                largest = right
-            if largest != idx:
-                nums[idx], nums[largest] = nums[largest], nums[idx]
-                heapify(heapsize, largest)
-
-        # build heap - top down
-        n = len(nums)
-        for i in range(n//2-1, -1, -1):
-            heapify(n, i)
+        if len(nums) <=1:
+            return nums
+        mid = len(nums)//2
+        left_side = self.sortArray(nums[:mid])
+        right_side = self.sortArray(nums[mid:])
+        return self.merge(left_side, right_side)
         
-        for i in range(n-1, -1, -1):
-            nums[0], nums[i] = nums[i], nums[0]
-            heapify(i, 0)
-
-        return nums
+    def merge(self, left_nums, right_nums):
+        left, right = 0, 0
+        sorted_array = []
+        while left < len(left_nums) and right < len(right_nums):
+            if left_nums[left] <= right_nums[right]:
+                sorted_array.append(left_nums[left])
+                left += 1
+            else:
+                sorted_array.append(right_nums[right])
+                right += 1
+        
+        # copying
+        sorted_array.extend(left_nums[left:])
+        sorted_array.extend(right_nums[right:])
+        return sorted_array
