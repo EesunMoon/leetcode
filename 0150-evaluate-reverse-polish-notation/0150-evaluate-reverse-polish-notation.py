@@ -4,24 +4,25 @@ class Solution(object):
         :type tokens: List[str]
         :rtype: int
         """
-        ope = ['+', '-', '*', '/']
+        import operator
+        operations = {
+            "+": lambda x, y: x+y,
+            "-": lambda x, y: x-y,
+            "*": lambda x, y: x*y,
+            '/': lambda x, y: int(operator.truediv(x,y)) # truncate towards zero
+        }
         stack = []
 
         for t in tokens:
-            if t in ope:
-                x = stack.pop()
+            if t in operations:
                 y = stack.pop()
-                operation = str(eval(y + t + x))
-
-                # The division between two integers always truncates toward zero
-                if t == '/' and int(y) % int(x) != 0 and int(operation) < 0:
-                    operation = str(int(operation) + 1)
-
-                stack.append(operation)
+                x = stack.pop()
+                result = operations[t](x,y)
+                stack.append(result)
             else:
-                stack.append(t)
+                stack.append(int(t))
             
         
-        return int(stack.pop())
+        return stack[-1]
         
         
