@@ -8,16 +8,15 @@ class Solution(object):
         def calDist(a, b):
             return (a-0)**2 + (b-0)**2
         
-        result = [] # store [x, y]
-        max_heap = [] # (dist, idx)
-        
-        for i in range(len(points)):
-            x, y = points[i][0], points[i][1]
-            dist = -calDist(x, y)
-            heapq.heappush(max_heap, (dist, i))
-            result.append([x, y])
-            if len(max_heap) > k:
-                val, idx = heapq.heappop(max_heap)
-                result.remove([points[idx][0], points[idx][1]])
+        # first k elements
+        heap = [(-calDist(points[i][0], points[i][1]), i) for i in range(k)]
+        heapq.heapify(heap)
+
+        for i in range(k, len(points)):
+            dist = -calDist(points[i][0], points[i][1])
             
-        return result
+            if dist > heap[0][0]:
+                heapq.heappushpop(heap, (dist, i)) # delete & add
+                
+            
+        return [points[i] for (_, i) in heap]
