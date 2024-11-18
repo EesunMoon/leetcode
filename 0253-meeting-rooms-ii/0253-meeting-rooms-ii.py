@@ -4,24 +4,20 @@ class Solution(object):
         :type intervals: List[List[int]]
         :rtype: int
         """
-        rooms = [0]
+        if not intervals:
+            return 0
+        
+        rooms = [] # priority queue
 
         # sort by start time in increasing order
-        heapq.heapify(intervals)
+        intervals.sort(key=lambda x: x[0])
 
-        while intervals:
-            start, end = heapq.heappop(intervals)
+        heapq.heappush(rooms, intervals[0][1]) # store end time
 
-            rooms.sort()
-            flag = False
-            for i in range(len(rooms)):
-                if rooms[i] <= start:
-                    rooms[i] = end
-                    flag = True
-                    break
-
-            if not flag:
-                rooms.append(end)
+        for interval in intervals[1:]:
+            if rooms[0] <= interval[0]:
+                heapq.heappop(rooms)
+            heapq.heappush(rooms, interval[1])
             
-        # print(rooms)
+        
         return len(rooms)
