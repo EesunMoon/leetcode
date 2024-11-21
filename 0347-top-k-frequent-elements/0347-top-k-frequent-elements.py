@@ -6,6 +6,21 @@ class Solution(object):
         :rtype: List[int]
         """
         
-        count=Counter(nums) # keys: count_num, values: nums
- 
-        return heapq.nlargest(k, count.keys(), key=count.get)
+        # build hashmap: calculate frequencies => O(n)
+        count = {}
+        for num in nums:
+            count[num] = 1 + count.get(num, 0)
+        
+        # build heap (freq, num) => O(nlogk)
+        heap = []
+        for num in count.keys():
+            heapq.heappush(heap, (count[num], num))
+            if len(heap) > k:
+                heapq.heappop(heap)
+        
+        # make result => O(k)
+        result = []
+        for i in range(k):
+            result.append(heapq.heappop(heap)[1])
+        
+        return result
