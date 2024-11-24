@@ -4,16 +4,19 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        # sorting => O(nlogn)
+        # 1, 2, 3, 4, | 100, | 200
 
-        numSet = set(nums)
+        setNums = set(nums)
         longest = 0
 
-        for num in nums:
-            # check whether num is a starting number of not
-            if num-1 not in numSet:
-                length = 0
-                while length + num in numSet:
+        for num in setNums:
+            if (num-1) not in setNums: # starting point
+                length = 1
+                while (length + num) in setNums:
                     length += 1
-                longest = max(length, longest)
+                
+                longest = max(longest, length)
         
         return longest
+        
