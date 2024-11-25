@@ -6,17 +6,17 @@ class Solution(object):
         """
         # height = min(height[l], height[r])
         # width = abs(r-l)
-        maxAmount = 0
 
-        l, r = 0, len(height)-1 # maximize the width
+        l, r = 0, len(height)-1 # max width
+        maxamount = 0
+        
         while l<r:
-            amount = abs(r-l) * min(height[l], height[r])
-            maxAmount = max(maxAmount, amount)
-
-            # maximize the height
-            if height[l] <= height[r]:
+            w = abs(r-l)
+            h = min(height[l], height[r])
+            area = w*h
+            maxamount = max(maxamount, area)
+            if height[l] < height[r]:
                 l+=1
             else:
                 r-=1
-        
-        return maxAmount
+        return maxamount
