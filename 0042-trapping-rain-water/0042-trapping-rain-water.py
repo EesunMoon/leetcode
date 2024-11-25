@@ -4,23 +4,20 @@ class Solution(object):
         :type height: List[int]
         :rtype: int
         """
-        if not height:
-            return 0
-        
         total = 0
+        n = len(height)-1
+        maxl, maxr = height[0], height[n]
 
-        l, r = 0, len(height)-1
-        leftMax, rightMax = height[l], height[r]
-
+        l, r = 0, n
         while l<r:
-            if leftMax <= rightMax:
-                l+= 1
-                leftMax = max(leftMax, height[l])
-                total += leftMax - height[l]
+            
+            if maxl < maxr:
+                l+=1
+                maxl = max(maxl, height[l])
+                total += maxl-height[l]
             else:
                 r-=1
-                rightMax = max(rightMax, height[r])
-                total += rightMax - height[r]
+                maxr = max(maxr, height[r])
+                total += maxr-height[r]
             
         return total
-        
