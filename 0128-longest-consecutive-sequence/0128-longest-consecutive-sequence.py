@@ -4,19 +4,17 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        # sorting => O(nlogn)
-        # 1, 2, 3, 4, | 100, | 200
+        # if) sorting => O(nlogn)
+        # solve without sorting
 
-        setNums = set(nums)
         longest = 0
+        setnums = set(nums)
 
-        for num in setNums:
-            if (num-1) not in setNums: # starting point
+        for num in setnums:
+            if (num-1) not in setnums: # starting point
                 length = 1
-                while (length + num) in setNums:
+                while (num + length) in setnums:
                     length += 1
-                
                 longest = max(longest, length)
-        
+
         return longest
-        
