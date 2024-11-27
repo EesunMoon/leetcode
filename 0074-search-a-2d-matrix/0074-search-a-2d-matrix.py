@@ -5,14 +5,15 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        ROWS, COLS = len(matrix), len(matrix[0])
+        ROWS, COLS = len(matrix), len(matrix[0]) # 3x4
 
         l, r = 0, ROWS*COLS-1
 
         while l<=r:
-            m = l + ((r-l)//2)
+            m = (l+r)//2
 
-            # row: m//COLS, col: m%COLS
+            # col: m // COLS
+            # row: m % COLS
             cand = matrix[m//COLS][m%COLS]
             if cand == target:
                 return True
