@@ -5,25 +5,20 @@ class Solution(object):
         :type h: int
         :rtype: int
         """
-        # koko can eat a piles in a hour
-        # return minimum
-        # search range: [1, ..., max(piles)]
-
-        l, r = 1, max(piles)
-        k = r
+        l, r = 1, max(piles) # O(n)
+        minamount = r
 
         while l<=r:
-            cand = (l+r)//2
+            m = (l+r)//2
             
-            hours = 0
+            total = 0
             for pile in piles:
-                hours += math.ceil(float(pile)/cand)
-            
-            if hours <= h:
-                k = min(k, cand)
-                r = cand-1
-                
+                total += math.ceil(float(pile)/m)
+
+            if total > h:
+                l = m+1
             else:
-                l = cand+1
+                minamount = min(minamount, m)
+                r = m-1
         
-        return k
+        return minamount
