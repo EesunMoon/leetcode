@@ -7,27 +7,22 @@ class Solution(object):
         """
         l, r = 0, len(nums)-1
 
-        while l<=r:
+        # binary search => O(logn)
+        while l<=r: 
             m = (l+r)//2
-
-            if nums[m] == target:
+            if target == nums[m]:
                 return m
 
-            # left part
-            if nums[l] <= nums[m]:
-                if target > nums[m]:
-                    l = m + 1
-                elif target < nums[l]:
-                    l = m + 1
-                else:
-                    r = m - 1
-            # right part
-            else:
-                if target < nums[m]:
-                    r = m-1
-                elif target > nums[r]:
+            if nums[l] <= nums[m]: # left
+                if nums[m] > target and target >= nums[l]:
                     r = m-1
                 else:
                     l = m+1
-
+            else: # right
+                if nums[m] < target and target <= nums[r]:
+                    l = m+1
+                else:
+                    r = m-1
+                
         return -1
+        
