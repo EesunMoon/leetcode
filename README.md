@@ -131,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0344-reverse-string](https://github.com/EesunMoon/leetcode/tree/master/0344-reverse-string) |
 | [0392-is-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0392-is-subsequence) |
+| [0874-backspace-string-compare](https://github.com/EesunMoon/leetcode/tree/master/0874-backspace-string-compare) |
 ## String
 |  |
 | ------- |
@@ -150,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0344-reverse-string](https://github.com/EesunMoon/leetcode/tree/master/0344-reverse-string) |
 | [0392-is-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0392-is-subsequence) |
 | [0753-open-the-lock](https://github.com/EesunMoon/leetcode/tree/master/0753-open-the-lock) |
+| [0874-backspace-string-compare](https://github.com/EesunMoon/leetcode/tree/master/0874-backspace-string-compare) |
 | [0965-unique-email-addresses](https://github.com/EesunMoon/leetcode/tree/master/0965-unique-email-addresses) |
 ## String Matching
 |  |
@@ -276,6 +278,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/EesunMoon/leetcode/tree/master/0155-min-stack) |
 | [0173-binary-search-tree-iterator](https://github.com/EesunMoon/leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0739-daily-temperatures](https://github.com/EesunMoon/leetcode/tree/master/0739-daily-temperatures) |
+| [0874-backspace-string-compare](https://github.com/EesunMoon/leetcode/tree/master/0874-backspace-string-compare) |
 ## Design
 |  |
 | ------- |
@@ -453,4 +456,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1014-k-closest-points-to-origin](https://github.com/EesunMoon/leetcode/tree/master/1014-k-closest-points-to-origin) |
+## Simulation
+|  |
+| ------- |
+| [0874-backspace-string-compare](https://github.com/EesunMoon/leetcode/tree/master/0874-backspace-string-compare) |
 <!---LeetCode Topics End-->
