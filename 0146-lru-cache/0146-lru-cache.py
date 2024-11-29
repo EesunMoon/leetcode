@@ -1,26 +1,23 @@
 class Node():
     def __init__(self, key, value):
         self.key, self.value = key, value
-        self.prev = self.next = None
+        self.prev, self.next = None, None
 
 class LRUCache(object):
-
     def __init__(self, capacity):
         """
         :type capacity: int
         """
         self.size = capacity
-        self.cache = {} # key: node address
-
+        self.cache = {}
         self.left, self.right = Node(0,0), Node(0,0)
         self.left.next, self.right.prev = self.right, self.left
-    
+
     def insert(self, node):
-        # insert to the rightmost
         prv, nxt = self.right.prev, self.right
         prv.next = nxt.prev = node
         node.prev, node.next = prv, nxt
-
+        
     def delete(self, node):
         prv, nxt = node.prev, node.next
         prv.next, nxt.prev = nxt, prv
@@ -30,11 +27,13 @@ class LRUCache(object):
         :type key: int
         :rtype: int
         """
-        if key in self.cache:
-            self.delete(self.cache[key])
-            self.insert(self.cache[key])
-            return self.cache[key].value
-        return -1
+        if key not in self.cache:
+            return -1
+        
+        node = self.cache[key]
+        self.delete(node)
+        self.insert(node)
+        return node.value
 
     def put(self, key, value):
         """
@@ -48,10 +47,10 @@ class LRUCache(object):
         self.insert(self.cache[key])
 
         if len(self.cache) > self.size:
+            # leftmost cache
             lru = self.left.next
             self.delete(lru)
             del self.cache[lru.key]
-
     
 
 # Your LRUCache object will be instantiated and called as such:
