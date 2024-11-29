@@ -5,27 +5,24 @@ class Solution(object):
         :type prerequisites: List[List[int]]
         :rtype: List[int]
         """
-        graph = defaultdict(list)
         indegree = {}
-        for post, pre in prerequisites:
-            graph[pre].append(post)
-            indegree[post] = indegree.get(post, 0)+1
-        queue = deque(
-            [k for k in range(numCourses) if k not in indegree]
-        )
+        graph = collections.defaultdict(list)
 
-        answer = []
-        while queue:
-            course = queue.popleft()
-            answer.append(course)
+        # pre, nxt
+        for nxt, pre in prerequisites:
+            indegree[nxt] = indegree.get(nxt, 0) + 1
+            graph[pre].append(nxt)
+        
+        node = [x for x in range(numCourses) if x not in indegree]
+        
+        ans = []
+        while node:
+            pre = node.pop()
+            ans.append(pre)
+            for nxt in graph[pre]:
+                indegree[nxt] -= 1
+                if indegree[nxt] == 0:
+                    node.append(nxt)
 
-            if course not in graph:
-                continue
-            for next_course in graph[course]:
-                indegree[next_course] -= 1
-                if indegree[next_course] == 0:
-                    queue.append(next_course)
-
-
-        return answer if len(answer) == numCourses else []
+        return ans if len(ans) == numCourses else []
         
