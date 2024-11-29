@@ -6,21 +6,23 @@ class Solution(object):
         :rtype: List[int]
         """
         
-        # build hashmap: calculate frequencies => O(n)
+        # 1) hashmap => O(n)
         count = {}
         for num in nums:
-            count[num] = 1 + count.get(num, 0)
+            count[num] = 1 + count.get(num,0)
         
-        # build heap (freq, num) => O(nlogk)
+        # 2) heapify
         heap = []
-        for num in count.keys():
-            heapq.heappush(heap, (count[num], num))
+        for nums, freq in count.items():
+            heapq.heappush(heap, (freq, nums))
+
             if len(heap) > k:
                 heapq.heappop(heap)
         
-        # make result => O(k)
-        result = []
+        # 3) result
+        res = []
         for i in range(k):
-            result.append(heapq.heappop(heap)[1])
+            freq, ele = heapq.heappop(heap)
+            res.append(ele)
         
-        return result
+        return res
