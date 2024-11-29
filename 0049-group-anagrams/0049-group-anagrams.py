@@ -5,13 +5,14 @@ class Solution(object):
         :rtype: List[List[str]]
         """
 
-        result = defaultdict(list)
-        for s in strs:
-            count = [0] * 26 # lower alphabet 26
+        hashmap = collections.defaultdict(list)
+        
+        for string in strs:
+            nums = [0] * 26
+            for c in string:
+                nums[ord(c)-ord('a')] += 1
+            
+            hashmap[tuple(nums)].append(string)
+        
+        return hashmap.values()
 
-            for c in s:
-                count[ord(c)-ord('a')] += 1
-
-            result[tuple(count)].append(s)
-
-        return list(result.values())
