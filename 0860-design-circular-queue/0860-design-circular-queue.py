@@ -4,60 +4,56 @@ class MyCircularQueue(object):
         """
         :type k: int
         """
-        self.cqueue = [-1] * k
-        self.total = k
-        self.start = 0
-        self.count = 0
+        self.size = k
+        self.queue = [-1] * self.size
+        self.start, self.cnt = 0, 0
 
     def enQueue(self, value):
         """
         :type value: int
         :rtype: bool
         """
-        if self.count != self.total:
-            self.cqueue[(self.start + self.count) % self.total] = value
-            self.count += 1
+        if not self.isFull():
+            self.queue[(self.start + self.cnt)%self.size] = value
+            self.cnt += 1
             return True
         return False
-        
 
     def deQueue(self):
         """
         :rtype: bool
         """
-        if self.count != 0:
-            self.cqueue[self.start] = -1
-            self.start = (self.start+1)%self.total
-            self.count -= 1
+        if not self.isEmpty():
+            self.start = (self.start + 1) % self.size
+            self.cnt -= 1
             return True
         return False
-        
 
     def Front(self):
         """
         :rtype: int
         """
-        return self.cqueue[self.start] if not self.isEmpty() else -1
+        return self.queue[self.start] if not self.isEmpty() else -1
 
     def Rear(self):
         """
         :rtype: int
         """
-        return self.cqueue[(self.start + self.count -1)%self.total] if not self.isEmpty() else -1
-        
+        return self.queue[(self.start+self.cnt-1)%self.size] if not self.isEmpty() else -1
 
     def isEmpty(self):
         """
         :rtype: bool
         """
-        return self.count ==0
+        return self.cnt == 0
         
 
     def isFull(self):
         """
         :rtype: bool
         """
-        return self.count == self.total
+        return self.cnt == self.size
+        
 
 
 # Your MyCircularQueue object will be instantiated and called as such:
