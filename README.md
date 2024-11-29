@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0271-encode-and-decode-strings](https://github.com/EesunMoon/leetcode/tree/master/0271-encode-and-decode-strings) |
 | [0286-walls-and-gates](https://github.com/EesunMoon/leetcode/tree/master/0286-walls-and-gates) |
 | [0300-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0300-longest-increasing-subsequence) |
+| [0322-coin-change](https://github.com/EesunMoon/leetcode/tree/master/0322-coin-change) |
 | [0346-moving-average-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0346-moving-average-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/EesunMoon/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
@@ -115,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/EesunMoon/leetcode/tree/master/0198-house-robber) |
 | [0279-perfect-squares](https://github.com/EesunMoon/leetcode/tree/master/0279-perfect-squares) |
 | [0300-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0300-longest-increasing-subsequence) |
+| [0322-coin-change](https://github.com/EesunMoon/leetcode/tree/master/0322-coin-change) |
 | [0392-is-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0392-is-subsequence) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0740-delete-and-earn](https://github.com/EesunMoon/leetcode/tree/master/0740-delete-and-earn) |
@@ -247,6 +249,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0261-graph-valid-tree](https://github.com/EesunMoon/leetcode/tree/master/0261-graph-valid-tree) |
 | [0279-perfect-squares](https://github.com/EesunMoon/leetcode/tree/master/0279-perfect-squares) |
 | [0286-walls-and-gates](https://github.com/EesunMoon/leetcode/tree/master/0286-walls-and-gates) |
+| [0322-coin-change](https://github.com/EesunMoon/leetcode/tree/master/0322-coin-change) |
 | [0417-pacific-atlantic-water-flow](https://github.com/EesunMoon/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0547-number-of-provinces](https://github.com/EesunMoon/leetcode/tree/master/0547-number-of-provinces) |
