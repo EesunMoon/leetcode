@@ -511,4 +511,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0595-big-countries](https://github.com/EesunMoon/leetcode/tree/master/0595-big-countries) |
+| [1837-daily-leads-and-partners](https://github.com/EesunMoon/leetcode/tree/master/1837-daily-leads-and-partners) |
 <!---LeetCode Topics End-->
