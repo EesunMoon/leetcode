@@ -510,6 +510,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Database
 |  |
 | ------- |
+| [0182-duplicate-emails](https://github.com/EesunMoon/leetcode/tree/master/0182-duplicate-emails) |
 | [0595-big-countries](https://github.com/EesunMoon/leetcode/tree/master/0595-big-countries) |
 | [1179-game-play-analysis-i](https://github.com/EesunMoon/leetcode/tree/master/1179-game-play-analysis-i) |
 | [1837-daily-leads-and-partners](https://github.com/EesunMoon/leetcode/tree/master/1837-daily-leads-and-partners) |
