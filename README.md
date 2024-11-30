@@ -522,4 +522,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1724-customer-who-visited-but-did-not-make-any-transactions](https://github.com/EesunMoon/leetcode/tree/master/1724-customer-who-visited-but-did-not-make-any-transactions) |
 | [1837-daily-leads-and-partners](https://github.com/EesunMoon/leetcode/tree/master/1837-daily-leads-and-partners) |
 | [1877-find-followers-count](https://github.com/EesunMoon/leetcode/tree/master/1877-find-followers-count) |
+| [2110-employees-with-missing-information](https://github.com/EesunMoon/leetcode/tree/master/2110-employees-with-missing-information) |
 <!---LeetCode Topics End-->
