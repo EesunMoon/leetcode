@@ -42,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0417-pacific-atlantic-water-flow](https://github.com/EesunMoon/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
 | [0739-daily-temperatures](https://github.com/EesunMoon/leetcode/tree/master/0739-daily-temperatures) |
 | [0740-delete-and-earn](https://github.com/EesunMoon/leetcode/tree/master/0740-delete-and-earn) |
 | [0747-min-cost-climbing-stairs](https://github.com/EesunMoon/leetcode/tree/master/0747-min-cost-climbing-stairs) |
@@ -238,6 +239,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0417-pacific-atlantic-water-flow](https://github.com/EesunMoon/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0547-number-of-provinces](https://github.com/EesunMoon/leetcode/tree/master/0547-number-of-provinces) |
+| [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
 | [0744-network-delay-time](https://github.com/EesunMoon/leetcode/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/EesunMoon/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0813-all-paths-from-source-to-target](https://github.com/EesunMoon/leetcode/tree/master/0813-all-paths-from-source-to-target) |
@@ -258,6 +260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0417-pacific-atlantic-water-flow](https://github.com/EesunMoon/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0547-number-of-provinces](https://github.com/EesunMoon/leetcode/tree/master/0547-number-of-provinces) |
+| [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
 | [0744-network-delay-time](https://github.com/EesunMoon/leetcode/tree/master/0744-network-delay-time) |
 | [0753-open-the-lock](https://github.com/EesunMoon/leetcode/tree/master/0753-open-the-lock) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/EesunMoon/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
@@ -328,6 +331,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/EesunMoon/leetcode/tree/master/0200-number-of-islands) |
 | [0261-graph-valid-tree](https://github.com/EesunMoon/leetcode/tree/master/0261-graph-valid-tree) |
 | [0547-number-of-provinces](https://github.com/EesunMoon/leetcode/tree/master/0547-number-of-provinces) |
+| [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
 | [1706-min-cost-to-connect-all-points](https://github.com/EesunMoon/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [2121-find-if-path-exists-in-graph](https://github.com/EesunMoon/leetcode/tree/master/2121-find-if-path-exists-in-graph) |
@@ -390,6 +394,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0286-walls-and-gates](https://github.com/EesunMoon/leetcode/tree/master/0286-walls-and-gates) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0417-pacific-atlantic-water-flow](https://github.com/EesunMoon/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
 | [1036-rotting-oranges](https://github.com/EesunMoon/leetcode/tree/master/1036-rotting-oranges) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/EesunMoon/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
