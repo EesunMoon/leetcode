@@ -12,22 +12,19 @@ class Solution(object):
         :type node: Node
         :rtype: Node
         """
-        if not node:
-            return
-
-        # create clone
-        clone = {}
-        clone[node] = Node(node.val)
-        queue = deque([node])
-
-        while queue:
-            curr = queue.popleft()
-
-            for nei in curr.neighbors:
-                if nei not in clone:
-                    clone[nei] = Node(nei.val)
-                    queue.append(nei)
-                clone[curr].neighbors.append(clone[nei])
-            
-        return clone[node]
+        hashmap = {}
         
+        def clone(node):
+            # already cloned
+            if node in hashmap:
+                return hashmap[node]
+            
+            new = Node(node.val)
+            hashmap[node] = new
+            
+            for nei in node.neighbors:
+                new.neighbors.append(clone(nei))
+            
+            return new
+                
+        return clone(node) if node else None
