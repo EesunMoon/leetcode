@@ -5,36 +5,27 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: int
         """
-        par = [i for i in range(n)]
-        rank = [1]*n
+        adj = [[] for _ in range(n)] # O(V)
 
-        def find(node):
-            p = par[node]
-            
-            while p != par[p]:
-                par[p] = par[par[p]]
-                p = par[p]
-            
-            return p
-        
-        def union(n1, n2):
-            p1, p2 = find(n1), find(n2)
+        for u, v in edges: # O(E)
+            adj[u].append(v)
+            adj[v].append(u)
 
-            if p1 == p2:
-                return False
-            else:
-                if rank[p1] > rank[p2]:
-                    par[p2] = p1
-                    rank[p1] += rank[p2]
-                else:
-                    par[p1] = p2
-                    rank[p2] += rank[p1]
+        visited = set()
+        def dfs(curr):
+            if curr in visited:
+                return
             
-            return True
-        
-        res = n
-        for u, v in edges:
-            if union(u, v):
-                res -= 1
+            visited.add(curr)
+            for nei in adj[curr]:
+                if nei not in visited:
+                    dfs(nei)
+
+        res = 0
+        for i in range(n):
+            if i not in visited:
+                dfs(i)
+                res += 1
         
         return res
+            
