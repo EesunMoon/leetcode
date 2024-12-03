@@ -36,29 +36,26 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: bool
         """
-        # adj list
+        # adj
         adj = [[] for _ in range(n)]
-
-        for u, v in edges:
+        for u, v in edges: # O(E)
             adj[u].append(v)
             adj[v].append(u)
-
+        
+        # check circle
         visited = set()
-
         def dfs(curr, prev):
-            # cycle detection
             if curr in visited:
                 return False
-
+            
             visited.add(curr)
             for nei in adj[curr]:
                 # backtrack
                 if nei == prev:
                     continue
-                
+                # if cicle => return False immeditedly
                 if not dfs(nei, curr):
-                    return False # cycle
+                    return False
             return True
-        
-        return dfs(0, -1) and len(visited)==n
-        
+
+        return dfs(0, -1) and len(visited) == n
