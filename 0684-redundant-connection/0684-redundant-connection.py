@@ -5,11 +5,10 @@ class Solution(object):
         :rtype: List[int]
         """
         par = [i for i in range(len(edges)+1)]
-        rank = [1] *(len(edges)+1)
+        rank = [1] * (len(edges)+1)
 
-        def find(node):
-            p = par[node]
-
+        def find(n):
+            p = par[n]
             while p != par[p]:
                 par[p] = par[par[p]]
                 p = par[p]
@@ -21,8 +20,8 @@ class Solution(object):
             if p1 == p2:
                 return False
             else:
-                if rank[p1] > rank[p2]:
-                    par[p2] = p1
+                if rank[p1]>rank[p2]:
+                    par[p2]=p1
                     rank[p1] += rank[p2]
                 else:
                     par[p1] = p2
@@ -32,7 +31,3 @@ class Solution(object):
         for u, v in edges:
             if not union(u, v):
                 return [u, v]
-            
-
-
-        
