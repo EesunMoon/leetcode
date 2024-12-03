@@ -4,42 +4,40 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        # initialize
-        rotten = []
-        fresh, time = 0, 0
-        visited = set() 
+        fresh = 0
+        queue = deque()
         ROWS, COLS = len(grid), len(grid[0])
+        directions = [(1, 0), (-1, 0), (0, -1), (0, 1)]
+        res = 1
 
+        # initialize
         for r in range(ROWS):
             for c in range(COLS):
                 if grid[r][c] == 1:
                     fresh += 1
                 elif grid[r][c] == 2:
-                    rotten.append((r, c))
-                    visited.add((r, c))
+                    queue.append((r, c))
+                    grid[r][c] = 0 # mark as visited
         
         if fresh == 0:
             return 0
-
-        # BFS
-        queue = deque(rotten)
-        directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]
-        while rotten:
-
-            rotten = []
-            while queue:
-                r, c = deque.popleft(queue)
+        
+        # track
+        while queue:
+            # level
+            for _ in range(len(queue)):
+                r, c = queue.popleft()
                 for dr, dc in directions:
-                    candr, candc = r + dr, c + dc
-                    if candr not in (-1, ROWS) and candc not in (-1, COLS):
-                        if (grid[candr][candc] == 1) and ((candr, candc) not in visited):
-                            visited.add((candr, candc))
-                            rotten.append((candr, candc))
-                            fresh -= 1
-            time += 1
+                    candr, candc = dr+r, dc+c
+                    if (candr in (-1, ROWS) or candc in (-1, COLS) 
+                        or grid[candr][candc] == 0):
+                        continue
+                    queue.append((candr, candc))
+                    grid[candr][candc] = 0 # mark as visited
+                    fresh -= 1
+            # print(queue, res)
             if fresh == 0:
-                return time
-            queue = deque(rotten)
+                break
+            res += 1                        
 
-
-        return time if fresh == 0 else -1
+        return res if fresh == 0 else -1
