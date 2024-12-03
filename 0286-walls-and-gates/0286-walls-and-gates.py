@@ -5,36 +5,34 @@ class Solution(object):
         :type rooms: List[List[int]]
         :rtype: None Do not return anything, modify rooms in-place instead.
         """
-        EMPTY = float("inf")
-        GATE = 0
-        WALL = -1
-        directions = [[1,0],[-1,0],[0,1],[0,-1]]
-        m = len(rooms)
-
-        if m == 0:
-            return
-        n = len(rooms[0])
+        ROWS, COLS = len(rooms), len(rooms[0])
         queue = deque()
+        visited = set() # prevent from tracking visited node again
 
-        # save GATE info(row, col)
-        for row in range(m):
-            for col in range(n):
-                if rooms[row][col] == GATE:
-                    queue.append((row, col))
-        print(queue)
+        for r in range(ROWS):
+            for c in range(COLS):
+                # start from gate
+                if rooms[r][c] == 0:
+                    queue.append((r, c))
+                    visited.add((r, c))
+        
+        dist = 0
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         while queue:
-            # start with GATE
-            row, col = queue.popleft()
+            for i in range(len(queue)):
+                r, c = queue.popleft()
+                rooms[r][c] = dist
 
-            candidate_distance = rooms[row][col] + 1
-            for dr, dc in directions:
-                r = row + dr
-                c = col + dc
+                for dr, dc in directions:
+                    candr, candc = dr + r, dc + c
 
-                if r in (-1, m) or c in (-1, n) or (rooms[r][c]== WALL):
-                    continue
-                if candidate_distance < rooms[r][c]:
-                    # Fine distance by searching room of distance + 1
-                    rooms[r][c] = candidate_distance
-                    queue.append((r,c))
+                    if candr in (-1, ROWS) or candc in (-1, COLS) or rooms[candr][candc] == -1 or (candr, candc) in visited:
+                        continue
+                    queue.append((candr, candc))
+                    visited.add((candr, candc))
+            dist += 1
+
+
+
+
         
