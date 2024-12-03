@@ -5,32 +5,22 @@ class Solution(object):
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-        # hashmap
-        preMap = {crs: [] for crs in range(numCourses)}
-        for crs, pre in prerequisites:
-            preMap[crs].append(pre)
+        hashset = [[] for _ in range(numCourses)]
+        indegree = {}
+        for nxt, prv in prerequisites:
+            hashset[prv].append(nxt)
+            indegree[nxt] = 1 + indegree.get(nxt, 0)
         
-        # check if visited
-        visited = set()
-        def dfs(crs):
-            # already visited
-            if crs in visited:
-                return False
-            # no prerequisites
-            if preMap[crs] == []:
-                return True
-            
-            visited.add(crs)
-            for pre in preMap[crs]:
-                if not dfs(pre): 
-                    return False
-            
-            visited.remove(crs)
-            preMap[crs] = []
-            return True
+        queue = deque(i for i in range(numCourses) if i not in indegree)
+        if not queue:
+            return False
+        seen = set()
+        while queue:
+            crs = queue.popleft()
+            seen.add(crs)
+            for nxt in hashset[crs]:
+                indegree[nxt] -= 1
+                if indegree[nxt] == 0:
+                    queue.append(nxt)
 
-        for crs in range(numCourses):
-            if not dfs(crs):
-                return False
-
-        return True
+        return len(seen) == numCourses
