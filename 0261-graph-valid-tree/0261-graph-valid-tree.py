@@ -36,13 +36,29 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: bool
         """
-        if len(edges) != n-1:
-            return False
-        
-        unionFind = UnionFind(n)
-        for A, B in edges:
-            if not unionFind.union(A, B):
+        # adj list
+        adj = [[] for _ in range(n)]
+
+        for u, v in edges:
+            adj[u].append(v)
+            adj[v].append(u)
+
+        visited = set()
+
+        def dfs(curr, prev):
+            # cycle detection
+            if curr in visited:
                 return False
-            
-        return True
+
+            visited.add(curr)
+            for nei in adj[curr]:
+                # backtrack
+                if nei == prev:
+                    continue
+                
+                if not dfs(nei, curr):
+                    return False # cycle
+            return True
+        
+        return dfs(0, -1) and len(visited)==n
         
