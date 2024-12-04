@@ -19,9 +19,11 @@ class Solution(object):
             if node in hashmap:
                 return hashmap[node]
             
+            # create new node
             new = Node(node.val)
             hashmap[node] = new
             
+            # track neighbors
             for nei in node.neighbors:
                 new.neighbors.append(clone(nei))
             
