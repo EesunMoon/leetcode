@@ -15,7 +15,7 @@ class Solution(object):
                 pattern = word[:i] + "*" + word[i+1:]
                 nei[pattern].append(word)
         
-        print(nei)
+        # print(nei)
         cnt = 1
         queue = deque([beginWord])
         seen = set([beginWord])
