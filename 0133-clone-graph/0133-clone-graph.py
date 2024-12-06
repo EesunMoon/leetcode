@@ -12,21 +12,22 @@ class Solution(object):
         :type node: Node
         :rtype: Node
         """
-        hashmap = {}
-        
-        def clone(node):
-            # already cloned
-            if node in hashmap:
-                return hashmap[node]
+        graph={} # Node address: Node
+
+        def clone(curr):
+            # already in graph hashmap
+            if curr in graph:
+                return graph[curr]
             
             # create new node
-            new = Node(node.val)
-            hashmap[node] = new
-            
-            # track neighbors
-            for nei in node.neighbors:
+            new = Node(curr.val)
+            graph[curr] = new
+
+            # connect neighbors to new(clone) node
+            for nei in curr.neighbors:
                 new.neighbors.append(clone(nei))
             
             return new
-                
+
         return clone(node) if node else None
+        
