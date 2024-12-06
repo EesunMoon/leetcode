@@ -6,43 +6,34 @@ class Solution(object):
         :type wordList: List[str]
         :rtype: int
         """
-        # base case
-        if endWord not in wordList:
-            return 0
-
-        # n = len(wordList), m = len(word)
-        # Every adjacent pair of words differs by a single letter
-        ## => adjacent list
-        # shortest transformation sequence
-        ## => BFS
-
-        # 1) adjacent pair -> O(n*m^2)
-        adj = defaultdict(list)
+        nei = defaultdict(list)
         wordList.append(beginWord)
+
+        # hashmap => O(n*m)
         for word in wordList:
-            for j in range(len(word)):
-                pattern = word[:j]+"*"+word[j+1:]
-                adj[pattern].append(word)
+            for i in range(len(word)):
+                pattern = word[:i] + "*" + word[i+1:]
+                nei[pattern].append(word)
         
-        # 2) BFS
-        ## initialization: start to beginWord
-        visited = set([beginWord])
+        print(nei)
+        cnt = 1
         queue = deque([beginWord])
-        res = 1
+        seen = set([beginWord])
         while queue:
+            # one stage
             for _ in range(len(queue)):
-                word = queue.popleft()
-
+                word = queue.popleft() # target word
+                
+                # answer
                 if word == endWord:
-                    return res
-
-                for j in range(len(word)):
-                    pattern = word[:j]+"*"+word[j+1:]
-                    for neiWord in adj[pattern]:
-                        if neiWord not in visited:
-                            visited.add(neiWord)
+                    return cnt
+                # track neighbor words
+                for i in range(len(word)):
+                    pattern = word[:i] + "*" + word[i+1:]
+                    for neiWord in nei[pattern]:
+                        if neiWord not in seen:
                             queue.append(neiWord)
+                            seen.add(neiWord)
+            cnt += 1
 
-            res += 1
-        
         return 0
