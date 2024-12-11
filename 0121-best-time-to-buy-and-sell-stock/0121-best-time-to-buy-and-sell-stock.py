@@ -4,6 +4,8 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
+        """
+        ## dynamic programming approach ##
         # base case
         if not prices:
             return 0
@@ -15,4 +17,18 @@ class Solution(object):
             max_profits = max(max_profits, prices[i]-min_purchase)
             min_purchase = min(min_purchase, prices[i])
         return max_profits
+        """
+
+        ## two pointer ##
+        l, r = 0, 1
+        maxP = 0
+
+        while r < len(prices):
+            if prices[l] < prices[r]:
+                profit = prices[r] - prices[l]
+                maxP = max(maxP, profit)
+            else:
+                l = r
+            r+= 1
+        return maxP
         
