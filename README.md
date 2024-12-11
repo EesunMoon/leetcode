@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0022-generate-parentheses](https://github.com/EesunMoon/leetcode/tree/master/0022-generate-parentheses) |
 | [0042-trapping-rain-water](https://github.com/EesunMoon/leetcode/tree/master/0042-trapping-rain-water) |
+| [0062-unique-paths](https://github.com/EesunMoon/leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/EesunMoon/leetcode/tree/master/0070-climbing-stairs) |
 | [0091-decode-ways](https://github.com/EesunMoon/leetcode/tree/master/0091-decode-ways) |
 | [0119-pascals-triangle-ii](https://github.com/EesunMoon/leetcode/tree/master/0119-pascals-triangle-ii) |
@@ -212,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/EesunMoon/leetcode/tree/master/0013-roman-to-integer) |
+| [0062-unique-paths](https://github.com/EesunMoon/leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/EesunMoon/leetcode/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/EesunMoon/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0279-perfect-squares](https://github.com/EesunMoon/leetcode/tree/master/0279-perfect-squares) |
@@ -558,4 +560,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1837-daily-leads-and-partners](https://github.com/EesunMoon/leetcode/tree/master/1837-daily-leads-and-partners) |
 | [1877-find-followers-count](https://github.com/EesunMoon/leetcode/tree/master/1877-find-followers-count) |
 | [2110-employees-with-missing-information](https://github.com/EesunMoon/leetcode/tree/master/2110-employees-with-missing-information) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/EesunMoon/leetcode/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
