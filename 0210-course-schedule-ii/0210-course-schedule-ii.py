@@ -5,24 +5,31 @@ class Solution(object):
         :type prerequisites: List[List[int]]
         :rtype: List[int]
         """
-        indegree = {}
-        graph = collections.defaultdict(list)
-
-        # pre, nxt
-        for nxt, pre in prerequisites:
-            indegree[nxt] = indegree.get(nxt, 0) + 1
-            graph[pre].append(nxt)
+        # initialization
+        adj = defaultdict(list)
+        indegree = {i: 0 for i in range(numCourses)}
+        for nxt, prv in prerequisites:
+            adj[prv].append(nxt)
+            indegree[nxt] += 1
         
-        node = [x for x in range(numCourses) if x not in indegree]
+        queue = deque()
+        for i in range(numCourses):
+            if indegree[i] == 0:
+                queue.append(i)
         
-        ans = []
-        while node:
-            pre = node.pop()
-            ans.append(pre)
-            for nxt in graph[pre]:
-                indegree[nxt] -= 1
-                if indegree[nxt] == 0:
-                    node.append(nxt)
+        # bfs
+        res = []
+        visited = set()
+        while queue:
+            for _ in range(len(queue)):
+                course = queue.popleft()
+                visited.add(course)
+                res.append(course)
+                for nxt in adj[course]:
+                    indegree[nxt] -= 1
+                    if nxt not in visited and indegree[nxt] == 0:
+                        queue.append(nxt)
 
-        return ans if len(ans) == numCourses else []
+        return res if len(res) == numCourses else []
+        
         
