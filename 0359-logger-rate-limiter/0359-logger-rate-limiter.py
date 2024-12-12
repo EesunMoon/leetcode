@@ -1,8 +1,7 @@
 class Logger(object):
 
     def __init__(self):
-        self.time = 10
-        self.store = {}
+        self.hashmap = {}
 
     def shouldPrintMessage(self, timestamp, message):
         """
@@ -10,12 +9,13 @@ class Logger(object):
         :type message: str
         :rtype: bool
         """
-        x = self.store.get(message, 0)
-        if x <= timestamp:
-            self.store[message] = (self.time + timestamp)
-            return True
-        else:
+        time = self.hashmap.get(message, 0)
+        if time > timestamp:
             return False
+        
+        self.hashmap[message] = timestamp + 10
+        return True
+        
         
 
 
