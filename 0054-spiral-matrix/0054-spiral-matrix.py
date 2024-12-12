@@ -4,28 +4,24 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: List[int]
         """
+
+        directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+        ans = []
         ROWS, COLS = len(matrix), len(matrix[0])
-        directions = [[0, 1], [1, 0], [0, -1], [-1, 0]]
-        flag = 0
-        res = []
-        seen = set()
         r, c = 0, 0
+        flag = 0
+        cnt = 0
 
-        # start
-        seen.add((0,0))
-        res.append(matrix[0][0])
+        while cnt < ROWS * COLS:
+            ans.append(matrix[r][c])
+            matrix[r][c] = "X"
+            cnt += 1
+            candr, candc = r + directions[flag][0], c + directions[flag][1]
 
-        while len(seen) < ROWS*COLS:
-            candr = r + directions[flag][0]
-            candc = c + directions[flag][1]
-            
-            if (candr, candc) in seen or not (0 <= candr < ROWS and 0 <= candc < COLS):
+            if candr in (-1, ROWS) or candc in (-1, COLS) or matrix[candr][candc] == "X":
                 flag = (flag+1)%4
-                continue
-            r, c = candr, candc
-            res.append(matrix[r][c])
-            seen.add((r,c))
+    
+            r += directions[flag][0]
+            c += directions[flag][1]
 
-        
-        return res
-        
+        return ans
