@@ -4,17 +4,27 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        
         stack = []
-        for char in s:
-            if char in "({[":
-                stack.append(char)
-            else:
-                if not stack or (char == ")" and stack[-1] !="(") or (char == "}" and stack[-1]!="{") or (char == "]" and stack[-1]!="["):
+
+        if len(s) %2 !=0:
+            return False
+
+        for c in s:
+            if c in "[({":
+                stack.append(c)
+            elif not stack:
+                return False
+
+            if c in "]})":
+                if ((c == "]" and stack[-1] == "[") or 
+                    (c == "}" and stack[-1] == "{") or 
+                    (c == ")" and stack[-1] == "(")):
+                    stack.pop()
+                else:
                     return False
-                stack.pop()
         
         return not stack
+        
 
 
 
