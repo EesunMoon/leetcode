@@ -5,27 +5,20 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
+        # base case
         if numRows == 1:
             return s
 
-        flag = 1 # 1: increment, -1: decrement
-        res = [[]*numRows for _ in range(numRows)]
-        # print(res)
-        p = 0
+        ans = ""
+        for r in range(numRows):
+            increment = 2 * (numRows-1)
+            for i in range(r, len(s), increment):
+                # first, last rows
+                ans += s[i]
+                # middle row
+                if (r != 0 and r != numRows-1 and i+increment-2*r < len(s)):
+                    ans += s[i+increment- 2*r]
+        return ans
 
-        for c in s:
-            if p == 0:
-                flag = 1
-            
-            res[p].append(c)
-            if p == numRows-1:
-                flag = -1
-            
-            p = p + 1*flag
-        print(res)
-        answer = ""
-        for row in res:
-            answer += "".join(row)
-
-        return answer
+        
         
