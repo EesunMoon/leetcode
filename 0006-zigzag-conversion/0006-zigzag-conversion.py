@@ -5,31 +5,27 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
-
-        if not s:
-            return ""
-        if len(s) == 1 or numRows >= len(s) or numRows == 1:
+        if numRows == 1:
             return s
-        
-        zigzag = [''] *(numRows)
-        direct = 0
-        row = 0
 
-        for x in s:
-            if direct == 0:
-                zigzag[row] += x
-                if row == numRows-1: # last
-                    if numRows != 2:
-                        direct = 1
-                    row -=1
-                    continue
-                row += 1
-            elif direct == 1:
-                zigzag[row] += x
-                if row == 1:
-                    direct = 0
-                row -= 1
-        print(zigzag)
+        flag = 1 # 1: increment, -1: decrement
+        res = [[]*numRows for _ in range(numRows)]
+        # print(res)
+        p = 0
 
-        return ''.join(zigzag)
+        for c in s:
+            if p == 0:
+                flag = 1
+            
+            res[p].append(c)
+            if p == numRows-1:
+                flag = -1
+            
+            p = p + 1*flag
+        print(res)
+        answer = ""
+        for row in res:
+            answer += "".join(row)
+
+        return answer
         
