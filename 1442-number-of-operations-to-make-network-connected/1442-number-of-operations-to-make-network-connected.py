@@ -36,7 +36,7 @@ class Solution(object):
                 else:
                     par[p1] = p2
                     rank[p2] += rank[p1]
-                self.count -= 1
+                self.count -= 1 # component
         
         for u, v in connections:
             union(u, v)
