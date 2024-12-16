@@ -5,11 +5,12 @@ class Solution(object):
         :type space: int
         :rtype: int
         """
-        hashmap = {} # mod: (maximum cnt, minimum value)
+        hashmap = {} # (mod(%):(cnt, minumum target(seed) val))
         mx = 0
 
         for num in nums:
-            x = num % space
+            x = num%space # mod(%) - target
+
             if x not in hashmap:
                 hashmap[x] = (1, num)
             else:
@@ -17,10 +18,10 @@ class Solution(object):
             
             mx = max(mx, hashmap[x][0])
         
-        res = float('inf')
-        for val in hashmap.values():
-            if val[0] == mx:
-                res = min(res, val[1])
-        
-        return res
-        
+
+        mi = float("inf")
+        for x in hashmap.values():
+            if mx == x[0]:
+                mi = min(mi, x[1])
+
+        return mi
