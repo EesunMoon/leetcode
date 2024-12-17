@@ -13,14 +13,16 @@ class Solution(object):
         """
         res = []
 
-        def dfs(node):
-            if not node:
+        # left, parent, right
+        def inorder(root):
+            if not root:
                 return
             
-            dfs(node.left)
-            res.append(node.val)
-            dfs(node.right)
+            inorder(root.left)
+            res.append(root.val)
+            inorder(root.right)
         
-        dfs(root)
+
+        inorder(root)
         return res[k-1]
         
