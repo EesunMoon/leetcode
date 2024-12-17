@@ -5,31 +5,34 @@ class Solution(object):
         :type prerequisites: List[List[int]]
         :rtype: List[int]
         """
-        # initialization
+        # initialize: post, pre => T O(E), S O(E+V)
         adj = defaultdict(list)
-        indegree = {i: 0 for i in range(numCourses)}
-        for nxt, prv in prerequisites:
-            adj[prv].append(nxt)
-            indegree[nxt] += 1
-        
-        queue = deque()
-        for i in range(numCourses):
-            if indegree[i] == 0:
-                queue.append(i)
-        
-        # bfs
-        res = []
-        visited = set()
-        while queue:
-            for _ in range(len(queue)):
-                course = queue.popleft()
-                visited.add(course)
-                res.append(course)
-                for nxt in adj[course]:
-                    indegree[nxt] -= 1
-                    if nxt not in visited and indegree[nxt] == 0:
-                        queue.append(nxt)
+        indegree = {}
 
-        return res if len(res) == numCourses else []
+        for post, pre in prerequisites:
+            adj[pre].append(post)
+            indegree[post] = indegree.get(post, 0) + 1
+        
+        # bfs => T O(E+V), S O(E+V)
+        ans = []
+        queue = deque()
+        for cur in range(0, numCourses):
+            if cur not in indegree:
+                queue.append(cur)
+        
+        while queue:
+            crs = queue.popleft()
+            ans.append(crs)
+            if crs in adj:
+                for nei in adj[crs]:
+                    indegree[nei] -= 1
+                    if indegree[nei] == 0:
+                        queue.append(nei)
+
+        return ans if len(ans) == numCourses else []
+
+
+        
+        
         
         
