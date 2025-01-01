@@ -7,8 +7,8 @@ class Solution(object):
         ans = ""
         for num in digits:
             ans += str(num)
-        ans = list(str(int(ans)+1))
+        digits = list(str(int(ans)+1))
 
-        for i in range(len(ans)):
-            ans[i] = int(ans[i])
-        return ans
+        for i in range(len(digits)):
+            digits[i] = int(digits[i])
+        return digits
