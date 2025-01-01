@@ -20,8 +20,11 @@ class DetectSquares(object):
         res = 0
         px, py = point
         for x, y in self.pts:
+            # check diagnal points
             if (abs(px-x)!=abs(py-y)) or px == x or py ==y:
                 continue
+            
+            # other points
             res += self.square[(px, y)] * self.square[(x, py)]
         return res
         
