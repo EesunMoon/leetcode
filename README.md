@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/EesunMoon/leetcode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/EesunMoon/leetcode/tree/master/0049-group-anagrams) |
 | [0054-spiral-matrix](https://github.com/EesunMoon/leetcode/tree/master/0054-spiral-matrix) |
+| [0073-set-matrix-zeroes](https://github.com/EesunMoon/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/EesunMoon/leetcode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/EesunMoon/leetcode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/EesunMoon/leetcode/tree/master/0088-merge-sorted-array) |
@@ -213,6 +214,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/EesunMoon/leetcode/tree/master/0013-roman-to-integer) |
 | [0036-valid-sudoku](https://github.com/EesunMoon/leetcode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/EesunMoon/leetcode/tree/master/0049-group-anagrams) |
+| [0073-set-matrix-zeroes](https://github.com/EesunMoon/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0076-minimum-window-substring](https://github.com/EesunMoon/leetcode/tree/master/0076-minimum-window-substring) |
 | [0127-word-ladder](https://github.com/EesunMoon/leetcode/tree/master/0127-word-ladder) |
 | [0128-longest-consecutive-sequence](https://github.com/EesunMoon/leetcode/tree/master/0128-longest-consecutive-sequence) |
@@ -463,6 +465,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0036-valid-sudoku](https://github.com/EesunMoon/leetcode/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/EesunMoon/leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/EesunMoon/leetcode/tree/master/0054-spiral-matrix) |
+| [0073-set-matrix-zeroes](https://github.com/EesunMoon/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/EesunMoon/leetcode/tree/master/0074-search-a-2d-matrix) |
 | [0130-surrounded-regions](https://github.com/EesunMoon/leetcode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/EesunMoon/leetcode/tree/master/0200-number-of-islands) |
