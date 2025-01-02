@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/EesunMoon/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0240-search-a-2d-matrix-ii](https://github.com/EesunMoon/leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0253-meeting-rooms-ii](https://github.com/EesunMoon/leetcode/tree/master/0253-meeting-rooms-ii) |
+| [0269-alien-dictionary](https://github.com/EesunMoon/leetcode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/EesunMoon/leetcode/tree/master/0271-encode-and-decode-strings) |
 | [0286-walls-and-gates](https://github.com/EesunMoon/leetcode/tree/master/0286-walls-and-gates) |
 | [0300-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0300-longest-increasing-subsequence) |
@@ -190,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0151-reverse-words-in-a-string](https://github.com/EesunMoon/leetcode/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/EesunMoon/leetcode/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/EesunMoon/leetcode/tree/master/0242-valid-anagram) |
+| [0269-alien-dictionary](https://github.com/EesunMoon/leetcode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/EesunMoon/leetcode/tree/master/0271-encode-and-decode-strings) |
 | [0290-word-pattern](https://github.com/EesunMoon/leetcode/tree/master/0290-word-pattern) |
 | [0344-reverse-string](https://github.com/EesunMoon/leetcode/tree/master/0344-reverse-string) |
@@ -296,6 +298,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0230-kth-smallest-element-in-a-bst](https://github.com/EesunMoon/leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0261-graph-valid-tree](https://github.com/EesunMoon/leetcode/tree/master/0261-graph-valid-tree) |
+| [0269-alien-dictionary](https://github.com/EesunMoon/leetcode/tree/master/0269-alien-dictionary) |
 | [0285-inorder-successor-in-bst](https://github.com/EesunMoon/leetcode/tree/master/0285-inorder-successor-in-bst) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/EesunMoon/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0332-reconstruct-itinerary](https://github.com/EesunMoon/leetcode/tree/master/0332-reconstruct-itinerary) |
@@ -324,6 +327,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/EesunMoon/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/EesunMoon/leetcode/tree/master/0210-course-schedule-ii) |
 | [0261-graph-valid-tree](https://github.com/EesunMoon/leetcode/tree/master/0261-graph-valid-tree) |
+| [0269-alien-dictionary](https://github.com/EesunMoon/leetcode/tree/master/0269-alien-dictionary) |
 | [0279-perfect-squares](https://github.com/EesunMoon/leetcode/tree/master/0279-perfect-squares) |
 | [0286-walls-and-gates](https://github.com/EesunMoon/leetcode/tree/master/0286-walls-and-gates) |
 | [0322-coin-change](https://github.com/EesunMoon/leetcode/tree/master/0322-coin-change) |
@@ -428,6 +432,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/EesunMoon/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/EesunMoon/leetcode/tree/master/0210-course-schedule-ii) |
 | [0261-graph-valid-tree](https://github.com/EesunMoon/leetcode/tree/master/0261-graph-valid-tree) |
+| [0269-alien-dictionary](https://github.com/EesunMoon/leetcode/tree/master/0269-alien-dictionary) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/EesunMoon/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0332-reconstruct-itinerary](https://github.com/EesunMoon/leetcode/tree/master/0332-reconstruct-itinerary) |
 | [0547-number-of-provinces](https://github.com/EesunMoon/leetcode/tree/master/0547-number-of-provinces) |
@@ -538,6 +543,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0207-course-schedule](https://github.com/EesunMoon/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/EesunMoon/leetcode/tree/master/0210-course-schedule-ii) |
+| [0269-alien-dictionary](https://github.com/EesunMoon/leetcode/tree/master/0269-alien-dictionary) |
 ## Counting Sort
 |  |
 | ------- |
