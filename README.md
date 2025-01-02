@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0747-min-cost-climbing-stairs](https://github.com/EesunMoon/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0753-open-the-lock](https://github.com/EesunMoon/leetcode/tree/master/0753-open-the-lock) |
 | [0792-binary-search](https://github.com/EesunMoon/leetcode/tree/master/0792-binary-search) |
+| [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0860-design-circular-queue](https://github.com/EesunMoon/leetcode/tree/master/0860-design-circular-queue) |
 | [0907-koko-eating-bananas](https://github.com/EesunMoon/leetcode/tree/master/0907-koko-eating-bananas) |
 | [0948-sort-an-array](https://github.com/EesunMoon/leetcode/tree/master/0948-sort-an-array) |
@@ -83,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0792-binary-search](https://github.com/EesunMoon/leetcode/tree/master/0792-binary-search) |
+| [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0907-koko-eating-bananas](https://github.com/EesunMoon/leetcode/tree/master/0907-koko-eating-bananas) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/EesunMoon/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
@@ -303,6 +305,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/EesunMoon/leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
 | [0744-network-delay-time](https://github.com/EesunMoon/leetcode/tree/master/0744-network-delay-time) |
+| [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/EesunMoon/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0813-all-paths-from-source-to-target](https://github.com/EesunMoon/leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
@@ -332,6 +335,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
 | [0744-network-delay-time](https://github.com/EesunMoon/leetcode/tree/master/0744-network-delay-time) |
 | [0753-open-the-lock](https://github.com/EesunMoon/leetcode/tree/master/0753-open-the-lock) |
+| [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/EesunMoon/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0813-all-paths-from-source-to-target](https://github.com/EesunMoon/leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [1036-rotting-oranges](https://github.com/EesunMoon/leetcode/tree/master/1036-rotting-oranges) |
@@ -412,6 +416,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/EesunMoon/leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/EesunMoon/leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
+| [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/EesunMoon/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
 | [1706-min-cost-to-connect-all-points](https://github.com/EesunMoon/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
@@ -488,6 +493,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0417-pacific-atlantic-water-flow](https://github.com/EesunMoon/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
+| [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
 | [1036-rotting-oranges](https://github.com/EesunMoon/leetcode/tree/master/1036-rotting-oranges) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/EesunMoon/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
@@ -513,6 +519,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0744-network-delay-time](https://github.com/EesunMoon/leetcode/tree/master/0744-network-delay-time) |
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/EesunMoon/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0948-sort-an-array](https://github.com/EesunMoon/leetcode/tree/master/0948-sort-an-array) |
 | [1014-k-closest-points-to-origin](https://github.com/EesunMoon/leetcode/tree/master/1014-k-closest-points-to-origin) |
