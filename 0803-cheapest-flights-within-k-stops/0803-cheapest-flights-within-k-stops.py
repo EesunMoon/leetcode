@@ -8,6 +8,26 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        # approach 2) Bellman Ford - DP
+        prices = [float("INF")] * n
+        prices[src] = 0
+
+        # consider k-th stop
+        for _ in range(k+1):
+            tmpPrices = prices[:] # .copy()
+
+            for s, d, p in flights:
+                if prices[s] == float("INF"):
+                    continue
+                # update
+                if prices[s] + p < tmpPrices[d]:
+                    tmpPrices[d] = prices[s] + p
+            prices = tmpPrices
+        return prices[dst] if prices[dst]!=float("INF") else -1 
+     
+        
+        """
+        # approach 1) Dijistra
         graph = defaultdict(list)
         for start, end, weight in flights:
             graph[start].append((end, weight))
@@ -25,3 +45,4 @@ class Solution(object):
                     heapq.heappush(queue, (weight+new_weight, cnt+1, new_end))
         
         return -1
+        """
