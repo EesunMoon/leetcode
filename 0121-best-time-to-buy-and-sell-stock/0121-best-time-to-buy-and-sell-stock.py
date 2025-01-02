@@ -19,16 +19,18 @@ class Solution(object):
         return max_profits
         """
 
-        ## two pointer ##
+        ## two pointer ## => S O(1) T O(N)
+        # initialize
         l, r = 0, 1
-        maxP = 0
+        maxProfit = 0
 
         while r < len(prices):
+            # case1) increase
             if prices[l] < prices[r]:
-                profit = prices[r] - prices[l]
-                maxP = max(maxP, profit)
+                maxProfit=max(maxProfit, prices[r]-prices[l])
+            # case2) green
             else:
                 l = r
-            r+= 1
-        return maxP
-        
+            r+=1
+
+        return maxProfit
