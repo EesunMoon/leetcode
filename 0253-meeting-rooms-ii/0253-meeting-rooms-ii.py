@@ -4,20 +4,11 @@ class Solution(object):
         :type intervals: List[List[int]]
         :rtype: int
         """
-        if not intervals:
-            return 0
-        
-        rooms = [] # priority queue
+        intervals.sort(key=lambda x:x[0])
+        rooms = [] # min_heap
 
-        # sort by start time in increasing order
-        intervals.sort(key=lambda x: x[0])
-
-        heapq.heappush(rooms, intervals[0][1]) # store end time
-
-        for interval in intervals[1:]:
-            if rooms[0] <= interval[0]:
+        for start, end in intervals:
+            if rooms and rooms[0] <= start:
                 heapq.heappop(rooms)
-            heapq.heappush(rooms, interval[1])
-            
-        
+            heapq.heappush(rooms, end)
         return len(rooms)
