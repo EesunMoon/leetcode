@@ -50,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/EesunMoon/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0417-pacific-atlantic-water-flow](https://github.com/EesunMoon/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0435-non-overlapping-intervals](https://github.com/EesunMoon/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/EesunMoon/leetcode/tree/master/0621-task-scheduler) |
 | [0628-maximum-product-of-three-numbers](https://github.com/EesunMoon/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
@@ -116,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/EesunMoon/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0435-non-overlapping-intervals](https://github.com/EesunMoon/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/EesunMoon/leetcode/tree/master/0621-task-scheduler) |
 | [0628-maximum-product-of-three-numbers](https://github.com/EesunMoon/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
@@ -149,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/EesunMoon/leetcode/tree/master/0322-coin-change) |
 | [0392-is-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0392-is-subsequence) |
+| [0435-non-overlapping-intervals](https://github.com/EesunMoon/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0740-delete-and-earn](https://github.com/EesunMoon/leetcode/tree/master/0740-delete-and-earn) |
 | [0747-min-cost-climbing-stairs](https://github.com/EesunMoon/leetcode/tree/master/0747-min-cost-climbing-stairs) |
@@ -619,6 +622,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/EesunMoon/leetcode/tree/master/0011-container-with-most-water) |
 | [0253-meeting-rooms-ii](https://github.com/EesunMoon/leetcode/tree/master/0253-meeting-rooms-ii) |
+| [0435-non-overlapping-intervals](https://github.com/EesunMoon/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/EesunMoon/leetcode/tree/master/0621-task-scheduler) |
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
 | [1126-minimum-cost-to-connect-sticks](https://github.com/EesunMoon/leetcode/tree/master/1126-minimum-cost-to-connect-sticks) |
