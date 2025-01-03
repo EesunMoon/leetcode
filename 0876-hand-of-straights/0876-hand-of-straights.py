@@ -14,20 +14,17 @@ class Solution(object):
         for num in hand:
             count[num] = 1 + count.get(num, 0)
         
-        minH = list(count.keys())
-        heapq.heapify(minH)
-        while minH:
-            # starting with the smallest value
-            start = minH[0]
-
-            for i in range(start, start+groupSize):
-                # no exist consequence values
-                if not count.get(i, 0):
-                    return False
-                
-                count[i] -= 1
-                if count[i] == 0:
-                    if minH[0] != i:
-                        return False
-                    heapq.heappop(minH)
+        for card in hand:
+            # find the valid start card
+            start = card
+            while count.get(start-1,0):
+                start -= 1
+            
+            while start <= card:
+                while count[start]:
+                    for next_card in range(start, start+groupSize):
+                        if not count.get(next_card, 0):
+                            return False
+                        count[next_card] -= 1
+                start += 1
         return True
