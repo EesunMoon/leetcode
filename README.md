@@ -65,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0792-binary-search](https://github.com/EesunMoon/leetcode/tree/master/0792-binary-search) |
 | [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0860-design-circular-queue](https://github.com/EesunMoon/leetcode/tree/master/0860-design-circular-queue) |
+| [0876-hand-of-straights](https://github.com/EesunMoon/leetcode/tree/master/0876-hand-of-straights) |
 | [0907-koko-eating-bananas](https://github.com/EesunMoon/leetcode/tree/master/0907-koko-eating-bananas) |
 | [0948-sort-an-array](https://github.com/EesunMoon/leetcode/tree/master/0948-sort-an-array) |
 | [0965-unique-email-addresses](https://github.com/EesunMoon/leetcode/tree/master/0965-unique-email-addresses) |
@@ -126,6 +127,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/EesunMoon/leetcode/tree/master/0621-task-scheduler) |
 | [0628-maximum-product-of-three-numbers](https://github.com/EesunMoon/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
+| [0876-hand-of-straights](https://github.com/EesunMoon/leetcode/tree/master/0876-hand-of-straights) |
 | [0948-sort-an-array](https://github.com/EesunMoon/leetcode/tree/master/0948-sort-an-array) |
 | [1014-k-closest-points-to-origin](https://github.com/EesunMoon/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1137-height-checker](https://github.com/EesunMoon/leetcode/tree/master/1137-height-checker) |
@@ -264,6 +266,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0740-delete-and-earn](https://github.com/EesunMoon/leetcode/tree/master/0740-delete-and-earn) |
 | [0753-open-the-lock](https://github.com/EesunMoon/leetcode/tree/master/0753-open-the-lock) |
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
+| [0876-hand-of-straights](https://github.com/EesunMoon/leetcode/tree/master/0876-hand-of-straights) |
 | [0965-unique-email-addresses](https://github.com/EesunMoon/leetcode/tree/master/0965-unique-email-addresses) |
 | [1023-time-based-key-value-store](https://github.com/EesunMoon/leetcode/tree/master/1023-time-based-key-value-store) |
 | [1256-rank-transform-of-an-array](https://github.com/EesunMoon/leetcode/tree/master/1256-rank-transform-of-an-array) |
@@ -638,6 +641,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/EesunMoon/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/EesunMoon/leetcode/tree/master/0621-task-scheduler) |
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
+| [0876-hand-of-straights](https://github.com/EesunMoon/leetcode/tree/master/0876-hand-of-straights) |
 | [1126-minimum-cost-to-connect-sticks](https://github.com/EesunMoon/leetcode/tree/master/1126-minimum-cost-to-connect-sticks) |
 | [1762-furthest-building-you-can-reach](https://github.com/EesunMoon/leetcode/tree/master/1762-furthest-building-you-can-reach) |
 ## Geometry
