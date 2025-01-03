@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/EesunMoon/leetcode/tree/master/0042-trapping-rain-water) |
 | [0048-rotate-image](https://github.com/EesunMoon/leetcode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/EesunMoon/leetcode/tree/master/0049-group-anagrams) |
+| [0053-maximum-subarray](https://github.com/EesunMoon/leetcode/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/EesunMoon/leetcode/tree/master/0054-spiral-matrix) |
 | [0056-merge-intervals](https://github.com/EesunMoon/leetcode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/EesunMoon/leetcode/tree/master/0057-insert-interval) |
@@ -143,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0022-generate-parentheses](https://github.com/EesunMoon/leetcode/tree/master/0022-generate-parentheses) |
 | [0042-trapping-rain-water](https://github.com/EesunMoon/leetcode/tree/master/0042-trapping-rain-water) |
+| [0053-maximum-subarray](https://github.com/EesunMoon/leetcode/tree/master/0053-maximum-subarray) |
 | [0062-unique-paths](https://github.com/EesunMoon/leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/EesunMoon/leetcode/tree/master/0070-climbing-stairs) |
 | [0091-decode-ways](https://github.com/EesunMoon/leetcode/tree/master/0091-decode-ways) |
@@ -576,6 +578,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/EesunMoon/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
+| [0053-maximum-subarray](https://github.com/EesunMoon/leetcode/tree/master/0053-maximum-subarray) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0215-kth-largest-element-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0240-search-a-2d-matrix-ii](https://github.com/EesunMoon/leetcode/tree/master/0240-search-a-2d-matrix-ii) |
