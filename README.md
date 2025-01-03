@@ -76,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1706-min-cost-to-connect-all-points](https://github.com/EesunMoon/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [1762-furthest-building-you-can-reach](https://github.com/EesunMoon/leetcode/tree/master/1762-furthest-building-you-can-reach) |
+| [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2139-detect-squares](https://github.com/EesunMoon/leetcode/tree/master/2139-detect-squares) |
 | [2548-destroy-sequential-targets](https://github.com/EesunMoon/leetcode/tree/master/2548-destroy-sequential-targets) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
@@ -97,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/EesunMoon/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
+| [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 ## Sorting
 |  |
@@ -127,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1256-rank-transform-of-an-array](https://github.com/EesunMoon/leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [1306-minimum-absolute-difference](https://github.com/EesunMoon/leetcode/tree/master/1306-minimum-absolute-difference) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/EesunMoon/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
+| [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 ## Prefix Sum
 |  |
@@ -547,6 +550,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/EesunMoon/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [1762-furthest-building-you-can-reach](https://github.com/EesunMoon/leetcode/tree/master/1762-furthest-building-you-can-reach) |
+| [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 ## Shortest Path
 |  |
 | ------- |
@@ -686,4 +690,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0332-reconstruct-itinerary](https://github.com/EesunMoon/leetcode/tree/master/0332-reconstruct-itinerary) |
+## Line Sweep
+|  |
+| ------- |
+| [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 <!---LeetCode Topics End-->
