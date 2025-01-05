@@ -4,12 +4,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        maxSub, currSum = nums[0], 0
-
+        subSum, maxSub = 0, nums[0]
         for num in nums:
-            if currSum < 0:
-                currSum = 0
-            currSum += num
-            maxSub = max(maxSub, currSum)
-        
+            if subSum < 0:
+                subSum = 0
+            subSum += num
+            maxSub = max(maxSub, subSum)
         return maxSub
