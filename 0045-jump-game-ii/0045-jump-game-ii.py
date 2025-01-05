@@ -7,12 +7,13 @@ class Solution(object):
         # greedy O(n) vs DP O(n^2)
         # sliding window + BFS
 
-        l, r = 0, 0
         step = 0
+        l, r = 0, 0
         while r < len(nums)-1:
             farthest = 0
             for i in range(l, r+1):
                 farthest = max(farthest, i+nums[i])
-            l, r = r, farthest
+            l = r
+            r = farthest
             step += 1
         return step
