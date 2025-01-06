@@ -6,16 +6,22 @@ class Solution(object):
         """
         # hashmap
         count = {}
-        for i, c in enumerate(s):
-            count[c] = i
+        for c in s:
+            count[c] = 1 + count.get(c, 0)
         
+        l = 0
         res = []
-        size, end = 0, 0
-        for i, c in enumerate(s):
-            size += 1
-            end = max(end, count[c])
-
-            if i == end:
-                res.append(size)
-                size = 0
+        target = set()
+        for r in range(len(s)):
+            count[s[r]] -= 1
+            target.add(s[r])
+            flag = True
+            for c in target:
+                if count[c] != 0:
+                    flag = False
+                    break
+            if flag:
+                res.append(r-l+1)
+                l = r+1
+                target = set()
         return res
