@@ -82,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [1762-furthest-building-you-can-reach](https://github.com/EesunMoon/leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
+| [2026-merge-triplets-to-form-target-triplet](https://github.com/EesunMoon/leetcode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2139-detect-squares](https://github.com/EesunMoon/leetcode/tree/master/2139-detect-squares) |
 | [2548-destroy-sequential-targets](https://github.com/EesunMoon/leetcode/tree/master/2548-destroy-sequential-targets) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
@@ -650,6 +651,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0876-hand-of-straights](https://github.com/EesunMoon/leetcode/tree/master/0876-hand-of-straights) |
 | [1126-minimum-cost-to-connect-sticks](https://github.com/EesunMoon/leetcode/tree/master/1126-minimum-cost-to-connect-sticks) |
 | [1762-furthest-building-you-can-reach](https://github.com/EesunMoon/leetcode/tree/master/1762-furthest-building-you-can-reach) |
+| [2026-merge-triplets-to-form-target-triplet](https://github.com/EesunMoon/leetcode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 ## Geometry
 |  |
 | ------- |
