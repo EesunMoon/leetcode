@@ -5,6 +5,29 @@
 #         self.left = left
 #         self.right = right
 class Solution(object):
+    # BFS approach
+    def rightSideView(self, root):
+        # base case
+        if not root:
+            return []
+        
+        res = []
+        queue = deque([root])
+        while queue:
+            # append last element at every level
+            rightmost = queue[-1].val
+            res.append(rightmost)
+
+            for _ in range(len(queue)):
+                node = queue.popleft()
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+        
+        return res
+    '''
+    # DFS approach
     def rightSideView(self, root):
         """
         :type root: Optional[TreeNode]
@@ -25,3 +48,4 @@ class Solution(object):
         
         dfs(root, 0)
         return [level[-1] for level in levels]
+    '''
