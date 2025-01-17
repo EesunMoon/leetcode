@@ -5,6 +5,20 @@
 #         self.left = left
 #         self.right = right
 class Solution(object):
+    # approach 2) not using global variable (same time complexity)
+    def goodNodes(self, root):
+        def dfs(node, maxVal):
+            if not node:
+                return 0
+            res = 1 if node.val >= maxVal else 0
+            maxVal = max(maxVal, node.val)
+            res += dfs(node.left, maxVal)
+            res += dfs(node.right, maxVal)
+            return res
+        return dfs(root, root.val)
+
+    '''
+    # approach 1) using global variable
     def goodNodes(self, root):
         """
         :type root: TreeNode
@@ -27,3 +41,4 @@ class Solution(object):
 
         dfs(root, root.val)
         return self.res
+    '''
