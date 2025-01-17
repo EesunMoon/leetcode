@@ -13,18 +13,14 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
-        p_val = p.val
-        q_val = q.val
-        node = root
-        
-        while node:
-            parent_val = node.val
+        curr = root
 
-            if p_val > parent_val and q_val > parent_val:
-                node = node.right
-            elif p_val < parent_val and q_val < parent_val:
-                node = node.left
+        while curr:
+            if curr.val < p.val and curr.val < q.val:
+                curr = curr.right
+            elif curr.val > p.val and curr.val > q.val:
+                curr = curr.left
             else:
-                return node
+                return curr
                 
         
