@@ -342,6 +342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0784-insert-into-a-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -373,6 +374,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0813-all-paths-from-source-to-target](https://github.com/EesunMoon/leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/EesunMoon/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [2121-find-if-path-exists-in-graph](https://github.com/EesunMoon/leetcode/tree/master/2121-find-if-path-exists-in-graph) |
 ## Breadth-First Search
@@ -405,6 +407,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0813-all-paths-from-source-to-target](https://github.com/EesunMoon/leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [1036-rotting-oranges](https://github.com/EesunMoon/leetcode/tree/master/1036-rotting-oranges) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/EesunMoon/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [2121-find-if-path-exists-in-graph](https://github.com/EesunMoon/leetcode/tree/master/2121-find-if-path-exists-in-graph) |
 ## Binary Search Tree
@@ -442,6 +445,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0784-insert-into-a-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Stack
 |  |
 | ------- |
