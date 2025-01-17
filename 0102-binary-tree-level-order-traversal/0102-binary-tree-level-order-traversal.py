@@ -10,22 +10,19 @@ class Solution(object):
         :type root: Optional[TreeNode]
         :rtype: List[List[int]]
         """
-        levels = []
         if not root:
-            return levels
-        
-        def bfs(node, level):
+            return []
+
+        levels = []
+        def dfs(node, level):
             if len(levels) == level:
                 levels.append([])
-                
+            
             levels[level].append(node.val)
             if node.left:
-                bfs(node.left, level+1)
+                dfs(node.left, 1+level)
             if node.right:
-                bfs(node.right, level+1)
-            
-        bfs(root, 0)
+                dfs(node.right, 1+level)
+        
+        dfs(root, 0)
         return levels
-
-        while queue:
-            ele = deque
