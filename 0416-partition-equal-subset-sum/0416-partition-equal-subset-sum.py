@@ -5,20 +5,24 @@ class Solution(object):
         :rtype: bool
         """
         total = sum(nums)
+        
+        # base case
         if total % 2:
             return False
         
         target = total // 2
-        dp = set()
+        dp = set( ) # contain all available sum
         dp.add(0)
-
-        for i in range(len(nums)-1, -1, -1):
-            newDP = set()
-            for t in dp:
-                if t+nums[i] == target:
+        for num in nums:
+            tmp = set()
+            for d in dp:
+                if d + num == target:
                     return True
-                newDP.add(t)
-                newDP.add(t+nums[i])
-            dp = newDP
+                tmp.add(d+num)
+                tmp.add(d)
+            dp = tmp
         return True if target in dp else False
+        
+
+        
                 
