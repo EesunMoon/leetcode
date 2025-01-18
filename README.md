@@ -237,6 +237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0139-word-break](https://github.com/EesunMoon/leetcode/tree/master/0139-word-break) |
 | [0151-reverse-words-in-a-string](https://github.com/EesunMoon/leetcode/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/EesunMoon/leetcode/tree/master/0205-isomorphic-strings) |
+| [0208-implement-trie-prefix-tree](https://github.com/EesunMoon/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0242-valid-anagram](https://github.com/EesunMoon/leetcode/tree/master/0242-valid-anagram) |
 | [0269-alien-dictionary](https://github.com/EesunMoon/leetcode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/EesunMoon/leetcode/tree/master/0271-encode-and-decode-strings) |
@@ -265,6 +266,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0014-longest-common-prefix](https://github.com/EesunMoon/leetcode/tree/master/0014-longest-common-prefix) |
 | [0139-word-break](https://github.com/EesunMoon/leetcode/tree/master/0139-word-break) |
+| [0208-implement-trie-prefix-tree](https://github.com/EesunMoon/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [1838-number-of-distinct-substrings-in-a-string](https://github.com/EesunMoon/leetcode/tree/master/1838-number-of-distinct-substrings-in-a-string) |
 ## Hash Table
 |  |
@@ -285,6 +287,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/EesunMoon/leetcode/tree/master/0146-lru-cache) |
 | [0202-happy-number](https://github.com/EesunMoon/leetcode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/EesunMoon/leetcode/tree/master/0205-isomorphic-strings) |
+| [0208-implement-trie-prefix-tree](https://github.com/EesunMoon/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/EesunMoon/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/EesunMoon/leetcode/tree/master/0242-valid-anagram) |
 | [0290-word-pattern](https://github.com/EesunMoon/leetcode/tree/master/0290-word-pattern) |
@@ -477,6 +480,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/EesunMoon/leetcode/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/EesunMoon/leetcode/tree/master/0155-min-stack) |
 | [0173-binary-search-tree-iterator](https://github.com/EesunMoon/leetcode/tree/master/0173-binary-search-tree-iterator) |
+| [0208-implement-trie-prefix-tree](https://github.com/EesunMoon/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0271-encode-and-decode-strings](https://github.com/EesunMoon/leetcode/tree/master/0271-encode-and-decode-strings) |
 | [0295-find-median-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
