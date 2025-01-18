@@ -4,15 +4,12 @@ class Solution(object):
         :type n: int
         :rtype: List[int]
         """
-        def cnt(n):
-            res = 0
-            while n:
-                n, curr = divmod(n, 2)
-                if curr == 1:
-                    res += 1
-            return res
         res = []
-        for i in range(n+1):
-            res.append(cnt(i))
+        for i in range(n+1): # O(n)
+            one = 0
+            while i: # O(32) -> O(1)
+                i = i & (i-1)
+                one += 1
+            res.append(one)
         return res
         
