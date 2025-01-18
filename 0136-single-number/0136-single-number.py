@@ -9,5 +9,4 @@ class Solution(object):
 
         for num in nums:
             res = res ^ num
-            print(res)
         return res
