@@ -7,16 +7,7 @@ class Solution(object):
         :type cCenter: int
         :rtype: List[List[int]]
         """
-        H = []
-        def dist(r, c):
-            return abs(r-rCenter)+abs(c-cCenter)
-        
-        for r in range(rows):
-            for c in range(cols):
-                heapq.heappush(H, [dist(r,c), [r, c]])
-        
-        res = []
-        while H:
-            dist, cor = heapq.heappop(H)
-            res.append(cor)
-        return res
+        points = [(r, c) for r in range(rows) for c in range(cols)]
+        def dist(point):
+            return abs(point[0]-rCenter)+abs(point[1]-cCenter)
+        return sorted(points, key=dist)
