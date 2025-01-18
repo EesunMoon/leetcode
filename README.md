@@ -50,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0240-search-a-2d-matrix-ii](https://github.com/EesunMoon/leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0252-meeting-rooms](https://github.com/EesunMoon/leetcode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/EesunMoon/leetcode/tree/master/0253-meeting-rooms-ii) |
+| [0268-missing-number](https://github.com/EesunMoon/leetcode/tree/master/0268-missing-number) |
 | [0269-alien-dictionary](https://github.com/EesunMoon/leetcode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/EesunMoon/leetcode/tree/master/0271-encode-and-decode-strings) |
 | [0286-walls-and-gates](https://github.com/EesunMoon/leetcode/tree/master/0286-walls-and-gates) |
@@ -104,6 +105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/EesunMoon/leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/EesunMoon/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0240-search-a-2d-matrix-ii](https://github.com/EesunMoon/leetcode/tree/master/0240-search-a-2d-matrix-ii) |
+| [0268-missing-number](https://github.com/EesunMoon/leetcode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/EesunMoon/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
@@ -132,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/EesunMoon/leetcode/tree/master/0242-valid-anagram) |
 | [0252-meeting-rooms](https://github.com/EesunMoon/leetcode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/EesunMoon/leetcode/tree/master/0253-meeting-rooms-ii) |
+| [0268-missing-number](https://github.com/EesunMoon/leetcode/tree/master/0268-missing-number) |
 | [0295-find-median-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/EesunMoon/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
@@ -299,6 +302,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/EesunMoon/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/EesunMoon/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/EesunMoon/leetcode/tree/master/0242-valid-anagram) |
+| [0268-missing-number](https://github.com/EesunMoon/leetcode/tree/master/0268-missing-number) |
 | [0290-word-pattern](https://github.com/EesunMoon/leetcode/tree/master/0290-word-pattern) |
 | [0347-top-k-frequent-elements](https://github.com/EesunMoon/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/EesunMoon/leetcode/tree/master/0355-design-twitter) |
@@ -330,6 +334,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/EesunMoon/leetcode/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/EesunMoon/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0202-happy-number](https://github.com/EesunMoon/leetcode/tree/master/0202-happy-number) |
+| [0268-missing-number](https://github.com/EesunMoon/leetcode/tree/master/0268-missing-number) |
 | [0279-perfect-squares](https://github.com/EesunMoon/leetcode/tree/master/0279-perfect-squares) |
 | [0628-maximum-product-of-three-numbers](https://github.com/EesunMoon/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [1013-fibonacci-number](https://github.com/EesunMoon/leetcode/tree/master/1013-fibonacci-number) |
@@ -810,6 +815,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/EesunMoon/leetcode/tree/master/0136-single-number) |
 | [0190-reverse-bits](https://github.com/EesunMoon/leetcode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/EesunMoon/leetcode/tree/master/0191-number-of-1-bits) |
+| [0268-missing-number](https://github.com/EesunMoon/leetcode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/EesunMoon/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0338-counting-bits](https://github.com/EesunMoon/leetcode/tree/master/0338-counting-bits) |
 | [0693-binary-number-with-alternating-bits](https://github.com/EesunMoon/leetcode/tree/master/0693-binary-number-with-alternating-bits) |
