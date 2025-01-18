@@ -4,12 +4,12 @@ class Solution(object):
         :type n: int
         :rtype: List[int]
         """
-        res = []
-        for i in range(n+1): # O(n)
-            one = 0
-            while i: # O(32) -> O(1)
-                i = i & (i-1)
-                one += 1
-            res.append(one)
-        return res
+        dp = [0] * (n+1)
+        offset = 1 # store 1, 2, 4, 8... (2bits)
+
+        for i in range(1, n+1):
+            if offset * 2 == i:
+                offset = i
+            dp[i] = 1 + dp[i-offset]
+        return dp
         
