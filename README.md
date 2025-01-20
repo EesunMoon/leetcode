@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/EesunMoon/leetcode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/EesunMoon/leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/EesunMoon/leetcode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/EesunMoon/leetcode/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/EesunMoon/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0088-merge-sorted-array](https://github.com/EesunMoon/leetcode/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/EesunMoon/leetcode/tree/master/0090-subsets-ii) |
@@ -243,6 +244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/EesunMoon/leetcode/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/EesunMoon/leetcode/tree/master/0058-length-of-last-word) |
 | [0076-minimum-window-substring](https://github.com/EesunMoon/leetcode/tree/master/0076-minimum-window-substring) |
+| [0079-word-search](https://github.com/EesunMoon/leetcode/tree/master/0079-word-search) |
 | [0091-decode-ways](https://github.com/EesunMoon/leetcode/tree/master/0091-decode-ways) |
 | [0125-valid-palindrome](https://github.com/EesunMoon/leetcode/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/EesunMoon/leetcode/tree/master/0127-word-ladder) |
@@ -374,6 +376,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/EesunMoon/leetcode/tree/master/0079-word-search) |
 | [0098-validate-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/EesunMoon/leetcode/tree/master/0100-same-tree) |
 | [0110-balanced-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/0110-balanced-binary-tree) |
@@ -610,6 +613,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/EesunMoon/leetcode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/EesunMoon/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/EesunMoon/leetcode/tree/master/0074-search-a-2d-matrix) |
+| [0079-word-search](https://github.com/EesunMoon/leetcode/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/EesunMoon/leetcode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/EesunMoon/leetcode/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/EesunMoon/leetcode/tree/master/0212-word-search-ii) |
@@ -630,6 +634,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/EesunMoon/leetcode/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/EesunMoon/leetcode/tree/master/0040-combination-sum-ii) |
 | [0078-subsets](https://github.com/EesunMoon/leetcode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/EesunMoon/leetcode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/EesunMoon/leetcode/tree/master/0090-subsets-ii) |
 | [0212-word-search-ii](https://github.com/EesunMoon/leetcode/tree/master/0212-word-search-ii) |
 | [0813-all-paths-from-source-to-target](https://github.com/EesunMoon/leetcode/tree/master/0813-all-paths-from-source-to-target) |
