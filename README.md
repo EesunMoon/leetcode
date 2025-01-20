@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/EesunMoon/leetcode/tree/master/0046-permutations) |
 | [0048-rotate-image](https://github.com/EesunMoon/leetcode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/EesunMoon/leetcode/tree/master/0049-group-anagrams) |
+| [0051-n-queens](https://github.com/EesunMoon/leetcode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/EesunMoon/leetcode/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/EesunMoon/leetcode/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/EesunMoon/leetcode/tree/master/0055-jump-game) |
@@ -640,6 +641,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/EesunMoon/leetcode/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/EesunMoon/leetcode/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/EesunMoon/leetcode/tree/master/0046-permutations) |
+| [0051-n-queens](https://github.com/EesunMoon/leetcode/tree/master/0051-n-queens) |
 | [0078-subsets](https://github.com/EesunMoon/leetcode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/EesunMoon/leetcode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/EesunMoon/leetcode/tree/master/0090-subsets-ii) |
