@@ -60,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/EesunMoon/leetcode/tree/master/0268-missing-number) |
 | [0269-alien-dictionary](https://github.com/EesunMoon/leetcode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/EesunMoon/leetcode/tree/master/0271-encode-and-decode-strings) |
+| [0284-peeking-iterator](https://github.com/EesunMoon/leetcode/tree/master/0284-peeking-iterator) |
 | [0286-walls-and-gates](https://github.com/EesunMoon/leetcode/tree/master/0286-walls-and-gates) |
 | [0287-find-the-duplicate-number](https://github.com/EesunMoon/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0300-longest-increasing-subsequence) |
@@ -517,6 +518,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/EesunMoon/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/EesunMoon/leetcode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0271-encode-and-decode-strings](https://github.com/EesunMoon/leetcode/tree/master/0271-encode-and-decode-strings) |
+| [0284-peeking-iterator](https://github.com/EesunMoon/leetcode/tree/master/0284-peeking-iterator) |
 | [0295-find-median-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0346-moving-average-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0346-moving-average-from-data-stream) |
@@ -530,6 +532,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/EesunMoon/leetcode/tree/master/0173-binary-search-tree-iterator) |
+| [0284-peeking-iterator](https://github.com/EesunMoon/leetcode/tree/master/0284-peeking-iterator) |
 ## Union Find
 |  |
 | ------- |
