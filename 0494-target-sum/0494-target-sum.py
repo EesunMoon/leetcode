@@ -5,14 +5,14 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        # caching
-        dp = {} # (i, amount): count
-        def dfs(i, amount):
-            if i == len(nums):
-                return 1 if amount == target else 0
-            
-            if (i, amount) in dp:
-                return dp[(i,amount)]
-            dp[(i, amount)] = dfs(i+1, amount + nums[i]) + dfs(i+1, amount - nums[i])
-            return dp[(i, amount)]
-        return dfs(0, 0)
+        dp = defaultdict(int)
+        # base case
+        dp[0] = 1 # sum 0 -> 1 way
+
+        for i in range(len(nums)):
+            newDP = defaultdict(int)
+            for currSum, count in dp.items():
+                newDP[currSum + nums[i]] += count
+                newDP[currSum - nums[i]] += count
+            dp = newDP
+        return dp[target]
