@@ -1,19 +1,15 @@
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        counts = {}
-
-        for idx, num in enumerate(nums):
-            counts[num] = idx
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # make hashmap (num : [index]) -> T O(n)
+        hashmap = collections.defaultdict(list)
+        for i, num in enumerate(nums):
+            hashmap[num].append(i)
         
-        for idx, num in enumerate(nums):
+        # find index
+        for i, num in enumerate(nums):
             diff = target - num
-            if diff in counts and counts[diff] != idx:
-                return [idx, counts[diff]]
-
-        return []
-        
+            if diff not in hashmap:
+                continue
+            for idx in hashmap[diff]:
+                if idx != i:
+                    return [i, idx]
