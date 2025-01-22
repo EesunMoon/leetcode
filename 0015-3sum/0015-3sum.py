@@ -1,30 +1,27 @@
-class Solution(object):
-    def threeSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-        nums.sort() # O(nlong)
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        res = []
 
-        n = len(nums)
-        result = []
+        nums.sort() # O(nlogn)
+        for k in range(len(nums)):
+            target = nums[k]
 
-        for k in range(n):
-            # prevent duplicates
-            if k > 0 and nums[k-1] == nums[k]:
+            # prevent duplicate
+            if k != 0 and nums[k] == nums[k-1]:
                 continue
             
-            i, j = k+1, n-1
-            while i<j:
-                cand = nums[i] + nums[j] + nums[k]
-                if cand > 0:
+            # binary search
+            i, j = k + 1, len(nums)-1
+            while i < j:
+                cand = target + nums[i] + nums[j]
+
+                if cand < 0:
+                    i += 1
+                elif cand > 0:
                     j -= 1
-                elif cand < 0:
-                    i += 1
                 else:
-                    result.append([nums[k], nums[i], nums[j]])
+                    res.append([target, nums[i], nums[j]])
                     i += 1
-                    while nums[i] == nums[i-1] and i<j:
-                        i+= 1
-        return result
-            
+                    while i < j and nums[i] == nums[i-1]:
+                        i += 1
+        return res
