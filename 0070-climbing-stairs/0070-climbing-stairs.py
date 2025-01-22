@@ -1,29 +1,26 @@
-class Solution(object):
-    def climbStairs(self, n):
-        one, two= 1, 1 # base case
-        for _ in range(n-1):
-            tmp = one
-            one = one + two
-            two = tmp
-        return one
-    # def climb_stairs(self, i, n, cache):
-    #     if i > n:
-    #         return 0
-    #     if i == n:
-    #         return 1
-    #     if cache[i] > 0:
-    #         return cache[i]
-        
-    #     cache[i] = self.climb_stairs(i+1, n, cache) + self.climb_stairs(i+2, n, cache)
-        
-    #     return cache[i]
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        # dp: variable step, state: #. of distinct way
+        first, second = 1, 1 # i-1, i-2
 
-    # def climbStairs(self, n):
-    #     """
-    #     :type n: int
-    #     :rtype: int
-    #     """
-    #     cache = [0] * (n+1)
-    #     return self.climb_stairs(0, n, cache)
+        for i in range(2, n+1):
+            tmp = first + second
+            second = first
+            first = tmp
+
+        return first
+    """
+    def climbStairs(self, n: int) -> int:
+        # dp: variable step, state: #. of distinct way
+        dp = [float("INF")] * (1+n)
         
-        
+        # base case
+        dp[0] = 1
+        dp[1] = 1
+
+        for i in range(2, n+1):
+            dp[i] = dp[i-1] + dp[i-2]
+
+
+        return dp[n]
+    """
