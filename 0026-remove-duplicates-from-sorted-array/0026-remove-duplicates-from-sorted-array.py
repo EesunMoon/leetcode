@@ -1,15 +1,15 @@
 class Solution(object):
     def removeDuplicates(self, nums):
-        start = 1
-        n = len(nums)
+        l = 1 # l: represent the position that we replace
+        # r: compare previous value and current value
+        for r in range(1, len(nums)):
+            # find distinct
+            if nums[r-1] != nums[r]:
+                nums[l] = nums[r]
+                l += 1
+        return l
 
-        # condition) it is guaranteed that the given array is a sorted array
-        for i in range(1, n):
-            # find unique element
-            if nums[i-1] != nums[i]:
-                nums[start] = nums[i]
-                start += 1
-        return start
+
             
 
     '''
