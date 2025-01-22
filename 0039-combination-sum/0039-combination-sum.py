@@ -1,26 +1,18 @@
-class Solution(object):
-    def combinationSum(self, candidates, target):
-        """
-        :type candidates: List[int]
-        :type target: int
-        :rtype: List[List[int]]
-        """
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         res = []
-        candidates.sort()
-
-        def dfs(i, curr, total):
+        def backtracking(i, cand, total):
+            # base case
             if total == target:
-                res.append(curr[::])
+                res.append(cand[::])
                 return
-
-            # invalid
             if i >= len(candidates) or total > target:
                 return
             
-            curr.append(candidates[i])
-            dfs(i, curr, total + candidates[i]) # contain current num
-            curr.pop()
-            dfs(i+1, curr, total) # do not contain current num, contain next num
+            cand.append(candidates[i])
+            backtracking(i, cand, total + candidates[i])
+            cand.pop()
+            backtracking(i+1, cand, total)
         
-        dfs(0, [], 0)
+        backtracking(0, [], 0)
         return res
