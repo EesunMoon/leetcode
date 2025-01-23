@@ -6,6 +6,7 @@ class Solution:
                     (3) replace: 1+ (i+1, j+1)
     """
     # using bottom-up approach
+    # T O(m*n), S (m*n)
     def minDistance(self, word1: str, word2: str) -> int:
         dp = [[float("INF")] * (len(word2)+1) for _ in range(len(word1)+1)]
         
@@ -24,7 +25,7 @@ class Solution:
         return dp[0][0]
     """
     # using top-down DP approach
-    # time: O(m+n), space: O(m+n)
+    # time: O(m*n), space: O(m*n)
     def minDistance(self, word1: str, word2: str) -> int:
         
         cache = {}
