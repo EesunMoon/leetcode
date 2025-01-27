@@ -1,17 +1,17 @@
-class Solution(object):
-    def merge(self, intervals):
-        """
-        :type intervals: List[List[int]]
-        :rtype: List[List[int]]
-        """
-        # sorting by start => O(nlogn)
-        intervals.sort(key=lambda x:x[0])
-
-        res = [intervals[0]]
-        for start, end in intervals[1:]:
-            LastEnd = res[-1][1]
-            if LastEnd < start:
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        res = []
+        # O(nlogn)
+        for start, end in sorted(intervals):
+            if not res:
                 res.append([start, end])
+                continue
+
+            priorStart, priorEnd = res[-1][0], res[-1][1]
+            # overlap
+            if priorEnd >= start:
+                res[-1][0], res[-1][1] = min(priorStart, start), max(priorEnd, end)
             else:
-                res[-1][1] = max(LastEnd, end)
+                res.append([start, end])
+            
         return res
