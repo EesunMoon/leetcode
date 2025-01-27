@@ -1,5 +1,6 @@
 class Solution:
     def minimumOperations(self, nums: List[int]) -> int:
+        """
         total = len(nums)
 
         def helper(l, target):
@@ -16,3 +17,12 @@ class Solution:
                 return res
             res += 1
         return res
+        """
+
+        count = set()
+        for i in range(len(nums)-1, -1, -1):
+            if nums[i] not in count:
+                count.add(nums[i])
+            else:
+                return i//3 + 1
+        return 0
