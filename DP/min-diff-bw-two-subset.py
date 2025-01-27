@@ -7,6 +7,8 @@
     then if we assume Subset1 has m elements, 
     Subset2 must have n-m elements 
     and the value of abs(sum(Subset1) – sum(Subset2)) should be minimum.
+
+    [GeeksforGeeks] https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/
 """
 
 def solution(arr):
