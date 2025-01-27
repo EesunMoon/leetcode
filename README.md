@@ -109,6 +109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/EesunMoon/leetcode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2139-detect-squares](https://github.com/EesunMoon/leetcode/tree/master/2139-detect-squares) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2548-destroy-sequential-targets](https://github.com/EesunMoon/leetcode/tree/master/2548-destroy-sequential-targets) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
@@ -168,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1306-minimum-absolute-difference](https://github.com/EesunMoon/leetcode/tree/master/1306-minimum-absolute-difference) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/EesunMoon/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 ## Prefix Sum
 |  |
@@ -356,6 +358,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1023-time-based-key-value-store](https://github.com/EesunMoon/leetcode/tree/master/1023-time-based-key-value-store) |
 | [1256-rank-transform-of-an-array](https://github.com/EesunMoon/leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [2139-detect-squares](https://github.com/EesunMoon/leetcode/tree/master/2139-detect-squares) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2548-destroy-sequential-targets](https://github.com/EesunMoon/leetcode/tree/master/2548-destroy-sequential-targets) |
 | [2629-number-of-substrings-with-fixed-ratio](https://github.com/EesunMoon/leetcode/tree/master/2629-number-of-substrings-with-fixed-ratio) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
@@ -714,6 +717,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [1762-furthest-building-you-can-reach](https://github.com/EesunMoon/leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 ## Shortest Path
 |  |
 | ------- |
@@ -811,6 +815,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1762-furthest-building-you-can-reach](https://github.com/EesunMoon/leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/EesunMoon/leetcode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2279-maximum-split-of-positive-even-integers](https://github.com/EesunMoon/leetcode/tree/master/2279-maximum-split-of-positive-even-integers) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 ## Geometry
 |  |
 | ------- |
@@ -822,6 +827,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0043-multiply-strings](https://github.com/EesunMoon/leetcode/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/EesunMoon/leetcode/tree/master/0054-spiral-matrix) |
 | [0874-backspace-string-compare](https://github.com/EesunMoon/leetcode/tree/master/0874-backspace-string-compare) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 ## Doubly-Linked List
 |  |
 | ------- |
