@@ -304,10 +304,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1250-longest-common-subsequence](https://github.com/EesunMoon/leetcode/tree/master/1250-longest-common-subsequence) |
 | [1838-number-of-distinct-substrings-in-a-string](https://github.com/EesunMoon/leetcode/tree/master/1838-number-of-distinct-substrings-in-a-string) |
 | [2629-number-of-substrings-with-fixed-ratio](https://github.com/EesunMoon/leetcode/tree/master/2629-number-of-substrings-with-fixed-ratio) |
+| [3684-substring-matching-pattern](https://github.com/EesunMoon/leetcode/tree/master/3684-substring-matching-pattern) |
 ## String Matching
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/EesunMoon/leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [3684-substring-matching-pattern](https://github.com/EesunMoon/leetcode/tree/master/3684-substring-matching-pattern) |
 ## Trie
 |  |
 | ------- |
