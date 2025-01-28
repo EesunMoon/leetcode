@@ -4,16 +4,9 @@ class Solution:
 
         if not prior:
             return after in s
+    
+
         
-        if not after:
-            return prior in s
-        
-        if s.find(prior) != -1:
-            if s.find(after, s.find(prior) + len(prior)) != -1:
-                return True
-        return False
-        
-        """
         # find prior string
         flag = False
         idx = 0
@@ -32,4 +25,4 @@ class Solution:
             return True
         else:
             return False
-        """
+        
