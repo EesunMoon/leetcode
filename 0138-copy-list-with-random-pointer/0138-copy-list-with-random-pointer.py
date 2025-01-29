@@ -1,33 +1,38 @@
 """
 # Definition for a Node.
 class Node:
-    def __init__(self, x, next=None, random=None):
+    def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):
         self.val = int(x)
         self.next = next
         self.random = random
 """
 
-class Solution(object):
-    def copyRandomList(self, head):
-        """
-        :type head: Node
-        :rtype: Node
-        """
-
-        # phase 1) create copied list except for pointer
-        hashmap = {None:None} # base case
+class Solution:
+    def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
+        hashmap = {} # existed: address
+        dummy = Node(0)
+        
+        # copy key and next pointer
+        prt = dummy
         curr = head
         while curr:
-            newNode = Node(curr.val)
-            hashmap[curr] = newNode
+            NewNode = Node(curr.val) # make new node
+            prt.next = NewNode # connect new node
+            hashmap[curr] = NewNode # save in hashmap
+
+            # move pointer both new pointer and existed pointer
+            prt = prt.next
+            curr = curr.next
+
+        # copy random pointer
+        prt = dummy.next
+        curr = head
+        while curr:
+            rand = curr.random
+            if rand:
+                prt.random = hashmap[rand]
+
+            prt = prt.next
             curr = curr.next
         
-        # phase 2) mapping random using hashmap
-        curr = head
-        while curr:
-            copy = hashmap[curr]
-            copy.next = hashmap[curr.next]
-            copy.random = hashmap[curr.random]
-            curr = curr.next
-            
-        return hashmap[head]
+        return dummy.next
