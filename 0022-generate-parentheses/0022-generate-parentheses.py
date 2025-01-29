@@ -1,29 +1,22 @@
-class Solution(object):
-    def generateParenthesis(self, n):
-        """
-        :type n: int
-        :rtype: List[str]
-        """
-        stack = [] # current pair
-        res = [] # overall pairs
+class Solution:
+    def generateParenthesis(self, n: int) -> List[str]:
+        res = []
+        stack = []
 
-        def backtrack(openN, closedN):
-            # base case
-            if openN == closedN == n:
+        def backtracking(o, c):
+            if o == n and c == n:
                 res.append("".join(stack))
                 return
             
-            # add open parentheses
-            if openN < n:
+            if o < n:
                 stack.append("(")
-                backtrack(openN+1, closedN)
+                backtracking(o+1, c)
                 stack.pop()
-
-            # add closed parentheses
-            if closedN < openN:
+            
+            if c < o:
                 stack.append(")")
-                backtrack(openN, closedN+1)
+                backtracking(o, c+1)
                 stack.pop()
         
-        backtrack(0, 0)
+        backtracking(0,0)
         return res
