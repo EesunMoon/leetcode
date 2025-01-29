@@ -1,20 +1,16 @@
-class Solution(object):
-    def myPow(self, x, n):
-        """
-        :type x: float
-        :type n: int
-        :rtype: float
-        """
-        def helper(x, n):
-            # base case
-            if x == 0:
-                return 0
-            if n == 0:
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        
+        def Pow(i):
+            if i == 0:
                 return 1
+            if i == 1:
+                return x
             
-            res = helper(x*x, n//2)
-            return x*res if n%2 else res
+            mid = Pow(i//2)
+            if i % 2:
+                return mid * mid * x
+            else:
+                return mid * mid
         
-        res = helper(x, abs(n))
-        return res if n>=0 else 1/res
-        
+        return Pow(n) if n > 0 else 1/Pow(abs(n))
