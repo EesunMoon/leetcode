@@ -1,38 +1,28 @@
-class Solution(object):
-    def findOrder(self, numCourses, prerequisites):
-        """
-        :type numCourses: int
-        :type prerequisites: List[List[int]]
-        :rtype: List[int]
-        """
-        # initialize: post, pre => T O(E), S O(E+V)
-        adj = defaultdict(list)
+class Solution:
+    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+        graph = defaultdict(list)
         indegree = {}
 
-        for post, pre in prerequisites:
-            adj[pre].append(post)
-            indegree[post] = indegree.get(post, 0) + 1
+        # caculate indegree O(V)
+        for nxt, prev in prerequisites:
+            graph[prev].append(nxt)
+            indegree[nxt] = 1 + indegree.get(nxt, 0)
         
-        # bfs => T O(E+V), S O(E+V)
-        ans = []
+        # select indegree == 0 O(E)
         queue = deque()
-        for cur in range(0, numCourses):
-            if cur not in indegree:
-                queue.append(cur)
-        
+        for e in range(numCourses):
+            if e not in indegree:
+                queue.append(e)
+
+        # BFS O(E+V)
+        res = []
         while queue:
-            crs = queue.popleft()
-            ans.append(crs)
-            if crs in adj:
-                for nei in adj[crs]:
+            for _ in range(len(queue)):
+                crs = queue.popleft() # already indegree 0
+                res.append(crs)
+
+                for nei in graph[crs]:
                     indegree[nei] -= 1
                     if indegree[nei] == 0:
                         queue.append(nei)
-
-        return ans if len(ans) == numCourses else []
-
-
-        
-        
-        
-        
+        return res if len(res) == numCourses else []
