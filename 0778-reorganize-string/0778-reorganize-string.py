@@ -1,34 +1,27 @@
-class Solution(object):
-    def reorganizeString(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
-        hashmap = {}
-        for c in s:
-            hashmap[c] = 1 + hashmap.get(c, 0)
+class Solution:
+    def reorganizeString(self, s: str) -> str:
+        # make hashmap : T O(n) S O(k)
+        count = {}
+        for st in s:
+            count[st] = 1 + count.get(st, 0)
         
-        H = [[-cnt, c] for c, cnt in hashmap.items()]
-        heapq.heapify(H)
-
+        H = [] # build max heap T O(klogk) S O(k)
+        for st, freq in count.items():
+            heapq.heappush(H, (-freq, st))
+        
+        # O(nlogk)
         prev = None
-        ans = ""
-        while H or prev:
-            # impossible case
-            if prev and not H:
-                return ""
-            
-            cnt, c = heapq.heappop(H)
-
-            cnt += 1
-            ans += c
+        res = ""
+        while H:
+            freq, st = heapq.heappop(H)
+            res += st
+            freq += 1 # to make zero
 
             if prev:
                 heapq.heappush(H, prev)
+            if freq != 0:
+                prev = (freq, st)
+            else:
                 prev = None
-
-            if cnt != 0:
-                prev = [cnt, c]
-
-        return ans
-        
+            
+        return res if len(res) == len(s) else ""
