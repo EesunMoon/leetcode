@@ -3,28 +3,30 @@ class Solution:
         maxLen = 0
         res = ""
 
-        for i in range(len(s)):
-            # i: consider as center
-
-            # odd length
-            l, r = i, i
-            while l >=0 and r < len(s) and s[l] == s[r]:
-                length = (r-l)+1
-                if length > maxLen:
-                    maxLen = length
-                    res = s[l:l+length]
+        def isPal(l, r):
+            length = 0
+            pair = None
+            while l >= 0 and r < len(s):
+                if s[l] != s[r]:
+                    break
+                else:
+                    length = r-l+1
+                    pair = [l, r]
                 l -= 1
                 r += 1
+            return length, pair
+
+        for center in range(len(s)):
+            # odd number
+            length1, pair1 = isPal(center, center)
+            if maxLen < length1:
+                maxLen = length1
+                res = s[pair1[0]:pair1[1]+1]
+
+            # even number
+            length2, pair2 = isPal(center, center + 1)
+            if maxLen < length2:
+                maxLen = length2
+                res = s[pair2[0]:pair2[1]+1]
             
-            # even length
-            l, r = i, i+1
-            while l >=0 and r < len(s) and s[l] == s[r]:
-                length = (r-l)+1
-                if length > maxLen:
-                    maxLen = length
-                    res = s[l:l+length]
-                l -= 1
-                r += 1
-
-
-        return res
+        return res  
