@@ -1,15 +1,15 @@
 class Solution(object):
     def removeDuplicates(self, nums):
-        l = 1 # l: represent the position that we replace
-        # r: compare previous value and current value
-        for r in range(1, len(nums)):
-            # find distinct
-            if nums[r-1] != nums[r]:
-                nums[l] = nums[r]
-                l += 1
-        return l
+        pos = 1 # add position <=> #. unique elements
+        idx = 1 # moving pointer
+        while idx  < len(nums):
+            if nums[idx] != nums[idx-1]:
+                nums[pos] = nums[idx]
+                pos += 1
+            
+            idx += 1
 
-
+        return pos
             
 
     '''
