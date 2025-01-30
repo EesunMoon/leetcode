@@ -1,24 +1,19 @@
-class Solution(object):
-    def sortColors(self, nums):
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
         """
-        :type nums: List[int]
-        :rtype: None Do not return anything, modify nums in-place instead.
+        Do not return anything, modify nums in-place instead.
         """
-        
-        # counting sort
-        counts = [0] * (2+1)
+        hashmap = {}
         for num in nums:
-            counts[num] += 1
-        start = 0
-        for i, cnt in enumerate(counts):
-            counts[i] = start
-            start += cnt
-        
-        sorted_nums = [0] * len(nums)
-        for num in nums:
-            sorted_nums[counts[num]] = num
-            counts[num] += 1
-        
-        for i in range(len(nums)):
-            nums[i] = sorted_nums[i]
+            hashmap[num] = 1 + hashmap.get(num, 0)
+        print(hashmap)
+        idx = 0
+        for i in range(3): # color
+            if i not in hashmap:
+                continue
+            while hashmap[i] != 0:
+                nums[idx] = i
+                hashmap[i] -= 1
+                idx += 1
         return nums
+        
