@@ -1,38 +1,43 @@
-class Solution(object):
-    def orangesRotting(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
-        # initialization
+import collections
+class Solution:
+    def orangesRotting(self, grid: List[List[int]]) -> int:
+        # 1. count fresh orange / add rotten in deque
+        queue = collections.deque() # save rotten coordinate
         fresh = 0
         ROWS, COLS = len(grid), len(grid[0])
-        queue = deque()
-
         for r in range(ROWS):
             for c in range(COLS):
-                if grid[r][c] == 1:
+                if grid[r][c] == 1: # fresh
                     fresh += 1
-                elif grid[r][c] == 2:
-                    queue.append((r,c))
+                elif grid[r][c] == 2: # rotten
+                    queue.append((r, c)) 
         
-        # edge case
+        # base case
         if fresh == 0:
             return 0
-
-        # bfs
-        res = 0
-        directions = [(-1, 0), (1, 0), (0, 1), (0, -1)]
-        while queue and fresh > 0:
+        
+        # 2. traversal BFS - count minutes , terminate if not queue
+        time = 0
+        directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+        while queue and fresh != 0:
             for _ in range(len(queue)):
                 r, c = queue.popleft()
+
+                # track 4-directionally adjacent cell
                 for dr, dc in directions:
                     candr, candc = dr + r, dc + c
-                    if candr in (-1, ROWS) or candc in (-1, COLS) or grid[candr][candc] != 1:
+                    
+                    # invalid condition
+                    if (candr < 0 or candr >= ROWS or candc < 0 or candc >= COLS or
+                        grid[candr][candc] != 1):
                         continue
-                    queue.append((candr, candc))
+                    
+                    # proceeding rotten
+                    grid[candr][candc] = 2 # marked as visited (rotten)
                     fresh -= 1
-                    grid[candr][candc] = 2
-            res += 1
+                    queue.append((candr, candc))
+            
+            time += 1
 
-        return res if fresh == 0 else -1
+
+        return time if fresh == 0 else -1
