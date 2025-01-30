@@ -1,21 +1,16 @@
-class Solution(object):
-    def reverse(self, x):
-        """
-        :type x: int
-        :rtype: int
-        """
-        MAX, MIN = 2**31-1, -(2**31)
-        res = 0
-
-        isNegative = True if x < 0 else False
-        
+class Solution:
+    def reverse(self, x: int) -> int:
+        res = 0 
+        flag = True if x > 0 else False
+        boundary = 2**31
         x = abs(x)
         while x:
-            digit = x % 10
-            x = x // 10
-            res = (res*10)+digit
-
-        if isNegative:
-            res = -res
-
-        return res if MIN <= res <= MAX else 0
+            res = res * 10 + (x % 10)
+            x //= 10
+            if res > boundary:
+                return 0
+            
+        if (flag and res > boundary) or (flag == False and res <= -boundary):
+            return 0
+            
+        return res if flag else -res
