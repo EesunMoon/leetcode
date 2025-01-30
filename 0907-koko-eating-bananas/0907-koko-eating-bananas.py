@@ -2,23 +2,28 @@ import math
 
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        # base case
-        if len(piles) == h:
-            return max(piles)
-
-        l, r = 1, max(piles) # range: amount of banana to eat for a one
-        res = r
+        # binary search: 1 ~ max(piles)
+        # expected complexity: T O(nlogm) S O(1) n: len(piles), m: max(piles)
+        
+        # set the binary search boundary
+        l, r = 1, max(piles) # O(n)
+        res = r # minimum integer
 
         while l<=r:
-            m = (l+r)//2
+            k = (l+r)//2 # amount
 
-            cand = 0 # candidate hour
+            # compute the time => O(n)
+            take = 0 # time
             for p in piles:
-                cand += math.ceil(p/float(m))
+                take += math.ceil(p/float(k))
             
-            if cand <= h:
-                res = min(res, m)
-                r = m - 1
+            # binary search
+            if take > h:
+                # k is too small to eat all bananas in h
+                l = k + 1
             else:
-                l = m + 1
+                # k is big enough to eat all bananas in h
+                # find smallest value in this range
+                res = min(res, k)
+                r = k - 1
         return res
