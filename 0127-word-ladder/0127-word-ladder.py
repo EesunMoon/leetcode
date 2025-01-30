@@ -1,39 +1,32 @@
-class Solution(object):
-    def ladderLength(self, beginWord, endWord, wordList):
-        """
-        :type beginWord: str
-        :type endWord: str
-        :type wordList: List[str]
-        :rtype: int
-        """
-        nei = defaultdict(list)
-        wordList.append(beginWord)
-
-        # hashmap => O(n*m)
+class Solution:
+    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+        # base case
+        if (endWord not in wordList):
+            return 0
+        
+        # make wordDict - pattern: [word]
+        wordDict = defaultdict(list)
         for word in wordList:
             for i in range(len(word)):
-                pattern = word[:i] + "*" + word[i+1:]
-                nei[pattern].append(word)
+                keyword = word[:i] + "*" + word[i+1:]
+                wordDict[keyword].append(word)
         
-        # print(nei)
-        cnt = 1
+        # BFS - shortest path
+        visit = set()
         queue = deque([beginWord])
-        seen = set([beginWord])
+        visit.add(beginWord)
+        res = 0
         while queue:
-            # one stage
             for _ in range(len(queue)):
-                word = queue.popleft() # target word
-                
-                # answer
+                word = queue.popleft()
                 if word == endWord:
-                    return cnt
-                # track neighbor words
+                    res +=1
+                    return res
                 for i in range(len(word)):
-                    pattern = word[:i] + "*" + word[i+1:]
-                    for neiWord in nei[pattern]:
-                        if neiWord not in seen:
-                            queue.append(neiWord)
-                            seen.add(neiWord)
-            cnt += 1
-
+                    keyword = word[:i] + "*" + word[i+1:]
+                    for cand in wordDict[keyword]:
+                        if (cand not in visit):
+                            queue.append(cand)
+                            visit.add(cand)
+            res += 1
         return 0
