@@ -1,10 +1,16 @@
-class Solution(object):
-    def findKthLargest(self, nums, k):
-        H = []
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        minNum = min(nums)
+        minNum = abs(min(minNum, 0))
+        maxNum = max(nums) + minNum
+        count = [0] * (maxNum+1)
 
         for num in nums:
-            heapq.heappush(H, num)
-            if len(H) > k:
-                heapq.heappop(H)
-
-        return H[0]
+            count[num+minNum] += 1
+        
+        idx = maxNum
+        while k > 0:
+            k -= count[idx]
+            idx -= 1
+        
+        return idx+1-minNum
