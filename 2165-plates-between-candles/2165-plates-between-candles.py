@@ -18,6 +18,7 @@ class Solution:
         # [3, 8] => prefix[3] = 2, prefix[8] = 5
         #        => suffix[3] = 5, suffix[8] = 9
 
+        # S O(n) or O(m), T O(n)
         n = len(s)
         prefix = [-1] * n # closet leftmost position
         suffix = [n] * n  # closet rightmost position
