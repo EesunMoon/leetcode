@@ -114,6 +114,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/EesunMoon/leetcode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2139-detect-squares](https://github.com/EesunMoon/leetcode/tree/master/2139-detect-squares) |
+| [2165-plates-between-candles](https://github.com/EesunMoon/leetcode/tree/master/2165-plates-between-candles) |
 | [2354-minimum-health-to-beat-game](https://github.com/EesunMoon/leetcode/tree/master/2354-minimum-health-to-beat-game) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2548-destroy-sequential-targets](https://github.com/EesunMoon/leetcode/tree/master/2548-destroy-sequential-targets) |
@@ -141,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/EesunMoon/leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
+| [2165-plates-between-candles](https://github.com/EesunMoon/leetcode/tree/master/2165-plates-between-candles) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 ## Sorting
 |  |
@@ -184,6 +186,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/EesunMoon/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0253-meeting-rooms-ii](https://github.com/EesunMoon/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/EesunMoon/leetcode/tree/master/0560-subarray-sum-equals-k) |
+| [2165-plates-between-candles](https://github.com/EesunMoon/leetcode/tree/master/2165-plates-between-candles) |
 | [2629-number-of-substrings-with-fixed-ratio](https://github.com/EesunMoon/leetcode/tree/master/2629-number-of-substrings-with-fixed-ratio) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 ## Dynamic Programming
@@ -315,6 +318,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1250-longest-common-subsequence](https://github.com/EesunMoon/leetcode/tree/master/1250-longest-common-subsequence) |
 | [1838-number-of-distinct-substrings-in-a-string](https://github.com/EesunMoon/leetcode/tree/master/1838-number-of-distinct-substrings-in-a-string) |
 | [1894-merge-strings-alternately](https://github.com/EesunMoon/leetcode/tree/master/1894-merge-strings-alternately) |
+| [2165-plates-between-candles](https://github.com/EesunMoon/leetcode/tree/master/2165-plates-between-candles) |
 | [2629-number-of-substrings-with-fixed-ratio](https://github.com/EesunMoon/leetcode/tree/master/2629-number-of-substrings-with-fixed-ratio) |
 | [3684-substring-matching-pattern](https://github.com/EesunMoon/leetcode/tree/master/3684-substring-matching-pattern) |
 ## String Matching
