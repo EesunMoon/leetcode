@@ -1,19 +1,14 @@
-class Solution(object):
-    def jump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        # greedy O(n) vs DP O(n^2)
-        # sliding window + BFS
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        # DP : variable index state the numbere of jumps
+        # T O(n*m) S O(n)
+        dp = [float("INF")] * (len(nums))
+        dp[len(nums)-1] = 0 # goal
 
-        step = 0
-        l, r = 0, 0
-        while r < len(nums)-1:
-            farthest = 0
-            for i in range(l, r+1):
-                farthest = max(farthest, i+nums[i])
-            l = r
-            r = farthest
-            step += 1
-        return step
+        for i in range(len(nums)-2, -1, -1):
+            for j in range(nums[i], 0, -1):
+                if i + j >= len(nums):
+                    dp[i] = 1
+                    break
+                dp[i] = min(dp[i], 1 + dp[i+j])
+        return dp[0]
