@@ -1,30 +1,16 @@
-class Solution(object):
-    def __init__(self):
-        self.cache = {}
+class Solution:
+    def fib(self, n: int) -> int:
+        # base case
+        if n == 0:
+            return 0
+        if n == 1:
+            return 1
 
-    def fib(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+        one = 0
+        two = 1
 
-        if n in self.cache:
-            return self.cache[n]
-        
-        if n < 2:
-            result = n
-        else:
-            result = self.fib(n-1) + self.fib(n-2)
-
-        self.cache[n] = result
-        return result
-
-
-        # without memoization
-        """
-        if n < 2:
-            return n
-        
-        return self.fib(n-1) + self.fib(n-2)
-        """
-        
+        for _ in range(n-1):
+            tmp = one+two
+            one = two
+            two = tmp
+        return two
