@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/EesunMoon/leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0164-maximum-gap](https://github.com/EesunMoon/leetcode/tree/master/0164-maximum-gap) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/EesunMoon/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0169-majority-element](https://github.com/EesunMoon/leetcode/tree/master/0169-majority-element) |
 | [0198-house-robber](https://github.com/EesunMoon/leetcode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/EesunMoon/leetcode/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/EesunMoon/leetcode/tree/master/0212-word-search-ii) |
@@ -164,6 +165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/EesunMoon/leetcode/tree/master/0088-merge-sorted-array) |
 | [0147-insertion-sort-list](https://github.com/EesunMoon/leetcode/tree/master/0147-insertion-sort-list) |
 | [0164-maximum-gap](https://github.com/EesunMoon/leetcode/tree/master/0164-maximum-gap) |
+| [0169-majority-element](https://github.com/EesunMoon/leetcode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/EesunMoon/leetcode/tree/master/0217-contains-duplicate) |
 | [0220-contains-duplicate-iii](https://github.com/EesunMoon/leetcode/tree/master/0220-contains-duplicate-iii) |
@@ -368,6 +370,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0139-word-break](https://github.com/EesunMoon/leetcode/tree/master/0139-word-break) |
 | [0141-linked-list-cycle](https://github.com/EesunMoon/leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/EesunMoon/leetcode/tree/master/0146-lru-cache) |
+| [0169-majority-element](https://github.com/EesunMoon/leetcode/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/EesunMoon/leetcode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/EesunMoon/leetcode/tree/master/0205-isomorphic-strings) |
 | [0208-implement-trie-prefix-tree](https://github.com/EesunMoon/leetcode/tree/master/0208-implement-trie-prefix-tree) |
@@ -793,6 +796,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting Sort
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/EesunMoon/leetcode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/EesunMoon/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/EesunMoon/leetcode/tree/master/0621-task-scheduler) |
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
@@ -808,6 +812,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0023-merge-k-sorted-lists](https://github.com/EesunMoon/leetcode/tree/master/0023-merge-k-sorted-lists) |
 | [0053-maximum-subarray](https://github.com/EesunMoon/leetcode/tree/master/0053-maximum-subarray) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
+| [0169-majority-element](https://github.com/EesunMoon/leetcode/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/EesunMoon/leetcode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/EesunMoon/leetcode/tree/master/0191-number-of-1-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
