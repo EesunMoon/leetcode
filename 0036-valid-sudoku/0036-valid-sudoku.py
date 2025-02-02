@@ -1,23 +1,18 @@
-class Solution(object):
-    def isValidSudoku(self, board):
-        """
-        :type board: List[List[str]]
-        :rtype: bool
-        """
-        rows = defaultdict(set)
-        cols = defaultdict(set)
-        squares = defaultdict(set) # (row//3, col//3)
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        rowSet = defaultdict(set)
+        colSet = defaultdict(set)
+        boxSet = defaultdict(set)
 
-        for r in range(9):
-            for c in range(9):
-                if board[r][c] == '.':
+        ROWS, COLS = len(board), len(board[0])
+
+        for r in range(ROWS):
+            for c in range(COLS):
+                if board[r][c] == ".":
                     continue
-                
-                if (board[r][c] in rows[r] or board[r][c] in cols[c] or board[r][c] in squares[(r//3, c//3)]):
+                if (board[r][c] in rowSet[r]) or (board[r][c] in colSet[c]) or (board[r][c] in boxSet[(r//3, c//3)]):
                     return False
-                
-                rows[r].add(board[r][c])
-                cols[c].add(board[r][c])
-                squares[(r//3, c//3)].add(board[r][c])
+                rowSet[r].add(board[r][c])
+                colSet[c].add(board[r][c])
+                boxSet[(r//3, c//3)].add(board[r][c])
         return True
-        
