@@ -390,6 +390,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1256-rank-transform-of-an-array](https://github.com/EesunMoon/leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [2139-detect-squares](https://github.com/EesunMoon/leetcode/tree/master/2139-detect-squares) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/EesunMoon/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2548-destroy-sequential-targets](https://github.com/EesunMoon/leetcode/tree/master/2548-destroy-sequential-targets) |
 | [2629-number-of-substrings-with-fixed-ratio](https://github.com/EesunMoon/leetcode/tree/master/2629-number-of-substrings-with-fixed-ratio) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
@@ -447,6 +448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/EesunMoon/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -486,6 +488,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1544-count-good-nodes-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [2121-find-if-path-exists-in-graph](https://github.com/EesunMoon/leetcode/tree/master/2121-find-if-path-exists-in-graph) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/EesunMoon/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -521,6 +524,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1544-count-good-nodes-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [2121-find-if-path-exists-in-graph](https://github.com/EesunMoon/leetcode/tree/master/2121-find-if-path-exists-in-graph) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/EesunMoon/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -561,6 +565,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/EesunMoon/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Stack
 |  |
 | ------- |
