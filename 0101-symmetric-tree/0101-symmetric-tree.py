@@ -12,8 +12,7 @@ class Solution:
         def dfs(leftSub, rightSub):
             if not leftSub and not rightSub:
                 return True
-            elif ((not leftSub and rightSub) or (not rightSub and leftSub) 
-                    or (rightSub.val != leftSub.val)):
+            elif ((not leftSub or not rightSub) or (rightSub.val != leftSub.val)):
                 return False
             
             return dfs(leftSub.right, rightSub.left) and dfs(leftSub.left, rightSub.right)
