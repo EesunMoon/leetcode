@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0346-moving-average-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0346-moving-average-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/EesunMoon/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0380-insert-delete-getrandom-o1](https://github.com/EesunMoon/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0416-partition-equal-subset-sum](https://github.com/EesunMoon/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/EesunMoon/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0435-non-overlapping-intervals](https://github.com/EesunMoon/leetcode/tree/master/0435-non-overlapping-intervals) |
@@ -370,6 +371,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/EesunMoon/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/EesunMoon/leetcode/tree/master/0355-design-twitter) |
 | [0359-logger-rate-limiter](https://github.com/EesunMoon/leetcode/tree/master/0359-logger-rate-limiter) |
+| [0380-insert-delete-getrandom-o1](https://github.com/EesunMoon/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0424-longest-repeating-character-replacement](https://github.com/EesunMoon/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0491-non-decreasing-subsequences](https://github.com/EesunMoon/leetcode/tree/master/0491-non-decreasing-subsequences) |
 | [0496-next-greater-element-i](https://github.com/EesunMoon/leetcode/tree/master/0496-next-greater-element-i) |
@@ -411,6 +413,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/EesunMoon/leetcode/tree/master/0268-missing-number) |
 | [0279-perfect-squares](https://github.com/EesunMoon/leetcode/tree/master/0279-perfect-squares) |
 | [0371-sum-of-two-integers](https://github.com/EesunMoon/leetcode/tree/master/0371-sum-of-two-integers) |
+| [0380-insert-delete-getrandom-o1](https://github.com/EesunMoon/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0628-maximum-product-of-three-numbers](https://github.com/EesunMoon/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [1013-fibonacci-number](https://github.com/EesunMoon/leetcode/tree/master/1013-fibonacci-number) |
 | [1014-k-closest-points-to-origin](https://github.com/EesunMoon/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -594,6 +597,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0346-moving-average-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0346-moving-average-from-data-stream) |
 | [0355-design-twitter](https://github.com/EesunMoon/leetcode/tree/master/0355-design-twitter) |
 | [0359-logger-rate-limiter](https://github.com/EesunMoon/leetcode/tree/master/0359-logger-rate-limiter) |
+| [0380-insert-delete-getrandom-o1](https://github.com/EesunMoon/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0860-design-circular-queue](https://github.com/EesunMoon/leetcode/tree/master/0860-design-circular-queue) |
 | [1023-time-based-key-value-store](https://github.com/EesunMoon/leetcode/tree/master/1023-time-based-key-value-store) |
@@ -955,4 +959,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/EesunMoon/leetcode/tree/master/0239-sliding-window-maximum) |
+## Randomized
+|  |
+| ------- |
+| [0380-insert-delete-getrandom-o1](https://github.com/EesunMoon/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 <!---LeetCode Topics End-->
