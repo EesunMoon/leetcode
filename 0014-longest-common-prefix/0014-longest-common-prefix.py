@@ -1,24 +1,25 @@
-class Solution(object):
-    def longestCommonPrefix(self, strs):
-        """
-        :type strs: List[str]
-        :rtype: str
-        """
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        if not strs:
+            return ""
 
-        # all same
-        if len(set(strs)) == 1:
-            return strs[0]
-        
-        # remove duplicates
-        strs = list(set(strs))
-        min_len = min(len(x) for x in strs)
-        
-        common = ""
-        for x in zip(*strs):
-            if len(set(x)) == 1:
-                common += x[0]
-            else:
+        def returnPrefix(str1, str2):
+            if len(str2) > len(str1):
+                str1, str2 = str2, str1
+            
+            res = ""
+            i1, i2 = 0, 0
+            while i1 < len(str1):
+                while i1<len(str1) and i2<len(str2) and str1[i1] == str2[i2]:
+                    res += str1[i1]
+                    i1 += 1
+                    i2 += 1
                 break
+            return res
         
-        return common
-        
+        for i in range(len(strs)-1):
+            prefix = returnPrefix(strs[i], strs[i+1])
+            if prefix == "":
+                return ""
+            strs[i+1] = prefix
+        return strs[len(strs)-1]
