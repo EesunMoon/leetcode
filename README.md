@@ -122,6 +122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2548-destroy-sequential-targets](https://github.com/EesunMoon/leetcode/tree/master/2548-destroy-sequential-targets) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
+| [2792-neighboring-bitwise-xor](https://github.com/EesunMoon/leetcode/tree/master/2792-neighboring-bitwise-xor) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/EesunMoon/leetcode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 ## Binary Search
@@ -941,6 +942,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0371-sum-of-two-integers](https://github.com/EesunMoon/leetcode/tree/master/0371-sum-of-two-integers) |
 | [0491-non-decreasing-subsequences](https://github.com/EesunMoon/leetcode/tree/master/0491-non-decreasing-subsequences) |
 | [0693-binary-number-with-alternating-bits](https://github.com/EesunMoon/leetcode/tree/master/0693-binary-number-with-alternating-bits) |
+| [2792-neighboring-bitwise-xor](https://github.com/EesunMoon/leetcode/tree/master/2792-neighboring-bitwise-xor) |
 ## Enumeration
 |  |
 | ------- |
