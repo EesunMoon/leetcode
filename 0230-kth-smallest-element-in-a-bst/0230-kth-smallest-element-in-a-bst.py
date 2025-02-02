@@ -6,7 +6,8 @@
 #         self.right = right
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
-        # inorder => select?
+        # inorder => select? TC O(n) SC O(n)
+        """
         res = []
 
         def inorder(node):
@@ -19,3 +20,17 @@ class Solution:
         
         inorder(root)
         return res[k-1]
+        """
+
+        # stack - dfs
+        stack = []
+        curr = root
+        while True:
+            while curr:
+                stack.append(curr)
+                curr = curr.left
+            res = stack.pop()
+            k -= 1
+            if k == 0:
+                return res.val
+            curr = res.right
