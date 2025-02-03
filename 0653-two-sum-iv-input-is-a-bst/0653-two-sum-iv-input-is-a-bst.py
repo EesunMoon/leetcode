@@ -6,6 +6,9 @@
 #         self.right = right
 class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
+        # BFS O(n)
+        """
+        
         seen = set()
         queue = deque([root])
 
@@ -21,3 +24,22 @@ class Solution:
                 queue.append(node.right)
         
         return False
+        """
+
+        # DFS - Stack
+        seen = set()
+        stack = []
+        curr = root
+        while stack or curr:
+            while curr:
+                stack.append(curr)
+                curr = curr.left
+            
+            curr = stack.pop()
+            if (k - curr.val) in seen:
+                return True
+            seen.add(curr.val)
+
+            curr = curr.right
+        return False
+            
