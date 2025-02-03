@@ -1,21 +1,13 @@
-class Solution(object):
-    def kthSmallest(self, matrix, k):
-        """
-        :type matrix: List[List[int]]
-        :type k: int
-        :rtype: int
-        """
+class Solution:
+    def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
+        # add first element in matrix with index (value, (r, c))
         n = len(matrix)
-        min_heap = []
-        for i in range(min(n, k)):
-            min_heap.append((matrix[i][0], i, 0)) # value, row, col
-        
-        heapq.heapify(min_heap)
+        H = [[matrix[r][0], [r, 0]] for r in range(len(matrix))] # O(N)
+        heapq.heapify(H) # O(NlogN)
 
-        while k:
-            value, row, col = heapq.heappop(min_heap)
-            if col < n-1:
-                heapq.heappush(min_heap, (matrix[row][col+1], row, col+1))
-            k-=1
-
-        return value
+        # O(klogN)
+        for _ in range(k):
+            val, coor = heapq.heappop(H)
+            if coor[1] != n-1:
+                heapq.heappush(H, [matrix[coor[0]][coor[1]+1], [coor[0], coor[1]+1]])
+        return val
