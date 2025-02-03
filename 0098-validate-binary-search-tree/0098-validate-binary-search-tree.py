@@ -7,18 +7,14 @@
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         # calculate maximum of left subtree and minimum of right subtree
-
-        stack, prev = [], float("-INF")
-
-        while stack or root:
-            while root:
-                stack.append(root)
-                root = root.left
-            root = stack.pop()
-
-            if root.val <= prev:
+        # leftSubtree: root is the biggest
+        # rightSubtree: root is the smallest
+        
+        def valid(node, minimum, maximum):
+            if not node:
+                return True
+            
+            if not (node.val > minimum and node.val < maximum):
                 return False
-            prev = root.val
-            root = root.right
-        return True
-
+            return valid(node.left, minimum, node.val) and valid(node.right, node.val, maximum)
+        return valid(root, float("-INF"), float("INF"))
