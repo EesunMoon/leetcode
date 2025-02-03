@@ -23,6 +23,8 @@ class Solution:
         if not root:
             return True
 
+        # DFS - stack
+        """
         stack = [[root, float("-INF"), float("INF")]]
         while stack:
             node, minimum, maximum = stack.pop()
@@ -34,5 +36,16 @@ class Solution:
             if node.right:
                 stack.append([node.right, node.val, maximum])
         return True
+        """
 
-        
+        queue = deque()
+        queue.append([root, float("-INF"), float("INF")])
+        while queue:
+            node, minimum, maximum = queue.popleft()
+            if not (minimum < node.val < maximum):
+                return False
+            if node.left:
+                queue.append([node.left, minimum, node.val])
+            if node.right:
+                queue.append([node.right, node.val, maximum])
+        return True
