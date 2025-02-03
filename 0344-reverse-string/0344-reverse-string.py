@@ -1,11 +1,12 @@
-class Solution(object):
-    def reverseString(self, s):
-        
-        # print(s.reverse())
-        def helper(left, right):
-            if left < right:
-                s[left], s[right] = s[right], s[left]
-                # print(s)
-                helper(left+1, right-1)
-        
-        helper(0, len(s)-1)
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        # two pointer
+        l, r = 0, len(s)-1
+        while l<=r:
+            s[l], s[r] = s[r], s[l]
+            l += 1
+            r -= 1
+            
