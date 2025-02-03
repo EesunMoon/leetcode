@@ -1,28 +1,19 @@
-class Solution(object):
-    def evalRPN(self, tokens):
-        """
-        :type tokens: List[str]
-        :rtype: int
-        """
-        import operator
-        operations = {
-            "+": lambda x, y: x+y,
-            "-": lambda x, y: x-y,
-            "*": lambda x, y: x*y,
-            '/': lambda x, y: int(operator.truediv(x,y)) # truncate towards zero
-        }
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        
         stack = []
-
-        for t in tokens:
-            if t in operations:
-                y = stack.pop()
-                x = stack.pop()
-                result = operations[t](x,y)
-                stack.append(result)
+        for token in tokens:
+            if token in "+-*/":
+                t1 = stack.pop()
+                t2 = stack.pop()
+                if token == "+":
+                    stack.append(t2+t1)
+                elif token == "-":
+                    stack.append(t2-t1)
+                elif token == "*":
+                    stack.append(t2*t1)
+                elif token == "/":
+                    stack.append(int(float(t2)/t1))
             else:
-                stack.append(int(t))
-            
-        
-        return stack[-1]
-        
-        
+                stack.append(int(token))
+        return stack[0]
