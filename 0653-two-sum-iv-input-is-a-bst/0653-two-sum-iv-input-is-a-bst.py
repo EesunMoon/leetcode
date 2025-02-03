@@ -6,26 +6,18 @@
 #         self.right = right
 class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
-        element = []
+        seen = set()
+        queue = deque([root])
 
-        # inorder
-        def inorder(node):
-            if not node:
-                return
-            
-            inorder(node.left)
-            element.append(node.val)
-            inorder(node.right)
-        
-        inorder(root)
-        print(element)
-        l, r = 0, len(element)-1
-        while l<r:
-            cand = element[l] + element[r]
-            if cand == k:
+        while queue:
+            node = queue.popleft()
+            if (k - node.val) in seen:
                 return True
-            elif cand > k:
-                r -= 1
-            else:
-                l += 1
+            
+            seen.add(node.val)
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+        
         return False
