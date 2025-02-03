@@ -8,27 +8,24 @@ class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
         element = []
 
-        # save element in array
+        # inorder
         def inorder(node):
-            # we cannot search target
             if not node:
                 return
-
+            
             inorder(node.left)
             element.append(node.val)
             inorder(node.right)
         
         inorder(root)
-        
-        # two sum: using two pointer
+        print(element)
         l, r = 0, len(element)-1
         while l<r:
-            curr = element[l] + element[r]
-            if curr == k:
+            cand = element[l] + element[r]
+            if cand == k:
                 return True
-            elif curr < k:
-                l += 1
-            else:
+            elif cand > k:
                 r -= 1
-
+            else:
+                l += 1
         return False
