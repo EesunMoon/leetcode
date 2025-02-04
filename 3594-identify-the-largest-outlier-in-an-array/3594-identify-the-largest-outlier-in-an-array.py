@@ -1,5 +1,18 @@
 class Solution:
     def getLargestOutlier(self, nums: List[int]) -> int:
+        """
+            special number: n - 2 elements
+            typical number: sum(n-2)
+            outlier: other => sum(nums) - typical number * 2
+
+            to find the typical number by using 'sum(nums) - typical number * 2'
+
+            ex) 2, 3, 5, 10:: total = 20
+            2: outlier = 16
+            3: outlier = 11
+            5: outlier = 10
+        """
+
         total = sum(nums) # O(n)
         
         hashmap = {}
