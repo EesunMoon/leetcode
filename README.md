@@ -91,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0628-maximum-product-of-three-numbers](https://github.com/EesunMoon/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
+| [0721-accounts-merge](https://github.com/EesunMoon/leetcode/tree/master/0721-accounts-merge) |
 | [0735-asteroid-collision](https://github.com/EesunMoon/leetcode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/EesunMoon/leetcode/tree/master/0739-daily-temperatures) |
 | [0740-delete-and-earn](https://github.com/EesunMoon/leetcode/tree/master/0740-delete-and-earn) |
@@ -182,6 +183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/EesunMoon/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/EesunMoon/leetcode/tree/master/0621-task-scheduler) |
 | [0628-maximum-product-of-three-numbers](https://github.com/EesunMoon/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
+| [0721-accounts-merge](https://github.com/EesunMoon/leetcode/tree/master/0721-accounts-merge) |
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
 | [0876-hand-of-straights](https://github.com/EesunMoon/leetcode/tree/master/0876-hand-of-straights) |
 | [0883-car-fleet](https://github.com/EesunMoon/leetcode/tree/master/0883-car-fleet) |
@@ -331,6 +333,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/EesunMoon/leetcode/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/EesunMoon/leetcode/tree/master/0647-palindromic-substrings) |
 | [0678-valid-parenthesis-string](https://github.com/EesunMoon/leetcode/tree/master/0678-valid-parenthesis-string) |
+| [0721-accounts-merge](https://github.com/EesunMoon/leetcode/tree/master/0721-accounts-merge) |
 | [0753-open-the-lock](https://github.com/EesunMoon/leetcode/tree/master/0753-open-the-lock) |
 | [0768-partition-labels](https://github.com/EesunMoon/leetcode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
@@ -394,6 +397,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/EesunMoon/leetcode/tree/master/0567-permutation-in-string) |
 | [0621-task-scheduler](https://github.com/EesunMoon/leetcode/tree/master/0621-task-scheduler) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/EesunMoon/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0721-accounts-merge](https://github.com/EesunMoon/leetcode/tree/master/0721-accounts-merge) |
 | [0740-delete-and-earn](https://github.com/EesunMoon/leetcode/tree/master/0740-delete-and-earn) |
 | [0753-open-the-lock](https://github.com/EesunMoon/leetcode/tree/master/0753-open-the-lock) |
 | [0768-partition-labels](https://github.com/EesunMoon/leetcode/tree/master/0768-partition-labels) |
@@ -500,6 +504,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/EesunMoon/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0684-redundant-connection](https://github.com/EesunMoon/leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
+| [0721-accounts-merge](https://github.com/EesunMoon/leetcode/tree/master/0721-accounts-merge) |
 | [0744-network-delay-time](https://github.com/EesunMoon/leetcode/tree/master/0744-network-delay-time) |
 | [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/EesunMoon/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
@@ -538,6 +543,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/EesunMoon/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0684-redundant-connection](https://github.com/EesunMoon/leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
+| [0721-accounts-merge](https://github.com/EesunMoon/leetcode/tree/master/0721-accounts-merge) |
 | [0744-network-delay-time](https://github.com/EesunMoon/leetcode/tree/master/0744-network-delay-time) |
 | [0753-open-the-lock](https://github.com/EesunMoon/leetcode/tree/master/0753-open-the-lock) |
 | [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
@@ -651,6 +657,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/EesunMoon/leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/EesunMoon/leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/EesunMoon/leetcode/tree/master/0695-max-area-of-island) |
+| [0721-accounts-merge](https://github.com/EesunMoon/leetcode/tree/master/0721-accounts-merge) |
 | [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
 | [1396-count-servers-that-communicate](https://github.com/EesunMoon/leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/EesunMoon/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
