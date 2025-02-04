@@ -1,29 +1,26 @@
-class Solution(object):
-    def furthestBuilding(self, heights, bricks, ladders):
-        """
-        :type heights: List[int]
-        :type bricks: int
-        :type ladders: int
-        :rtype: int
-        """
-        
-        ladder_possible = []
+class Solution:
+    def furthestBuilding(self, heights: List[int], bricks: int, ladders: int) -> int:
+        # ladder: use the maximum jump as possible
+        # firstly, use bricks as long as bricks are avaialbe ( bricks != 0 )
+        # store differ in max heap of bricks
+        # if bricks are not available => in maximum value in max heap :: ladder if possible
+        # if ladder are available -> add the value of max heap to bricks again (since we use ladder)
+        # otherwise, return !
+
+        max_heap = [] # store difference in order decreasing order
 
         for i in range(len(heights)-1):
-            climb = heights[i+1] - heights[i]
+            diff = heights[i+1] - heights[i]
 
-            if climb <= 0:
+            if diff <= 0:
                 continue
-            
-            # use ladders for the longest climbs
-            heapq.heappush(ladder_possible, climb)
-            if len(ladder_possible) <= ladders:
-                continue
-            
-            # use bricks for the shortest climbs => min_heap
-            bricks -= heapq.heappop(ladder_possible)
+
+            # use bricks first
+            heapq.heappush(max_heap, -diff) # to make max heap
+            bricks -= diff
             if bricks < 0:
-                return i
-
-        # covered every climb 
-        return len(heights) - 1
+                if ladders == 0:
+                    return i # since we cannot go to next building
+                ladders -= 1
+                bricks += (-heapq.heappop(max_heap))
+        return len(heights)-1 # if all building
