@@ -103,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0876-hand-of-straights](https://github.com/EesunMoon/leetcode/tree/master/0876-hand-of-straights) |
 | [0883-car-fleet](https://github.com/EesunMoon/leetcode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/EesunMoon/leetcode/tree/master/0907-koko-eating-bananas) |
+| [0912-random-pick-with-weight](https://github.com/EesunMoon/leetcode/tree/master/0912-random-pick-with-weight) |
 | [0943-sum-of-subarray-minimums](https://github.com/EesunMoon/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [0948-sort-an-array](https://github.com/EesunMoon/leetcode/tree/master/0948-sort-an-array) |
 | [0965-unique-email-addresses](https://github.com/EesunMoon/leetcode/tree/master/0965-unique-email-addresses) |
@@ -150,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0792-binary-search](https://github.com/EesunMoon/leetcode/tree/master/0792-binary-search) |
 | [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0907-koko-eating-bananas](https://github.com/EesunMoon/leetcode/tree/master/0907-koko-eating-bananas) |
+| [0912-random-pick-with-weight](https://github.com/EesunMoon/leetcode/tree/master/0912-random-pick-with-weight) |
 | [1023-time-based-key-value-store](https://github.com/EesunMoon/leetcode/tree/master/1023-time-based-key-value-store) |
 | [1046-max-consecutive-ones-iii](https://github.com/EesunMoon/leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
@@ -204,6 +206,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/EesunMoon/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0253-meeting-rooms-ii](https://github.com/EesunMoon/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/EesunMoon/leetcode/tree/master/0560-subarray-sum-equals-k) |
+| [0912-random-pick-with-weight](https://github.com/EesunMoon/leetcode/tree/master/0912-random-pick-with-weight) |
 | [1046-max-consecutive-ones-iii](https://github.com/EesunMoon/leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [2165-plates-between-candles](https://github.com/EesunMoon/leetcode/tree/master/2165-plates-between-candles) |
 | [2629-number-of-substrings-with-fixed-ratio](https://github.com/EesunMoon/leetcode/tree/master/2629-number-of-substrings-with-fixed-ratio) |
@@ -440,6 +443,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0371-sum-of-two-integers](https://github.com/EesunMoon/leetcode/tree/master/0371-sum-of-two-integers) |
 | [0380-insert-delete-getrandom-o1](https://github.com/EesunMoon/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0628-maximum-product-of-three-numbers](https://github.com/EesunMoon/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
+| [0912-random-pick-with-weight](https://github.com/EesunMoon/leetcode/tree/master/0912-random-pick-with-weight) |
 | [1013-fibonacci-number](https://github.com/EesunMoon/leetcode/tree/master/1013-fibonacci-number) |
 | [1014-k-closest-points-to-origin](https://github.com/EesunMoon/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1094-matrix-cells-in-distance-order](https://github.com/EesunMoon/leetcode/tree/master/1094-matrix-cells-in-distance-order) |
@@ -1013,4 +1017,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/EesunMoon/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+| [0912-random-pick-with-weight](https://github.com/EesunMoon/leetcode/tree/master/0912-random-pick-with-weight) |
 <!---LeetCode Topics End-->
