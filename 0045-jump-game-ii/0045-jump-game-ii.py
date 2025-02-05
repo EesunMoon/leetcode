@@ -1,5 +1,16 @@
 class Solution:
     def jump(self, nums: List[int]) -> int:
+        # track how breath
+        l, r = 0, 0 # left boundary of level, right boundary of level
+        level = 0
+        while r < len(nums)-1:
+            furthest = 0
+            for i in range(l, r+1):
+                furthest = max(furthest, nums[i]+i)
+            l = r + 1
+            r = furthest
+            level += 1
+        return level
         # DP : variable index state the numbere of jumps
         # T O(n*m) S O(n)
         """
