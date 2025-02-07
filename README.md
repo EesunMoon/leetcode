@@ -345,6 +345,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0965-unique-email-addresses](https://github.com/EesunMoon/leetcode/tree/master/0965-unique-email-addresses) |
 | [1023-time-based-key-value-store](https://github.com/EesunMoon/leetcode/tree/master/1023-time-based-key-value-store) |
 | [1250-longest-common-subsequence](https://github.com/EesunMoon/leetcode/tree/master/1250-longest-common-subsequence) |
+| [1274-number-of-days-between-two-dates](https://github.com/EesunMoon/leetcode/tree/master/1274-number-of-days-between-two-dates) |
 | [1838-number-of-distinct-substrings-in-a-string](https://github.com/EesunMoon/leetcode/tree/master/1838-number-of-distinct-substrings-in-a-string) |
 | [1894-merge-strings-alternately](https://github.com/EesunMoon/leetcode/tree/master/1894-merge-strings-alternately) |
 | [2165-plates-between-candles](https://github.com/EesunMoon/leetcode/tree/master/2165-plates-between-candles) |
@@ -448,6 +449,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1014-k-closest-points-to-origin](https://github.com/EesunMoon/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1094-matrix-cells-in-distance-order](https://github.com/EesunMoon/leetcode/tree/master/1094-matrix-cells-in-distance-order) |
 | [1236-n-th-tribonacci-number](https://github.com/EesunMoon/leetcode/tree/master/1236-n-th-tribonacci-number) |
+| [1274-number-of-days-between-two-dates](https://github.com/EesunMoon/leetcode/tree/master/1274-number-of-days-between-two-dates) |
 | [1585-the-kth-factor-of-n](https://github.com/EesunMoon/leetcode/tree/master/1585-the-kth-factor-of-n) |
 | [2279-maximum-split-of-positive-even-integers](https://github.com/EesunMoon/leetcode/tree/master/2279-maximum-split-of-positive-even-integers) |
 | [2383-add-two-integers](https://github.com/EesunMoon/leetcode/tree/master/2383-add-two-integers) |
