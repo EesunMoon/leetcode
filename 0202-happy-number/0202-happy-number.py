@@ -1,25 +1,15 @@
-class Solution(object):
-    def isHappy(self, n):
-        """
-        :type n: int
-        :rtype: bool
-        """
-        def SumOfSquareOfDigits(num):
-            res = 0
-            while num:
-                res += ((num%10)**2)
-                num = num//10
-            return res
+class Solution:
+    def isHappy(self, n: int) -> bool:
         
-        cycle = set()
-        while n != 1:
-            n = SumOfSquareOfDigits(n)
-            if n == 1:
-                return True
-            
-            if n in cycle:
-                return False
-            cycle.add(n)
+        def help(n):
+            total = 0
+            while n > 0:
+                n, digit = divmod(n, 10)
+                total += digit ** 2
+            return total
         
-        return True
-        
+        seen = set()
+        while n != 1 and n not in seen:
+            seen.add(n)
+            n = help(n)
+        return n == 1
