@@ -1,6 +1,6 @@
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
-        # brute force O(n^n) => for all subarray
+        # brute force O(n^2) => for all subarray
         # [-2,1,-3,4,-1,2,1,-5,4]
         # subSum < 0
         # [-2, -1, -2, -1, -2, -1, -2, -1]
