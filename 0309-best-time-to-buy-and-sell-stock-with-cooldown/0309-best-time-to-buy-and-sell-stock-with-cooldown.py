@@ -1,5 +1,6 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
+        # TC O(n), SC O(2n)=O(n)
         # dp variables: (index, buy or not), states: maximum profit
         dp = {}
 
