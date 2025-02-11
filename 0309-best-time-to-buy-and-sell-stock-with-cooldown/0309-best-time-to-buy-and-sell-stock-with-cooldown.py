@@ -1,28 +1,25 @@
-class Solution(object):
-    def maxProfit(self, prices):
-        """
-        :type prices: List[int]
-        :rtype: int
-        """
-        # state: max_profit
-        dp = {} # [cache] key: (i, buying), value: max_profit
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        # dp variables: (index, buy or not), states: maximum profit
+        dp = {}
 
         def dfs(i, buying):
-            # base case: out of bound
+            # base case: out of the bound
             if i >= len(prices):
                 return 0
-            # base case: already compute
+            # base case: already in cache
             if (i, buying) in dp:
                 return dp[(i, buying)]
             
-            cooldown = dfs(i+1, buying)
+            cooldown = dfs(i+1, buying) # in case of cooldown
+            # 1) buying
             if buying:
-                # buying
-                buy = dfs(i+1, not buying) - prices[i]
-                dp[(i, buying)] = max(cooldown, buy)
+                buy = dfs(i+1, not buying) - prices[i] # in case of buying
+                dp[(i, buying)] = max(buy, cooldown) # store in cache
+            # 2) selling
             else:
-                # selling: we must have cooldown for next day
-                sell = dfs(i+2, not buying) + prices[i]
-                dp[(i, buying)] = max(cooldown, sell)
+                sell = dfs(i+2, not buying) + prices[i] # in case of selling (with cooldown)
+                dp[(i, buying)] = max(sell, cooldown) # store in cache
+            
             return dp[(i, buying)]
         return dfs(0, True)
