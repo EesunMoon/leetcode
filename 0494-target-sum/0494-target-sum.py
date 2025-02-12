@@ -1,18 +1,13 @@
-class Solution(object):
-    def findTargetSumWays(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
-        dp = defaultdict(int)
-        # base case
-        dp[0] = 1 # sum 0 -> 1 way
-
-        for i in range(len(nums)):
-            newDP = defaultdict(int)
-            for currSum, count in dp.items():
-                newDP[currSum + nums[i]] += count
-                newDP[currSum - nums[i]] += count
-            dp = newDP
-        return dp[target]
+class Solution:
+    def findTargetSumWays(self, nums: List[int], target: int) -> int:
+        dp = {} #(index, amount): the number of expressions
+        def dfs(i, total):
+            # base case
+            if i == len(nums):
+                return 1 if total == target else 0
+            if (i, total) in dp:
+                return dp[(i, total)]
+            
+            dp[(i, total)] = dfs(i+1, total + nums[i]) + dfs(i+1, total - nums[i])
+            return dp[(i, total)]
+        return dfs(0, 0)
