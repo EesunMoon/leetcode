@@ -123,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1753-path-with-minimum-effort](https://github.com/EesunMoon/leetcode/tree/master/1753-path-with-minimum-effort) |
 | [1762-furthest-building-you-can-reach](https://github.com/EesunMoon/leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/EesunMoon/leetcode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
+| [1909-buildings-with-an-ocean-view](https://github.com/EesunMoon/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/EesunMoon/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/EesunMoon/leetcode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2139-detect-squares](https://github.com/EesunMoon/leetcode/tree/master/2139-detect-squares) |
@@ -631,6 +632,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0883-car-fleet](https://github.com/EesunMoon/leetcode/tree/master/0883-car-fleet) |
 | [0943-sum-of-subarray-minimums](https://github.com/EesunMoon/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
+| [1909-buildings-with-an-ocean-view](https://github.com/EesunMoon/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
 ## Design
 |  |
 | ------- |
@@ -885,6 +887,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/EesunMoon/leetcode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/EesunMoon/leetcode/tree/master/0883-car-fleet) |
 | [0943-sum-of-subarray-minimums](https://github.com/EesunMoon/leetcode/tree/master/0943-sum-of-subarray-minimums) |
+| [1909-buildings-with-an-ocean-view](https://github.com/EesunMoon/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
 ## Sliding Window
 |  |
 | ------- |
