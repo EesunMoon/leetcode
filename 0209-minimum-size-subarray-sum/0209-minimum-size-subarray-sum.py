@@ -28,7 +28,8 @@ class Solution:
                 l += 1
         return minLength if minLength != float("INF") else 0
 
-
+        """
+        # brute force: TC SC O(n**2) 
         combination = [] # [length, total sum]
         for start in range(len(nums)):
             for end in range(start, len(nums)):
@@ -40,3 +41,4 @@ class Solution:
             if subSum >= target:
                 minLength = min(minLength, length)
         return minLength if minLength != float("INF") else 0
+        """
