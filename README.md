@@ -641,6 +641,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/EesunMoon/leetcode/tree/master/0739-daily-temperatures) |
 | [0874-backspace-string-compare](https://github.com/EesunMoon/leetcode/tree/master/0874-backspace-string-compare) |
 | [0883-car-fleet](https://github.com/EesunMoon/leetcode/tree/master/0883-car-fleet) |
+| [0937-online-stock-span](https://github.com/EesunMoon/leetcode/tree/master/0937-online-stock-span) |
 | [0943-sum-of-subarray-minimums](https://github.com/EesunMoon/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1909-buildings-with-an-ocean-view](https://github.com/EesunMoon/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
@@ -663,6 +664,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0817-design-hashmap](https://github.com/EesunMoon/leetcode/tree/master/0817-design-hashmap) |
 | [0860-design-circular-queue](https://github.com/EesunMoon/leetcode/tree/master/0860-design-circular-queue) |
+| [0937-online-stock-span](https://github.com/EesunMoon/leetcode/tree/master/0937-online-stock-span) |
 | [1023-time-based-key-value-store](https://github.com/EesunMoon/leetcode/tree/master/1023-time-based-key-value-store) |
 | [2139-detect-squares](https://github.com/EesunMoon/leetcode/tree/master/2139-detect-squares) |
 ## Iterator
@@ -759,6 +761,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0346-moving-average-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0346-moving-average-from-data-stream) |
 | [0359-logger-rate-limiter](https://github.com/EesunMoon/leetcode/tree/master/0359-logger-rate-limiter) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0937-online-stock-span](https://github.com/EesunMoon/leetcode/tree/master/0937-online-stock-span) |
 ## Matrix
 |  |
 | ------- |
@@ -901,6 +904,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/EesunMoon/leetcode/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/EesunMoon/leetcode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/EesunMoon/leetcode/tree/master/0883-car-fleet) |
+| [0937-online-stock-span](https://github.com/EesunMoon/leetcode/tree/master/0937-online-stock-span) |
 | [0943-sum-of-subarray-minimums](https://github.com/EesunMoon/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [1909-buildings-with-an-ocean-view](https://github.com/EesunMoon/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
 ## Sliding Window
