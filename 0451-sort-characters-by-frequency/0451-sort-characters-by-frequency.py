@@ -18,7 +18,7 @@ class Solution:
         
         # return
         res = ""
-        for freq in range(len(bucket)-1, -1, -1):
+        for freq in range(len(bucket)-1, 0, -1):
             for c in bucket[freq]:
                 res += (c*freq)
         return res
