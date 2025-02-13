@@ -5,7 +5,7 @@ class StockSpanner:
         self.stack = [] # [price, cnt]
 
     def next(self, price: int) -> int:
-        # equal or less
+        # equal or less - monotonic stack
         cnt = 1 # contain itself
         while self.stack and self.stack[-1][0] <= price:
             cnt += self.stack.pop()[1]
