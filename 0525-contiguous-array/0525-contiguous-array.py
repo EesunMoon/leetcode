@@ -8,7 +8,7 @@ class Solution:
         # [-1,0,-1, 0]
         # 0: idx
         prefix_sum = 0
-        sum_idx = {0:-1}
+        sum_idx = {0:-1} # subSum: index
         res = 0
         
         for i, num in enumerate(nums):
