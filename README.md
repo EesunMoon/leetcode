@@ -135,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2354-minimum-health-to-beat-game](https://github.com/EesunMoon/leetcode/tree/master/2354-minimum-health-to-beat-game) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2548-destroy-sequential-targets](https://github.com/EesunMoon/leetcode/tree/master/2548-destroy-sequential-targets) |
+| [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/EesunMoon/leetcode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 | [2792-neighboring-bitwise-xor](https://github.com/EesunMoon/leetcode/tree/master/2792-neighboring-bitwise-xor) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
@@ -437,6 +438,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/EesunMoon/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2548-destroy-sequential-targets](https://github.com/EesunMoon/leetcode/tree/master/2548-destroy-sequential-targets) |
+| [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/EesunMoon/leetcode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2629-number-of-substrings-with-fixed-ratio](https://github.com/EesunMoon/leetcode/tree/master/2629-number-of-substrings-with-fixed-ratio) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/EesunMoon/leetcode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
@@ -941,6 +943,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/EesunMoon/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/EesunMoon/leetcode/tree/master/0567-permutation-in-string) |
 | [1046-max-consecutive-ones-iii](https://github.com/EesunMoon/leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/EesunMoon/leetcode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 ## Ordered Set
 |  |
 | ------- |
