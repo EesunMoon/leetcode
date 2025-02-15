@@ -15,21 +15,19 @@ class Solution:
         """
         # TC O(m), O(n)
         res = [] # contain the results for each query
-        hashmap = {} # color: (index)
+        colormap = {} # color: freq
         ballmap = {} # index: color
         for x, y in queries:
             
-            prev = ballmap.get(x, -1)
+            prev = ballmap.get(x, -1) # previous ball's color
             if prev != -1:
-                hashmap[prev].remove(x)
-                if len(hashmap[prev]) == 0:
-                    del hashmap[prev]
+                colormap[prev] -= 1
+                if colormap[prev] == 0:
+                    del colormap[prev]
             
             ballmap[x] = y
-            if not y in hashmap:
-                hashmap[y] = set()
-            hashmap[y].add(x)
-            res.append(len(hashmap))
+            colormap[y] = 1 + colormap.get(y, 0)
+            res.append(len(colormap))
         
         return res
 
