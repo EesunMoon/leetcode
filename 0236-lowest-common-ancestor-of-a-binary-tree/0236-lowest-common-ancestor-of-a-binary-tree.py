@@ -10,10 +10,35 @@ class Solution:
         """
                 3
             5       1
-         6   2    0   8
+         6   2     0   8
             7  4
         => if p is in left subtree and q is in right subtree, the split point node is LCA
         """
+        # TC O(N) SC O(N)
+        parent_map = {}
+        stack = [root]
+
+        while stack:
+            node = stack.pop()
+            if node.left:
+                parent_map[node.left] = node
+                stack.append(node.left)
+            if node.right:
+                parent_map[node.right] = node
+                stack.append(node.right)
+        
+        ancestors = set()
+        while p:
+            ancestors.add(p)
+            p = parent_map.get(p)
+        while q:
+            if q in ancestors:
+                return q
+            q = parent_map.get(q)
+        return None
+
+        """
+        # recursion TC O(N) SC O(N)
         if not root or root == p or root == q:
             return root
         
@@ -24,3 +49,4 @@ class Solution:
             return root
         
         return left if left else right
+        """
