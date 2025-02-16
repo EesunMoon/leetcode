@@ -13,6 +13,36 @@ class Solution:
               2
         inorder =  [1, 3, 2, 4]
         """
+        # using only two pointer SC O(1)
+        first, second = None, None
+        prev = None
+        curr = root
+        while curr:
+            if not curr.left:
+                if prev and prev.val > curr.val:
+                    if not first:
+                        first = prev
+                    second = curr
+                prev = curr
+                curr = curr.right
+            else:
+                temp = curr.left
+                while temp.right and temp.right != curr:
+                    temp = temp.right
+                if not temp.right:
+                    temp.right = curr
+                    curr = curr.left
+                else:
+                    temp.right = None
+                    if prev and prev.val > curr.val:
+                        if not first:
+                            first = prev
+                        second = curr
+                    prev = curr
+                    curr = curr.right
+
+        # Inorder traversal SC O(n)
+        """
         inorder = []
         def traversal(node):
             if not node:
@@ -22,12 +52,12 @@ class Solution:
             inorder.append(node)
             traversal(node.right)
         traversal(root)
-
+        
         first, second = None, None # to ensure finding last error point
         for i in range(len(inorder)-1):
             if inorder[i].val > inorder[i+1].val:
                 if not first:
                     first = inorder[i]
                 second = inorder[i+1]
-        
+        """
         first.val, second.val = second.val, first.val
