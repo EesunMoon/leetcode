@@ -112,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0943-sum-of-subarray-minimums](https://github.com/EesunMoon/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [0948-sort-an-array](https://github.com/EesunMoon/leetcode/tree/master/0948-sort-an-array) |
 | [0965-unique-email-addresses](https://github.com/EesunMoon/leetcode/tree/master/0965-unique-email-addresses) |
+| [1002-maximum-width-ramp](https://github.com/EesunMoon/leetcode/tree/master/1002-maximum-width-ramp) |
 | [1014-k-closest-points-to-origin](https://github.com/EesunMoon/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1036-rotting-oranges](https://github.com/EesunMoon/leetcode/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/EesunMoon/leetcode/tree/master/1046-max-consecutive-ones-iii) |
@@ -307,6 +308,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/EesunMoon/leetcode/tree/master/0768-partition-labels) |
 | [0874-backspace-string-compare](https://github.com/EesunMoon/leetcode/tree/master/0874-backspace-string-compare) |
 | [0908-middle-of-the-linked-list](https://github.com/EesunMoon/leetcode/tree/master/0908-middle-of-the-linked-list) |
+| [1002-maximum-width-ramp](https://github.com/EesunMoon/leetcode/tree/master/1002-maximum-width-ramp) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/EesunMoon/leetcode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1894-merge-strings-alternately](https://github.com/EesunMoon/leetcode/tree/master/1894-merge-strings-alternately) |
@@ -672,6 +674,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0883-car-fleet](https://github.com/EesunMoon/leetcode/tree/master/0883-car-fleet) |
 | [0937-online-stock-span](https://github.com/EesunMoon/leetcode/tree/master/0937-online-stock-span) |
 | [0943-sum-of-subarray-minimums](https://github.com/EesunMoon/leetcode/tree/master/0943-sum-of-subarray-minimums) |
+| [1002-maximum-width-ramp](https://github.com/EesunMoon/leetcode/tree/master/1002-maximum-width-ramp) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/EesunMoon/leetcode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 | [1909-buildings-with-an-ocean-view](https://github.com/EesunMoon/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
@@ -949,6 +952,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0883-car-fleet](https://github.com/EesunMoon/leetcode/tree/master/0883-car-fleet) |
 | [0937-online-stock-span](https://github.com/EesunMoon/leetcode/tree/master/0937-online-stock-span) |
 | [0943-sum-of-subarray-minimums](https://github.com/EesunMoon/leetcode/tree/master/0943-sum-of-subarray-minimums) |
+| [1002-maximum-width-ramp](https://github.com/EesunMoon/leetcode/tree/master/1002-maximum-width-ramp) |
 | [1909-buildings-with-an-ocean-view](https://github.com/EesunMoon/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
 ## Sliding Window
 |  |
