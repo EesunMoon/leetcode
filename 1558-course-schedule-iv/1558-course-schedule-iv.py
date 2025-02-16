@@ -3,13 +3,14 @@ class Solution:
         # prerequisite (a, b) a -> b
         # query (a, b) a -> b
 
-        # make adjacent graph TC O(N) SC O(N)
+        # make adjacent graph TC O(N) SC O(N^2)
         indegree = {} # course: indegree
         adj = defaultdict(list)
         for pre, nxt in prerequisites:
             adj[pre].append(nxt)
             indegree[nxt] = 1 + indegree.get(nxt,0)
         
+        # TC O(N^3) SC O(N^2)
         premap = defaultdict(set) # nxt: (pre)
         Q = deque([crs for crs in range(numCourses) if crs not in indegree])
         while Q:
