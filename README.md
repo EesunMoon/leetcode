@@ -518,6 +518,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0784-insert-into-a-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [1035-cousins-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1035-cousins-in-binary-tree) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/EesunMoon/leetcode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
@@ -562,6 +563,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0803-cheapest-flights-within-k-stops](https://github.com/EesunMoon/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0813-all-paths-from-source-to-target](https://github.com/EesunMoon/leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [1035-cousins-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1035-cousins-in-binary-tree) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1396-count-servers-that-communicate](https://github.com/EesunMoon/leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/EesunMoon/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
@@ -604,6 +606,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0803-cheapest-flights-within-k-stops](https://github.com/EesunMoon/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0813-all-paths-from-source-to-target](https://github.com/EesunMoon/leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [1035-cousins-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1035-cousins-in-binary-tree) |
 | [1036-rotting-oranges](https://github.com/EesunMoon/leetcode/tree/master/1036-rotting-oranges) |
 | [1396-count-servers-that-communicate](https://github.com/EesunMoon/leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/EesunMoon/leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
@@ -657,6 +660,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0784-insert-into-a-binary-search-tree](https://github.com/EesunMoon/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [1035-cousins-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1035-cousins-in-binary-tree) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/EesunMoon/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/EesunMoon/leetcode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
