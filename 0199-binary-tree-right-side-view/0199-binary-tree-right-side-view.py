@@ -10,6 +10,26 @@ class Solution:
             return []
 
         res = []
+        """
+            DFS TC O(n) SC O(H)
+        """
+        def dfs(node, level):
+            if len(res) == level:
+                res.append(node.val)
+            """
+                if we want to left side: [node.left, node.right]
+                in this question we want to save right side => [node.right, node.left]
+            """
+            for next_node in [node.right, node.left]: # we want to see right side first
+                if next_node:
+                    dfs(next_node, level+1)
+        dfs(root, 0)
+        return res
+
+
+        """
+            BFS TC O(n) SC O(W = n/2)
+        """
         # not using additional level array
         Q = deque([root])
         while Q:
@@ -36,5 +56,4 @@ class Solution:
                     Q.append(node.right)
             res.append(level[-1])
         return res
-
         """
