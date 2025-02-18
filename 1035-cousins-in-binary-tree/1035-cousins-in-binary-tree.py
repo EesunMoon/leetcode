@@ -6,6 +6,36 @@
 #         self.right = right
 class Solution:
     def isCousins(self, root: Optional[TreeNode], x: int, y: int) -> bool:
+        # base case
+        if not root:
+            return False
+        
+        # cousins: same level, different parent
+        x_info = [-1, -1] # (level, parent value)
+        y_info = [-2, -2]
+
+        Q = deque([(root, 0, None)]) # (node, level, parent)
+        while Q:
+            node, level, parent = Q.popleft()
+            if node.val == x:
+                x_info = [level, parent]
+            if node.val == y:
+                y_info = [level, parent]
+            
+            if node.left:
+                Q.append([node.left, level+1, node])
+            if node.right:
+                Q.append([node.right, level+1, node])
+        
+        if x_info[0] == y_info[0] and x_info[1] != y_info[1]:
+            return True
+        return False
+
+
+        
+        
+        
+        
         # cousin: same depth and different parent
         # only valid: left children AND right children
         # invalid:
