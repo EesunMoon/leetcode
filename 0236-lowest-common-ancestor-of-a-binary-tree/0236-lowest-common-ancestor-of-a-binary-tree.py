@@ -57,8 +57,10 @@ class Solution:
         def makeParentMap(curr, parent):
             if curr:
                 parent_map[curr] = parent
-                makeParentMap(curr.left, curr)
-                makeParentMap(curr.right, curr)
+                if curr.left:
+                    makeParentMap(curr.left, curr)
+                if curr.right:
+                    makeParentMap(curr.right, curr)
         makeParentMap(root, None)
 
         # 2. store p_ancesor TC O(H) SC O(H)
