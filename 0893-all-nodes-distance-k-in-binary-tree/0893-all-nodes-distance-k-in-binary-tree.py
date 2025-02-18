@@ -21,9 +21,24 @@ class Solution:
                 add_parent(curr.right, curr)
         add_parent(root, None)
 
-        # 2. DFS TC O(N) SC O(N)
         res = []
         seen = set()
+        # 2. BFS
+        Q = deque([(target, 0)])
+        seen.add(target)
+        while Q:
+            if Q[0][1] == k:
+                return [node.val for node, _ in Q]
+            for _ in range(len(Q)):
+                node, dist = Q.popleft()
+                for next_node in [node.left, node.right, node.parent]:
+                    if next_node and next_node not in seen:
+                        Q.append([next_node, dist+1])
+                        seen.add(next_node)
+        return []
+
+        # 2. DFS TC O(N) SC O(N)
+
         def dfs(curr, dist):
             # base case
             if not curr or curr in seen:
