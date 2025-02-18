@@ -21,7 +21,7 @@ class Solution:
                     Q.append(node.right)
             res.append(node.val)
         return res
-
+        """
         ## Two list
         Q = deque()
         Q.append(root)
@@ -37,3 +37,4 @@ class Solution:
             res.append(level[-1])
         return res
 
+        """
