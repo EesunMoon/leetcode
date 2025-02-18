@@ -15,19 +15,23 @@ class Solution:
             return []
 
         hashmap = defaultdict(list) # index: []
-        max_index = 0
+        max_index = float("-INF")
+        min_index = float("INF")
         Q = deque([(root, 0)]) # (node, index)
         while Q:
             node, idx = Q.popleft()
             hashmap[idx].append(node.val)
-            max_index = max(max_index, abs(idx))
+
+            max_index = max(max_index, idx)
+            min_index = min(min_index, idx)
             if node.left:
                 Q.append([node.left, idx-1])
             if node.right:
                 Q.append([node.right, idx+1])
 
+        # TC O(W)
         res = []
-        for idx in range(-max_index, max_index+1):
+        for idx in range(min_index, max_index+1):
             if idx in hashmap:
                 res.append(hashmap[idx])
         return res
