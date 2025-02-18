@@ -8,6 +8,38 @@
 class Solution:
     def distanceK(self, root: TreeNode, target: TreeNode, k: int) -> List[int]:
         """
+        without using adjacent graph
+            -> should save the parent node information
+        1. add parent information in each node: TC O(n)
+        2. search based on parent pointer
+        """
+        # 1. add parent information in each node: TC O(n)
+        def add_parent(curr, parent):
+            if curr:
+                curr.parent = parent
+                add_parent(curr.left, curr)
+                add_parent(curr.right, curr)
+        add_parent(root, None)
+
+        # 2. DFS TC O(N) SC O(N)
+        res = []
+        seen = set()
+        def dfs(curr, dist):
+            # base case
+            if not curr or curr in seen:
+                return
+            seen.add(curr)
+            if dist == k:
+                res.append(curr.val)
+                return
+            dfs(curr.parent, dist + 1)
+            dfs(curr.left, dist + 1)
+            dfs(curr.right, dist + 1)
+        
+        dfs(target, 0)
+        return res
+        
+        """
         1. adjacent graph TC O(n) SC O(n)
         2. BFS TC O(n) SC O(n)
         """
