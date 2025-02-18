@@ -6,7 +6,30 @@
 #         self.right = right
 class Solution:
     def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
-        # TC O(n) SC O(n)
+        # DFS TC O(n) SC O(H) - H: height
+        if not root:
+            return []
+        
+        res = []
+        def dfs(node, level):
+            if not node:
+                return
+
+            if len(res) == level:
+                res.append(deque())
+            
+            if level % 2 == 0:
+                res[level].append(node.val)
+            else:
+                res[level].appendleft(node.val)
+
+            for next_node in [node.left, node.right]:
+                if next_node:
+                    dfs(next_node, level+1)
+        dfs(root, 0)
+        return [list(level) for level in res]
+        
+        # BFS TC O(n) SC O(n/2) -> O(n)
         # base case
         if not root:
             return []
