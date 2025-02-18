@@ -6,34 +6,31 @@
 #         self.right = right
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
-        res = []
-        
+        """
+            Using BFS to track node as widely as possible
+                - Queue: TC O(n) SC O(w = n/2) -> O(n)
+            Using DFS through recursively
+                - recursive stack TC O(n) SC O(H = logn when balanced) -> O(logn)
+        """
+        # base case
+        if not root:
+            return []
+        res = [] # append level
+
+        # DFS TC O(n) SC O(H = logn when balanced) = O(N)
         def dfs(node, level):
-            if not node:
-                return res
-            
             if len(res) == level:
-                res.append([])
-            
+                res.append([]) # append level
             res[level].append(node.val)
-            dfs(node.left, level+1)
-            dfs(node.right, level+1)
+            for next_node in [node.left, node.right]:
+                if next_node:
+                    dfs(next_node, level+1)
         dfs(root, 0)
         return res
 
-        
-        
-        # edge case
-        if not root:
-            return []
-        
-        # BFS using queue
-        # TC O(n) SC O(n)
-        Q = deque()
-        res = []
-        Q.append(root)
+        # BFS TC O(n) SC O(W = n/2) = O(n)
+        Q = deque([root])
         while Q:
-            # level
             level = []
             for _ in range(len(Q)):
                 node = Q.popleft()
