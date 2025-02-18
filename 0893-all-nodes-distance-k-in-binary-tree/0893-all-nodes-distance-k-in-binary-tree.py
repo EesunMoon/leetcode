@@ -7,29 +7,35 @@
 
 class Solution:
     def distanceK(self, root: TreeNode, target: TreeNode, k: int) -> List[int]:
-        # build adjacent graph
-        graph = defaultdict(list)
+        """
+        1. adjacent graph TC O(n) SC O(n)
+        2. BFS TC O(n) SC O(n)
+        """
+        # 1. build adjacent graph
+        adj = defaultdict(list)
         def makeGraph(node, parent):
-            if not node:
-                return
             if parent:
-                graph[node.val].append(parent.val)
-                graph[parent.val].append(node.val)
-            makeGraph(node.left, node)
-            makeGraph(node.right, node)
+                adj[node.val].append(parent.val)
+            if node.left:
+                adj[node.val].append(node.left.val)
+                makeGraph(node.left, node)
+            if node.right:
+                adj[node.val].append(node.right.val)
+                makeGraph(node.right, node)
         makeGraph(root, None)
 
-        # bfs to find nodes distance k
-        Q = deque([target.val])
-        seen = set([target.val])
-        while Q or k > 0:
+        # 2. BFS- starting from target node
+        Q = deque([target.val]) # append val
+        seen = set()
+        seen.add(target.val)
+        while Q:
             if k == 0:
                 return list(Q)
             for _ in range(len(Q)):
                 node = Q.popleft()
-                for nei in graph[node]:
+                for nei in adj[node]:
                     if nei not in seen:
                         Q.append(nei)
-                        seen.add(nei)
+                    seen.add(nei)
             k -= 1
         return []
