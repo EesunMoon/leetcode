@@ -10,6 +10,8 @@ class Solution:
             return []
         
         res = []
+        
+        ## DFS O(N) O(H)
         def inorder(node):
             if not node:
                 return
@@ -17,6 +19,5 @@ class Solution:
             inorder(node.left)
             res.append(node.val)
             inorder(node.right)
-        
         inorder(root)
         return res
