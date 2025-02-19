@@ -4,11 +4,15 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
 class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
         if not root:
             return False
-        
+        # can optimize using BSTIterator TC O(N) SC O(H)
+        ## next function takes O(1) TC, O(H) SC
+        ## hasNext function takes O(1) in both TC and SC
+        # Recusion DFS TC O(N) SC O(N+H)
         seen = set()
         def dfs(node):
             if not node:
@@ -20,7 +24,7 @@ class Solution:
         return dfs(root)
 
         
-        # BFS O(n)
+        # BFS TC O(N) SC O(N)
         """
         
         seen = set()
@@ -40,7 +44,7 @@ class Solution:
         return False
         
 
-        # DFS - Stack
+        # DFS - Stack TC O(N) SC O(N+H)
         seen = set()
         stack = []
         curr = root
