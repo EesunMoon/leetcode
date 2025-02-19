@@ -5,45 +5,47 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    def getMin(self, node):
+            leftmost = node
+            while leftmost.left:
+                leftmost = leftmost.left
+            return leftmost
+
     def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
         """
-        edge case)
-            1. No key found
-            2. not root
+        base case)
+            1. not root
+            2. not key in the tree
         
-        delete: 
-            not children: just delete
-            only one children: delete and connect
-            all children exist:
-                right subtree successor(the smallest value)
+        [high level] TC O(N) SC O(H)
+            1. find the node to delete: if not exist - return root O(N), O(1)
+            2. delete node O(H), O(1)
+                case 1) if leaf (no children): just delete O(1)
+                case 2) if only one child: swap node to the child, delete child O(1)
+                case 3) if two children: find minimum value(leftmost node) in the rightSubTree
         """
-        if not root:
-            return None
         
-        # find key
-        if key < root.val:
+        # base case
+        if not root:
+            return root
+
+        # 1) find the node to delete
+        if root.val > key:
             root.left = self.deleteNode(root.left, key)
-        elif key > root.val:
+        elif root.val < key:
             root.right = self.deleteNode(root.right, key)
         else:
-            # delete node
-
-            # 1) not children
+            # 2) delete node
+            # case1) leaf node
             if not root.left and not root.right:
                 return None
-            # 2) only one children
-            if not root.left:
-                return root.right
-            if not root.right:
-                return root.left
-            
-            # 3) all exist
-            successor = self.findMin(root.right)
-            root.val = successor.val
-            root.right = self.deleteNode(root.right, successor.val)
+            # case2) only one child
+            if not root.left or not root.right:
+                return root.left if root.left else root.right
+            # case3) all children exist
+            else:
+                # change with leftmost value in the rightSub
+                leftmost = self.getMin(root.right)
+                root.val = leftmost.val # update root to leftmost
+                root.right = self.deleteNode(root.right, leftmost.val)
         return root
-
-    def findMin(self, node):
-        while node.left:
-            node = node.left
-        return node
