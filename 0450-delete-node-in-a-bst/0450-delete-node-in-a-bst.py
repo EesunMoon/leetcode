@@ -12,6 +12,54 @@ class Solution:
             return leftmost
 
     def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
+        # base case
+        if not root:
+            return root
+        
+        # optimization TC O(N) SC O(1)
+        # 1. find the node to delete
+        parent, curr = None, root
+        while curr:
+            if curr.val > key:
+                parent = curr
+                curr = curr.left
+            elif curr.val < key:
+                parent = curr
+                curr = curr.right
+            else:
+                # 2. delete node
+                # case1) leaf
+                if not curr.left and not curr.right:
+                    if not parent: # root
+                       return None
+                    else: # not root
+                        if parent.left == curr:
+                            parent.left = None
+                        else:
+                            parent.right = None
+                # case2) only one child
+                elif not curr.left or not curr.right:      
+                    child = curr.left if curr.left else curr.right
+                    if not parent: # root
+                        return child
+                    else: # not root
+                        if parent.left == curr:
+                            parent.left = child
+                        else:
+                            parent.right = child
+                # case3) have two children
+                else:
+                    leftmost = self.getMin(curr.right)
+                    curr.val = leftmost.val
+                    
+                    # delete leftmost value in rightsubtree
+                    parent = curr
+                    curr = curr.right
+                    key = leftmost.val
+                    continue
+                break
+        return root
+    
         """
         base case)
             1. not root
@@ -24,10 +72,7 @@ class Solution:
                 case 2) if only one child: swap node to the child, delete child O(1)
                 case 3) if two children: find minimum value(leftmost node) in the rightSubTree
         """
-        
-        # base case
-        if not root:
-            return root
+
 
         # 1) find the node to delete
         if root.val > key:
