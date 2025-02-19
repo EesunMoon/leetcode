@@ -14,10 +14,14 @@ class Solution:
         """
             inorder: left - root - right
                 using prev pointer
-                1. start from root, move pointer while curr.left
-                    append curr -> move right -> move left
+                1. start from root, move pointer until curr.left is none
+                    every iteration, save current ptr in previous and then move ptr to left
+                    if curr.left is none: append curr -> move right -> move left
+
         """
 
+
+        ### DFS O(N) O(H) - stack
         stack = []
         curr = root
         while curr or stack:
@@ -28,7 +32,6 @@ class Solution:
             res.append(curr.val)
             curr = curr.right
         return res
-
 
         ## DFS O(N) O(H) - recursion
         """
