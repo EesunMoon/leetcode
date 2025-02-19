@@ -7,16 +7,27 @@
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
         # [-10, -3, 0, 5, 9]
-        # preorder: node -> left -> right
-        
-        def preorder(l, r):
+        """
+            preorder: parent -> left, right
+            ** height-balanced
+            [-10, -3, 0, 5, 9]
+            l               r
+                      m
+            leftside (l ~ m-1)
+            rightside (m+1 ~ r)
+
+            base case) l > r => return
+        """
+        # TC O(N) SC O(H => logN)
+        def makeGraph(l, r):
+            # base case
             if l > r:
                 return None
             
-            m = (l+r)//2 # parent
-            
-            root = TreeNode(nums[m])
-            root.left = preorder(l, m-1)
-            root.right = preorder(m+1, r)
-            return root
-        return preorder(0, len(nums)-1)
+            m = (l+r)//2
+            node = TreeNode(nums[m])
+            node.left = makeGraph(l, m-1)
+            node.right = makeGraph(m+1, r)
+            return node
+
+        return makeGraph(0, len(nums)-1)
