@@ -7,29 +7,29 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        """
-            recursive: DFS
-                if p is in the right side and q is in the left side -> LCA: root
-                if p is in the right/left side and root is q OR 
-                    q is in the right/left side and root is p       -> LCA: root 
-        """
-        # TC O(N) SC O(H)
-        def dfs(node):
-            # base case:
-            if (not node) or (node == p) or (node == q):
-                return node
+        # """
+        #     recursive: DFS
+        #         if p is in the right side and q is in the left side -> LCA: root
+        #         if p is in the right/left side and root is q OR 
+        #             q is in the right/left side and root is p       -> LCA: root 
+        # """
+        # # TC O(N) SC O(H)
+        # def dfs(node):
+        #     # base case:
+        #     if (not node) or (node == p) or (node == q):
+        #         return node
 
-            # track left subtree and right subtree
-            left = dfs(node.left)
-            right = dfs(node.right)
+        #     # track left subtree and right subtree
+        #     left = dfs(node.left)
+        #     right = dfs(node.right)
 
-            # find p and q in the both side
-            if left and right:
-                return node
+        #     # find p and q in the both side
+        #     if left and right:
+        #         return node
             
-            # there should be exist in one side
-            return left if left else right
-        return dfs(root)
+        #     # there should be exist in one side
+        #     return left if left else right
+        # return dfs(root)
         
 
         # """
@@ -38,21 +38,21 @@ class Solution:
         #         2. use pointer - as detecting circular in the linked list O(N)
 
         # """
-        # ## Total TC O(N) SC O(H)
-        # # 1. add parent information in the node: TC O(N) SC O(H)
-        # def assignParent(curr, parent):
-        #     if curr:
-        #         curr.parent = parent
-        #         assignParent(curr.left, curr)
-        #         assignParent(curr.right, curr)
-        # assignParent(root, None)
+        ## Total TC O(N) SC O(H)
+        # 1. add parent information in the node: TC O(N) SC O(H)
+        def assignParent(curr, parent):
+            if curr:
+                curr.parent = parent
+                assignParent(curr.left, curr)
+                assignParent(curr.right, curr)
+        assignParent(root, None)
 
-        # # 2. find LCA using parent pointer: TC O(N) SC O(1)
-        # p_ptr, q_ptr = p, q
-        # while p_ptr!=q_ptr:
-        #     p_ptr = p_ptr.parent if p_ptr else p
-        #     q_ptr = q_ptr.parent if q_ptr else q
-        # return p_ptr
+        # 2. find LCA using parent pointer: TC O(N) SC O(1)
+        p_ptr, q_ptr = p, q
+        while p_ptr!=q_ptr:
+            p_ptr = p_ptr.parent if p_ptr else p
+            q_ptr = q_ptr.parent if q_ptr else q
+        return p_ptr
         
         
         # """
