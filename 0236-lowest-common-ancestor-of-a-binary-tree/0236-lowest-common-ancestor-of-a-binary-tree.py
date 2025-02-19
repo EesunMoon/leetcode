@@ -8,6 +8,30 @@
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         """
+            recursive: DFS
+                if p is in the right side and q is in the left side -> LCA: root
+                if p is in the right/left side and root is q OR 
+                    q is in the right/left side and root is p       -> LCA: root 
+        """
+        # TC O(N) SC O(H)
+        def dfs(node):
+            # base case:
+            if (not node) or (node == p) or (node == q):
+                return node
+
+            # track left subtree and right subtree
+            left = dfs(node.left)
+            right = dfs(node.right)
+
+            # find p and q in the both side
+            if left and right:
+                return node
+            
+            # there should be exist in one side
+            return left if left else right
+        
+        
+        """
             don't use parent map
                 1. add parent information in the node instead of using parent map
                 2. use pointer - as detecting circular in the linked list O(N)
@@ -78,17 +102,3 @@ class Solution:
                 return curr
             curr = parent_map[curr]
         return None
-
-        """
-        # recursion TC O(N) SC O(N)
-        if not root or root == p or root == q:
-            return root
-        
-        left = self.lowestCommonAncestor(root.left, p, q)
-        right = self.lowestCommonAncestor(root.right, p, q)
-
-        if left and right:
-            return root
-        
-        return left if left else right
-        """
