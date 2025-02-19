@@ -11,6 +11,7 @@ class Solution:
             DFS - return height:: max(left, right) + 1
                 inside: calculate maximum diameter:: res = max(res, 1+left+right)
         """
+        # TC O(N) SC O(H)
         self.res = 0
         def dfs(node): # return height of subTree
             if not node:
