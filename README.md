@@ -143,6 +143,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/EesunMoon/leetcode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/EesunMoon/leetcode/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 | [2792-neighboring-bitwise-xor](https://github.com/EesunMoon/leetcode/tree/master/2792-neighboring-bitwise-xor) |
+| [3429-special-array-i](https://github.com/EesunMoon/leetcode/tree/master/3429-special-array-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/EesunMoon/leetcode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/EesunMoon/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/EesunMoon/leetcode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
