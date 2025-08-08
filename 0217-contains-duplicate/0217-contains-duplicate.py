@@ -1,4 +1,5 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        hashset = set(nums)
-        return len(hashset) != len(nums)
+        # sorting T O(nlogn) S O(1)
+        # hashset T O(n) S O(n)
+        return len(set(nums)) != len(nums)
