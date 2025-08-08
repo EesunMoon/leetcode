@@ -1,18 +1,19 @@
-class Solution(object):
-    def isAnagram(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: bool
-        """
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        # array -> 0~26 T O(n) S O(26)
+        
+        # edge case
         if len(s) != len(t):
             return False
         if set(s) != set(t):
             return False
         
-        countS, countT = {}, {}
-        for idx in range(len(s)):
-            countS[s[idx]] = countS.get(s[idx], 0) + 1
-            countT[t[idx]] = countT.get(t[idx], 0) + 1
+        count = [0] * 26
+        for i in range(len(s)):
+            count[ord(s[i])-ord('a')] += 1
+            count[ord(t[i])-ord('a')] -= 1
         
-        return countS == countT
+        for n in count:
+            if n != 0:
+                return False
+        return True
