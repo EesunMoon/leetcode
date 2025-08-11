@@ -1,5 +1,6 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
+        # T O(2n) S O(1) excluding answer 
         prefix = 1
         
         ans = []
