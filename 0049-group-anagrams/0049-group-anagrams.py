@@ -1,11 +1,11 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        group = defaultdict(list) # (0, 1, ..., 0): [strs1, strs2, ..]
-
-        for elem in strs:
-            count = [0] * 26 # num of lowercase alaphabets
-            for e in elem:
-                count[ord(e)-ord("a")] += 1
-            group[tuple(count)].append(elem)
-
-        return [ elem for elem in group.values() ]
+        
+        hashmap = defaultdict(list) # ord count: [words]
+        for word in strs:
+            count = [0] * 26
+            for w in word:
+                count[ord(w) - ord('a')] += 1
+            hashmap[tuple(count)].append(word)
+        
+        return [ele for ele in hashmap.values()]
