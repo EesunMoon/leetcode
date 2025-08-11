@@ -25,9 +25,11 @@ class Solution:
             heapq.heappush(heap, [values, key])
             while len(heap) > k:
                 heapq.heappop(heap)
-        
+        """
         ans = []
         while heap:
             count, val = heapq.heappop(heap)
             ans.append(val)
         return ans
+        """
+        return [val for _, val in heap]
