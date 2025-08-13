@@ -1,27 +1,28 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
+        """
+        do not contain duplicate triplets
+        """
+        nums.sort()
+        N = len(nums)
         res = []
-        nums.sort() # O(nlogn) to perform binary search
 
-        for k in range(len(nums)-2):
-            # prevent duplicates
-            if k > 0 and nums[k] == nums[k-1]:
+        for i in range(N-2):
+            if i>0 and nums[i] == nums[i-1]:
                 continue
+            l, r = i+1, N-1
 
-            # perform binary search
-            target = nums[k]
-            l, r = k+1, len(nums)-1
-            while l<r:
-                cand = target + nums[l] + nums[r]
-
-                if cand > 0:
-                    r -= 1
-                elif cand < 0:
-                    l += 1
-                else:
-                    res.append([target, nums[l], nums[r]])
+            while l < r:
+                target = nums[i] + nums[l] + nums[r]
+                if target == 0:
+                    res.append([nums[i], nums[l], nums[r]])
                     l += 1
                     while l < r and nums[l] == nums[l-1]:
                         l += 1
+                elif target > 0:
+                    r -= 1
+                else:
+                    l += 1
+
         return res
             
