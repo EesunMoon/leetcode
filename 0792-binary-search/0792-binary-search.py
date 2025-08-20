@@ -1,20 +1,13 @@
-class Solution(object):
-    def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
-        # sorted in ascending order: binary search
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
         l, r = 0, len(nums)-1
 
-        while l<=r:
-            mid = l + ((r-l)//2)
-
-            if nums[mid] > target:
-                r = mid-1
-            elif nums[mid] < target:
-                l = mid+1
-            else:
-                return mid
+        while l <= r:
+            m = (l+r)//2
+            if nums[m] == target:
+                return m
+            elif nums[m] < target: # right boundary
+                l = m + 1
+            else: # left boundary
+                r = m - 1
         return -1
