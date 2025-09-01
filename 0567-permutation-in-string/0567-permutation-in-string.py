@@ -1,32 +1,41 @@
-class Solution(object):
-    def checkInclusion(self, s1, s2):
-        """
-        :type s1: str
-        :type s2: str
-        :rtype: bool
-        """
-        # base case
+class Solution:
+    def checkInclusion(self, s1: str, s2: str) -> bool:
+        # edge case
         if len(s1) > len(s2):
             return False
 
-        # make hashmap
-        h1, h2 = {}, {}
+        # count hashmap in s1 and s2
+        hash1, hash2 = [0] * 26, [0] * 26
         for i in range(len(s1)):
-            h1[s1[i]] = 1 + h1.get(s1[i], 0)
-            h2[s2[i]] = 1 + h2.get(s2[i], 0)
+            hash1[ord(s1[i])-ord("a")] += 1
+            hash2[ord(s2[i])-ord("a")] += 1
         
-        if h1 == h2:
-            return True
-        
+        # matches or not?
+        matches = 0
+        for i in range(26):
+            matches += (1 if hash1[i] == hash2[i] else 0)
+
+        # sliding window
         l = 0
         for r in range(len(s1), len(s2)):
-            h2[s2[l]] -= 1
-            if h2[s2[l]] == 0:
-                del h2[s2[l]]
-            l += 1
-            h2[s2[r]] = 1 + h2.get(s2[r], 0)
-
-            if h1 == h2:
+            if matches == 26:
                 return True
-        return False
-
+            
+            # increasing window (right)
+            index = ord(s2[r]) - ord("a")
+            hash2[index] += 1
+            if hash1[index] == hash2[index]:
+                matches += 1
+            elif hash1[index] + 1 == hash2[index]:
+                matches -= 1
+            
+            # decreasing window (left)
+            index = ord(s2[l]) - ord("a")
+            hash2[index] -= 1
+            if hash1[index] == hash2[index]:
+                matches += 1
+            elif hash1[index] - 1 == hash2[index]:
+                matches -= 1
+            l += 1
+        
+        return matches == 26
