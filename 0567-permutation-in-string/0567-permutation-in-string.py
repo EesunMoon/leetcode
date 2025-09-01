@@ -26,7 +26,7 @@ class Solution:
             hash2[index] += 1
             if hash1[index] == hash2[index]:
                 matches += 1
-            elif hash1[index] + 1 == hash2[index]:
+            elif hash1[index]+1 == hash2[index]:
                 matches -= 1
             
             # decreasing window (left)
@@ -34,7 +34,7 @@ class Solution:
             hash2[index] -= 1
             if hash1[index] == hash2[index]:
                 matches += 1
-            elif hash1[index] - 1 == hash2[index]:
+            elif hash1[index]-1 == hash2[index]:
                 matches -= 1
             l += 1
         
