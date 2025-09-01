@@ -1,36 +1,34 @@
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
-        # TC O(n) SC O(m)
-        # n: the length of the string s, 
-        # m: the total number of unique characters in the strings t and s
-
-        if t == "":
+        # base case
+        if len(s) < len(t) or t == "":
             return ""
-
-        hasht, window = {}, {} # c: freq
-        for c in t:
-            hasht[c] = 1 + hasht.get(c, 0)
         
-        need, have = len(hasht), 0
-        res, reslen = [-1, -1], float("inf")
+        countT, window = {}, {}
+        for c in t:
+            countT[c] = 1 + countT.get(c, 0)
+        
+        have, need = 0, len(countT) # unique char
+        res, resLen = [-1, -1], float("inf")
         l = 0
         for r in range(len(s)):
             c = s[r]
             window[c] = 1 + window.get(c, 0)
 
-            if c in hasht and window[c] == hasht[c]:
+            # just satisfy the condition
+            if c in countT and window[c] == countT[c]:
                 have += 1
             
             while have == need:
                 # update result
-                if (r-l+1) < reslen:
-                    res = [l, r]
-                    reslen = (r-l+1)
-                
-                # shrink
+                if (r-l+1) < resLen:
+                    res, resLen = [l, r], (r-l+1)
+
+                # shrinking the window (left)
                 window[s[l]] -= 1
-                if s[l] in hasht and window[s[l]] < hasht[s[l]]:
+                if s[l] in countT and window[s[l]] < countT[s[l]]:
                     have -= 1
                 l += 1
+        
         l, r = res
-        return s[l:r+1] if reslen != float("inf") else ""
+        return s[l:r+1] if resLen != float("inf") else ""
