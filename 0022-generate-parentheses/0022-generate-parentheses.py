@@ -1,27 +1,29 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        """
-        n =3, ((( )))
-            1. No.Closing < No.Open -> )
-            2. No.Open < n -> (
-            N*2^N
-        """
-        res = []
+        # 1) only add open parenthesis if open < n
+        # 2) only add closing parenthesis if closed < open
+        # 3) valid IF open == closed == n
+
         stack = []
-        def backtracking(o, c):
-            if o == n and c == n:
-                res.append("".join(stack[::]))
+        res = []
+
+        def backtrack(openN, closedN):
+            # valid case
+            if openN == closedN == n:
+                res.append("".join(stack))
                 return
             
-            if o < n:
+            # add open parenthesis condition
+            if openN < n:
                 stack.append("(")
-                backtracking(o+1, c)
+                backtrack(openN+1, closedN)
                 stack.pop()
             
-            if c < o:
+            # add closing parethesis condition
+            if closedN < openN:
                 stack.append(")")
-                backtracking(o, c+1)
+                backtrack(openN, closedN+1)
                 stack.pop()
 
-        backtracking(0,0)
+        backtrack(0, 0)
         return res
