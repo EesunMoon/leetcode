@@ -1,27 +1,21 @@
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
-        # deque: store index (in decreasing order)
-        # deque[0]: maximum number's index
-
-        # T O(n) S O(n)
-        
-        queue = deque()
-        l = 0 # left boundary
+        q = collections.deque()
         res = []
+        l = 0
+
         for r in range(len(nums)):
-            # r: right boundary
+            # monotonic decreasing queue
+            while q and nums[q[-1]] < nums[r]:
+                q.pop()
+            q.append(r)
 
-            # making queue in decreasing order(value) before adding index in queue
-            while queue and nums[queue[-1]] < nums[r]:
-                queue.pop()
-            queue.append(r) # store index
-
-            # check queue is out of boundry
-            if queue[0] < l:
-                queue.popleft()
+            # shirink window: remove leftmost value
+            if l > q[0]:
+                q.popleft()
             
-            # check sliding window size
-            if (r-l+1) == k:
-                res.append(nums[queue[0]])
-                l+=1
+            if (r+1) >= k:
+                res.append(nums[q[0]])
+                l += 1
+
         return res
