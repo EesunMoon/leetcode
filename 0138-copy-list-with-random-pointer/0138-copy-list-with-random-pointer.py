@@ -9,30 +9,25 @@ class Node:
 
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
-        hashmap = {} # existed: address
+        hashmap = {}
         dummy = Node(0)
-        
-        # copy key and next pointer
-        prt = dummy
-        curr = head
+        curr, point = head, dummy
+
         while curr:
-            NewNode = Node(curr.val) # make new node
-            prt.next = NewNode # connect new node
-            hashmap[curr] = NewNode # save in hashmap
+            newNode = Node(curr.val)
+            hashmap[curr] = newNode # oldNode: newNode
+            point.next = newNode
 
-            # move pointer both new pointer and existed pointer
-            prt = prt.next
             curr = curr.next
+            point = point.next
 
-        # copy random pointer
-        prt = dummy.next
-        curr = head
+        curr, point = head, dummy.next
         while curr:
-            rand = curr.random
-            if rand:
-                prt.random = hashmap[rand]
+            target = curr.random # random can point None or any nodes
+            if target:
+                point.random = hashmap[target]
 
-            prt = prt.next
             curr = curr.next
-        
+            point = point.next
+
         return dummy.next
