@@ -9,10 +9,13 @@ class Node:
 
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
+        # TC O(N) SC O(N)
+
+        # 1) create Map (oldNode: newNode) by making new node and connecting next pointer
         hashmap = {}
         dummy = Node(0)
         curr, point = head, dummy
-
+        
         while curr:
             newNode = Node(curr.val)
             hashmap[curr] = newNode # oldNode: newNode
@@ -21,6 +24,7 @@ class Solution:
             curr = curr.next
             point = point.next
 
+        # 2) connect random pointer using hashmap
         curr, point = head, dummy.next
         while curr:
             target = curr.random # random can point None or any nodes
