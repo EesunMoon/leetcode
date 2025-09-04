@@ -1,12 +1,6 @@
-class Solution(object):
-    def findDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        # Floud's algorithm - two pointer (slow/fast)
-        
-        # phase 1) detect cycle
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        # 1st phase: find the intersection
         slow, fast = 0, 0
         while True:
             slow = nums[slow]
@@ -14,7 +8,7 @@ class Solution(object):
             if slow == fast:
                 break
         
-        # phase 2) find intersection point
+        # 2nd phase: find starting cycle point
         slow2 = 0
         while True:
             slow = nums[slow]
