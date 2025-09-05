@@ -4,34 +4,30 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        def reversek(nodeHead):
-            previous_node = None
-            current_node = nodeHead
-            for _ in range(k):
-                next_node = current_node.next
-                current_node.next = previous_node
-                previous_node = current_node
-                current_node = next_node
-            return previous_node
-                
-        dummy = ListNode() # dummy
-        previous = dummy
-        curr = head
+    def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:  
+        dummy = ListNode(0, head)
+        groupPrev = dummy
 
-        while curr:
-            nxt = curr
-            cnt = k
-            while nxt and cnt > 0:
-                nxt = nxt.next
-                cnt -= 1
-            # enough to reverse
-            if cnt == 0:
-                previous.next = reversek(curr) # return the head of reverse node
-                curr.next = nxt # connect the two set of nodes
-                previous = curr
-                curr = curr.next # move pointer
-            else:
+        while True:
+            kth = self.getKth(groupPrev, k)
+            if not kth:
                 break
-        
+            groupNext = kth.next
+
+            # reverse group
+            prev, curr = groupNext, groupPrev.next
+            while curr != groupNext:
+                nxt = curr.next
+                curr.next = prev
+                prev = curr
+                curr = nxt
+            tmp = groupPrev.next
+            groupPrev.next = kth
+            groupPrev = tmp
         return dummy.next
+
+    def getKth(self, curr, k):
+        while curr and k > 0:
+            curr = curr.next
+            k -= 1
+        return curr
