@@ -1,17 +1,7 @@
-class Solution(object):
-    def canAttendMeetings(self, intervals):
-        """
-        :type intervals: List[List[int]]
-        :rtype: bool
-        """
-        if not intervals:
-            return True
-        
-        intervals.sort(key=lambda x:x[0])
-        endTime = intervals[0][1]
-        for idx in range(1, len(intervals)):
-            if endTime > intervals[idx][0]:
+class Solution:
+    def canAttendMeetings(self, intervals: List[List[int]]) -> bool:
+        intervals.sort()
+        for i in range(1, len(intervals)):
+            if intervals[i-1][1] > intervals[i][0]:
                 return False
-            endTime = intervals[idx][1]
         return True
-        
