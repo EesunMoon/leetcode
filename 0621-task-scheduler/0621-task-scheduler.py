@@ -1,28 +1,23 @@
 class Solution:
     def leastInterval(self, tasks: List[str], n: int) -> int:
-        # use most frequently element first <- maxHeap (freq)
-        # tracking the interval <- Queue ([freq, time])
-
-        # define hashmap O(n)
-        count = {}
+        # 1) freqmap
+        freqmap = {}
         for task in tasks:
-            count[task] = 1 + count.get(task, 0)
+            freqmap[task] = 1 + freqmap.get(task, 0)
         
-        # define max_heap, deque
-        max_heap = [-cnt for cnt in count.values()]
-        heapq.heapify(max_heap)
-        Q = deque() # store [freq, time to be able to use]
-        
-        time = 0
-        while max_heap or Q:
-            time += 1
-            if max_heap:
-                freq = 1 + heapq.heappop(max_heap) # max heap
-                if freq:
-                    Q.append([freq, time+n]) 
-            
-            # use this task
-            if Q and Q[0][1] == time:
-                freq, t = Q.popleft()
-                heapq.heappush(max_heap, freq)
-        return time
+        # 2) maxHeap TC O(log26)
+        maxHeap = [-cnt for cnt in freqmap.values()]
+        heapq.heapify(maxHeap)
+
+        t = 0
+        q = deque() # [-cnt, idleTime]
+        while maxHeap or q:
+            t += 1
+            if maxHeap:
+                cnt = 1+heapq.heappop(maxHeap)
+                if cnt:
+                    q.append([cnt, t+n])
+            if q and q[0][1] == t:
+                heapq.heappush(maxHeap, q.popleft()[0]) # we can use this
+
+        return t
