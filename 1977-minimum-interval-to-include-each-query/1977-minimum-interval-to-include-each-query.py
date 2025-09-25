@@ -1,26 +1,18 @@
-class Solution(object):
-    def minInterval(self, intervals, queries):
-        """
-        :type intervals: List[List[int]]
-        :type queries: List[int]
-        :rtype: List[int]
-        """
-        intervals.sort() # O(nlogn)
-        minHeap = [] # (length, right) to return shortest length
-        res, i = {}, 0 # hashmap - map query to length
+class Solution:
+    def minInterval(self, intervals: List[List[int]], queries: List[int]) -> List[int]:
+        sizes = [] # minheap [size, right]
+        intervals.sort()
+        idx = 0 # intervals index
+        mapping = {} # query: size
 
-        # O(qlogq)
         for q in sorted(queries):
-            # add element into minHeap
-            while i<len(intervals) and intervals[i][0] <= q:
-                l, r = intervals[i]
-                heapq.heappush(minHeap, (r-l+1, r))
-                i+=1
+            while idx < len(intervals) and intervals[idx][0] <= q:
+                l, r = intervals[idx]
+                heapq.heappush(sizes, [r-l+1, r])
+                idx += 1
             
-            # pop invalid element in the minHeap
-            while minHeap and minHeap[0][1] < q:
-                heapq.heappop(minHeap)
+            while sizes and sizes[0][1] < q:
+                heapq.heappop(sizes)
+            mapping[q] = sizes[0][0] if sizes else -1
 
-            res[q] = minHeap[0][0] if minHeap else -1
-            
-        return [res[q] for q in queries]
+        return [ mapping[q] for q in queries]
