@@ -1,18 +1,11 @@
-class Solution(object):
-    def kClosest(self, points, k):
-        dist = []
-        def euclidean(x, y):
-            return x**2 + y**2
+class Solution:
+    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        dists = [] # max heap (- dist, idx)
 
-        for x, y in points:
-            heapq.heappush(dist, [-euclidean(x, y), [x, y]])
-
-            if len(dist) > k:
-                heapq.heappop(dist)
-        
-        ans = []
-        while dist:
-            d, point = heapq.heappop(dist)
-            ans.append(point)
-        
-        return ans
+        for i in range(len(points)):
+            dist = -(points[i][0]**2 + points[i][1]**2)
+            heapq.heappush(dists, (dist, i))
+            if len(dists) > k:
+                heapq.heappop(dists)
+        return [points[i] for _, i in dists]
+            
