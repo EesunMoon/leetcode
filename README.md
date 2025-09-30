@@ -453,6 +453,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/EesunMoon/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/EesunMoon/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/EesunMoon/leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [0460-lfu-cache](https://github.com/EesunMoon/leetcode/tree/master/0460-lfu-cache) |
 | [0491-non-decreasing-subsequences](https://github.com/EesunMoon/leetcode/tree/master/0491-non-decreasing-subsequences) |
 | [0496-next-greater-element-i](https://github.com/EesunMoon/leetcode/tree/master/0496-next-greater-element-i) |
 | [0525-contiguous-array](https://github.com/EesunMoon/leetcode/tree/master/0525-contiguous-array) |
@@ -754,6 +755,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0359-logger-rate-limiter](https://github.com/EesunMoon/leetcode/tree/master/0359-logger-rate-limiter) |
 | [0362-design-hit-counter](https://github.com/EesunMoon/leetcode/tree/master/0362-design-hit-counter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/EesunMoon/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+| [0460-lfu-cache](https://github.com/EesunMoon/leetcode/tree/master/0460-lfu-cache) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0817-design-hashmap](https://github.com/EesunMoon/leetcode/tree/master/0817-design-hashmap) |
 | [0860-design-circular-queue](https://github.com/EesunMoon/leetcode/tree/master/0860-design-circular-queue) |
@@ -824,6 +826,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/EesunMoon/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/EesunMoon/leetcode/tree/master/0328-odd-even-linked-list) |
 | [0355-design-twitter](https://github.com/EesunMoon/leetcode/tree/master/0355-design-twitter) |
+| [0460-lfu-cache](https://github.com/EesunMoon/leetcode/tree/master/0460-lfu-cache) |
 | [0817-design-hashmap](https://github.com/EesunMoon/leetcode/tree/master/0817-design-hashmap) |
 | [0860-design-circular-queue](https://github.com/EesunMoon/leetcode/tree/master/0860-design-circular-queue) |
 | [0908-middle-of-the-linked-list](https://github.com/EesunMoon/leetcode/tree/master/0908-middle-of-the-linked-list) |
@@ -1086,6 +1089,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/EesunMoon/leetcode/tree/master/0146-lru-cache) |
+| [0460-lfu-cache](https://github.com/EesunMoon/leetcode/tree/master/0460-lfu-cache) |
 ## Binary Indexed Tree
 |  |
 | ------- |
