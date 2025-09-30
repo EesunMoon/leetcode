@@ -10,13 +10,13 @@ class Solution:
         buf4 = ['']*4
 
         while cnt < n:
-            if len(self.to_load) == 0:
-                for i in range(read4(buf4)):
-                    self.to_load.append(buf4[i])
-                if len(self.to_load) == 0:
+            if not self.to_load:
+                k = read4(buf4)
+                if k == 0: # EOF
                     break
-            else:
-                buf[cnt] = self.to_load.popleft()
-                cnt += 1
+                self.to_load.extend(buf4[:k])
+            
+            buf[cnt] = self.to_load.popleft()
+            cnt += 1
         return cnt
         
