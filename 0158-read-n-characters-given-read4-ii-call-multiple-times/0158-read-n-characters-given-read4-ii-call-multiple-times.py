@@ -14,7 +14,8 @@ class Solution:
                 k = read4(buf4)
                 if k == 0: # EOF
                     break
-                self.to_load.extend(buf4[:k])
+                for i in range(k):
+                    self.to_load.append(buf4[i])
             
             buf[cnt] = self.to_load.popleft()
             cnt += 1
