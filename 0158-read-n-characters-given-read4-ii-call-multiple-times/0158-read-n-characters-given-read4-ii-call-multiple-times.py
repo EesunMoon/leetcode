@@ -7,7 +7,7 @@ class Solution:
 
     def read(self, buf: List[str], n: int) -> int:
         cnt = 0
-        buf4 = [''] *4
+        buf4 = ['']*4
 
         while cnt < n:
             if len(self.to_load) == 0:
