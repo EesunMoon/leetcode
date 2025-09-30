@@ -516,6 +516,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2279-maximum-split-of-positive-even-integers](https://github.com/EesunMoon/leetcode/tree/master/2279-maximum-split-of-positive-even-integers) |
 | [2383-add-two-integers](https://github.com/EesunMoon/leetcode/tree/master/2383-add-two-integers) |
 | [2629-number-of-substrings-with-fixed-ratio](https://github.com/EesunMoon/leetcode/tree/master/2629-number-of-substrings-with-fixed-ratio) |
+| [2663-distribute-money-to-maximum-children](https://github.com/EesunMoon/leetcode/tree/master/2663-distribute-money-to-maximum-children) |
 ## Tree
 |  |
 | ------- |
@@ -1051,6 +1052,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2279-maximum-split-of-positive-even-integers](https://github.com/EesunMoon/leetcode/tree/master/2279-maximum-split-of-positive-even-integers) |
 | [2354-minimum-health-to-beat-game](https://github.com/EesunMoon/leetcode/tree/master/2354-minimum-health-to-beat-game) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/EesunMoon/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
+| [2663-distribute-money-to-maximum-children](https://github.com/EesunMoon/leetcode/tree/master/2663-distribute-money-to-maximum-children) |
 ## Geometry
 |  |
 | ------- |
