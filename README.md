@@ -80,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/EesunMoon/leetcode/tree/master/0322-coin-change) |
 | [0346-moving-average-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0346-moving-average-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/EesunMoon/leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0362-design-hit-counter](https://github.com/EesunMoon/leetcode/tree/master/0362-design-hit-counter) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/EesunMoon/leetcode/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0380-insert-delete-getrandom-o1](https://github.com/EesunMoon/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -165,6 +166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0278-first-bad-version](https://github.com/EesunMoon/leetcode/tree/master/0278-first-bad-version) |
 | [0287-find-the-duplicate-number](https://github.com/EesunMoon/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/EesunMoon/leetcode/tree/master/0300-longest-increasing-subsequence) |
+| [0362-design-hit-counter](https://github.com/EesunMoon/leetcode/tree/master/0362-design-hit-counter) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/EesunMoon/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0792-binary-search](https://github.com/EesunMoon/leetcode/tree/master/0792-binary-search) |
 | [0794-swim-in-rising-water](https://github.com/EesunMoon/leetcode/tree/master/0794-swim-in-rising-water) |
@@ -730,6 +732,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0346-moving-average-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0346-moving-average-from-data-stream) |
 | [0355-design-twitter](https://github.com/EesunMoon/leetcode/tree/master/0355-design-twitter) |
 | [0359-logger-rate-limiter](https://github.com/EesunMoon/leetcode/tree/master/0359-logger-rate-limiter) |
+| [0362-design-hit-counter](https://github.com/EesunMoon/leetcode/tree/master/0362-design-hit-counter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/EesunMoon/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0817-design-hashmap](https://github.com/EesunMoon/leetcode/tree/master/0817-design-hashmap) |
@@ -826,6 +829,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/EesunMoon/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0346-moving-average-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0346-moving-average-from-data-stream) |
+| [0362-design-hit-counter](https://github.com/EesunMoon/leetcode/tree/master/0362-design-hit-counter) |
 | [0387-first-unique-character-in-a-string](https://github.com/EesunMoon/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0860-design-circular-queue](https://github.com/EesunMoon/leetcode/tree/master/0860-design-circular-queue) |
 ## Data Stream
@@ -834,6 +838,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0346-moving-average-from-data-stream](https://github.com/EesunMoon/leetcode/tree/master/0346-moving-average-from-data-stream) |
 | [0359-logger-rate-limiter](https://github.com/EesunMoon/leetcode/tree/master/0359-logger-rate-limiter) |
+| [0362-design-hit-counter](https://github.com/EesunMoon/leetcode/tree/master/0362-design-hit-counter) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/EesunMoon/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0937-online-stock-span](https://github.com/EesunMoon/leetcode/tree/master/0937-online-stock-span) |
 ## Matrix
