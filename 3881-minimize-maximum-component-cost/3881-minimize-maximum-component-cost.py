@@ -1,49 +1,33 @@
+class DSU:
+    def __init__(self, n):
+        self.p = list(range(n))
+        self.r = [0]*n
+        self.cc = n
+    def find(self, x):
+        while self.p[x] != x:
+            self.p[x] = self.p[self.p[x]]
+            x = self.p[x]
+        return x
+    def union(self, a, b):
+        ra, rb = self.find(a), self.find(b)
+        if ra==rb:
+            return False
+        if self.r[ra] < self.r[rb]:
+            ra, rb = rb, ra
+        self.p[rb] = ra
+        if self.r[ra] == self.r[rb]:
+            self.r[ra] += 1
+        self.cc -= 1
+        return True
+
 class Solution:
     def minCost(self, n: int, edges: List[List[int]], k: int) -> int:
         if n <= k:
             return 0
-        
-        res = float("inf")
-        l, r = 0, 0
-        for _, _, w in edges:
-            r = max(r, w)
-
-        def bfs(thres):
-            adj = collections.defaultdict(list)
-            # only include the edge's weight is lower than thres
-            for u, v, w in edges:
-                if w <= thres:
-                    adj[u].append([v,w])
-                    adj[v].append([u,w])
-
-            cnt, maxC = 0, 0
-            q = collections.deque()
-            visited = set()
-            for node in range(n):
-                if node in visited:
-                    continue
-                q.append(node)
-                visited.add(node)
-                while q:
-                    curr = q.popleft()
-                    if curr not in adj:
-                        continue
-                    for nei, w in adj[curr]:
-                        if nei not in visited:
-                            q.append(nei)
-                            visited.add(nei)
-                            maxC = max(maxC, w)
-                cnt += 1
-            return cnt, maxC
-                    
-        while l<=r:
-            m = (l+r)//2
-            cnt, maxC = bfs(m)
-            if cnt > k: # threshold is too small
-                l = m+1
-            else: # threshold is too big
-                res = min(res, maxC)
-                r = m-1
-            
-        return res
-            
+        edges_sorted = sorted(edges, key=lambda x:x[2])
+        dsu=DSU(n)
+        for u, v, w in edges_sorted:
+            if dsu.union(u, v):
+                if dsu.cc <=k:
+                    return w
+        return 0
