@@ -1,45 +1,29 @@
-class Node:
-    def __init__(self, key, val, prev=None, next=None):
-        self.key = key
-        self.val = val
-        self.prev = prev
-        self.next = next
-
 class LRUCache:
+
     def __init__(self, capacity: int):
-        self.capacity = capacity
-        self.hashmap = {} # key: address
-        self.head, self.tail = Node(0, 0), Node(0,0)
-        self.head.next, self.tail.prev = self.tail, self.head
+        self.cap = capacity
+        self.Map = collections.OrderedDict()
 
-    def add(self, newNode):
-        LLU = self.tail.prev
-        LLU.next = self.tail.prev = newNode
-        newNode.prev, newNode.next = LLU, self.tail
+    def touch(self, key):
+        val = self.Map.pop(key)
+        self.Map[key] = val
 
-    def delete(self, node):
-        prevNode, nextNode = node.prev, node.next
-        prevNode.next, nextNode.prev = nextNode, prevNode
-        
     def get(self, key: int) -> int:
-        if key in self.hashmap:
-            self.delete(self.hashmap[key])
-            self.add(self.hashmap[key])
-            return self.hashmap[key].val
-        return -1
+        if key not in self.Map:
+            return -1
+        self.touch(key)
+        return self.Map[key]
 
     def put(self, key: int, value: int) -> None:
-        if key in self.hashmap:
-            self.delete(self.hashmap[key])
-
-        newNode = Node(key, value)
-        self.hashmap[key] = newNode
-        self.add(newNode)
+        if key in self.Map:
+            self.Map[key] = value
+            self.touch(key)
+            return
+        if len(self.Map) == self.cap:
+            self.Map.popitem(last=False)
+        self.Map[key] = value
         
-        if len(self.hashmap) > self.capacity: # delete LRU
-            LRU = self.head.next
-            self.delete(LRU)
-            del self.hashmap[LRU.key]
+
 
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
