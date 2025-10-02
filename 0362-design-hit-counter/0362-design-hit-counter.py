@@ -16,11 +16,23 @@ class HitCounter:
     def __init__(self):
         self.count = 0
         # self.q = collections.deque()
-        self.q = []
-        
+        # self.q = []
+        self.hits = [0] * 300
+        self.time = [0] * 300
+
     def hit(self, timestamp: int) -> None:
         # append timestamp into the deque , count the total counts --> T O(1)
-        self.q.append(timestamp)
+        # self.q.append(timestamp)
+        # self.count += 1
+
+        i = timestamp%300
+        if self.time[i] != timestamp: # old timestamp
+            self.count -= self.hits[i]
+            self.time[i] = timestamp
+            self.hits[i] = 1
+        else:
+            self.hits[i] += 1
+        
         self.count += 1
     
     def binarysearch(self, timestamp):
@@ -41,7 +53,13 @@ class HitCounter:
         # while self.q and self.q[0] <= (timestamp-300):
         #     self.q.popleft()
         #     self.count -= 1
-        return self.count - (self.binarysearch(timestamp)+1)
+        # return self.count - (self.binarysearch(timestamp)+1)
+        for i in range(300):
+            if timestamp-self.time[i] >= 300:
+                self.count -= self.hits[i]
+                self.hits[i] = 0
+                self.time[i] = 0
+        return self.count
        
 
 
