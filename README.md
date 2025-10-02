@@ -122,6 +122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0948-sort-an-array](https://github.com/EesunMoon/leetcode/tree/master/0948-sort-an-array) |
 | [0965-unique-email-addresses](https://github.com/EesunMoon/leetcode/tree/master/0965-unique-email-addresses) |
 | [1002-maximum-width-ramp](https://github.com/EesunMoon/leetcode/tree/master/1002-maximum-width-ramp) |
+| [1009-pancake-sorting](https://github.com/EesunMoon/leetcode/tree/master/1009-pancake-sorting) |
 | [1014-k-closest-points-to-origin](https://github.com/EesunMoon/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1036-rotting-oranges](https://github.com/EesunMoon/leetcode/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/EesunMoon/leetcode/tree/master/1046-max-consecutive-ones-iii) |
@@ -225,6 +226,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0876-hand-of-straights](https://github.com/EesunMoon/leetcode/tree/master/0876-hand-of-straights) |
 | [0883-car-fleet](https://github.com/EesunMoon/leetcode/tree/master/0883-car-fleet) |
 | [0948-sort-an-array](https://github.com/EesunMoon/leetcode/tree/master/0948-sort-an-array) |
+| [1009-pancake-sorting](https://github.com/EesunMoon/leetcode/tree/master/1009-pancake-sorting) |
 | [1014-k-closest-points-to-origin](https://github.com/EesunMoon/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1094-matrix-cells-in-distance-order](https://github.com/EesunMoon/leetcode/tree/master/1094-matrix-cells-in-distance-order) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/EesunMoon/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
@@ -338,6 +340,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0874-backspace-string-compare](https://github.com/EesunMoon/leetcode/tree/master/0874-backspace-string-compare) |
 | [0908-middle-of-the-linked-list](https://github.com/EesunMoon/leetcode/tree/master/0908-middle-of-the-linked-list) |
 | [1002-maximum-width-ramp](https://github.com/EesunMoon/leetcode/tree/master/1002-maximum-width-ramp) |
+| [1009-pancake-sorting](https://github.com/EesunMoon/leetcode/tree/master/1009-pancake-sorting) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/EesunMoon/leetcode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1894-merge-strings-alternately](https://github.com/EesunMoon/leetcode/tree/master/1894-merge-strings-alternately) |
@@ -1067,6 +1070,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/EesunMoon/leetcode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
 | [0876-hand-of-straights](https://github.com/EesunMoon/leetcode/tree/master/0876-hand-of-straights) |
+| [1009-pancake-sorting](https://github.com/EesunMoon/leetcode/tree/master/1009-pancake-sorting) |
 | [1126-minimum-cost-to-connect-sticks](https://github.com/EesunMoon/leetcode/tree/master/1126-minimum-cost-to-connect-sticks) |
 | [1762-furthest-building-you-can-reach](https://github.com/EesunMoon/leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/EesunMoon/leetcode/tree/master/2026-merge-triplets-to-form-target-triplet) |
