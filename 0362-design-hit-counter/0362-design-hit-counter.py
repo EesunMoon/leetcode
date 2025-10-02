@@ -1,21 +1,30 @@
 class HitCounter:
-    # in chronological order
+    # past 300 seconds
+    # 1, 3, 5, 400, 400, 401
+    # 1, 2, 3, 300 << queue(deque)
+    # get: 4 ->> 3
+    # get: 300 (0~300) ->> 4
+    # get: 301 (0~301) ->> 3
+    # 200
+
     def __init__(self):
-        self.hits = deque([])
-        self.total = 0
+        self.count = 0
+        self.q = collections.deque()
         
     def hit(self, timestamp: int) -> None:
-        self.hits.append(timestamp) # monotonically increasing
-        self.total += 1
+        # append timestamp into the deque , count the total counts --> T O(1)
+        self.q.append(timestamp)
+        self.count += 1
 
     def getHits(self, timestamp: int) -> int:
-        """ (timestamp-300) ~ (timestamp) """
-        while (self.hits) and (self.hits[0] <= timestamp-300): 
-            self.hits.popleft()
-            self.total -= 1
-        return self.total
-        
+        # remove the elements in deque, which is out out the bound (q[0] < timestamp-300)
+        while self.q and self.q[0] <= (timestamp-300):
+            self.q.popleft()
+            self.count -= 1
+        return self.count
 
+
+        
 
 
 # Your HitCounter object will be instantiated and called as such:
