@@ -1,24 +1,17 @@
-class Solution(object):
-    def searchMatrix(self, matrix, target):
-        """
-        :type matrix: List[List[int]]
-        :type target: int
-        :rtype: bool
-        """
-        # base case
-        if not matrix:
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        ROWS, COLS = len(matrix), len(matrix[0])
+        if ROWS == 0 and COLS == 0:
             return False
+        
+        c, r = 0, ROWS-1
 
-        n, m = len(matrix), len(matrix[0])
-        row, col = 0, m-1
-        while row < n and col >= 0:
-            if matrix[row][col] == target:
-                return True
-            elif matrix[row][col] > target:
-                col-=1
+        while c < COLS and r >=0:
+            if matrix[r][c] > target:
+                r -= 1
+            elif matrix[r][c] < target:
+                c += 1
             else:
-                row+=1
-
+                return True
         return False
 
-        
