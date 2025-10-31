@@ -1,6 +1,13 @@
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         newStart, newEnd = newInterval
+        if not intervals:
+            return [newInterval]
+        if newEnd < intervals[0][0]: # in the first location
+            return [newInterval] + intervals
+        if newStart > intervals[-1][1]:
+            return intervals + [newInterval]
+        
         res = []
         for i in range(len(intervals)):
             currStart, currEnd = intervals[i]
