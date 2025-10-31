@@ -1,11 +1,9 @@
 class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
-        dists = [] # max heap (- dist, idx)
-
-        for i in range(len(points)):
-            dist = -(points[i][0]**2 + points[i][1]**2)
-            heapq.heappush(dists, (dist, i))
-            if len(dists) > k:
-                heapq.heappop(dists)
-        return [points[i] for _, i in dists]
-            
+        res = [] # heap (-dist, (x, y)) O(klogk) O(k)
+        for x, y in points:
+            dist = x**2 + y**2
+            heapq.heappush(res, (-dist, (x, y)))
+            if len(res) > k:
+                heapq.heappop(res)
+        return [[x, y] for _, (x, y) in res]
