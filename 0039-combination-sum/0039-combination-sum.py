@@ -8,15 +8,13 @@ class Solution:
             if curr == target:
                 res.append(cand.copy())
                 return # find
-            if i >= len(candidates) or curr > target:
+            if curr > target:
                 return # invalid
             
-            # first decision - include current value
-            cand.append(candidates[i])
-            dfs(i, curr+candidates[i], cand)
-            # other decision - not include
-            cand.pop()
-            dfs(i+1, curr, cand)
+            for j in range(i, len(candidates)):
+                cand.append(candidates[j])
+                dfs(j, curr + candidates[j], cand)
+                cand.pop()
         
         dfs(0, 0, [])
         return res
