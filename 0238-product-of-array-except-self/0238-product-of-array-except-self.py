@@ -1,14 +1,14 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        # T O(2n) S O(1) excluding answer 
+        res = []
+
         prefix = 1
-        
-        ans = []
-        for n in nums:
-            ans.append(prefix)
-            prefix *= n
-        prefix = 1
-        for i in range(len(nums)-1, -1, -1):
-            ans[i] *= prefix
+        for i in range(len(nums)):
+            res.append(prefix)
             prefix *= nums[i]
-        return ans
+        
+        prefix = 1 # suffix
+        for i in range(len(nums)-1, -1, -1):
+            res[i] *= prefix
+            prefix *= nums[i]
+        return res
