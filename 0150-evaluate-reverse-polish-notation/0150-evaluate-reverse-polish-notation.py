@@ -3,17 +3,19 @@ class Solution:
         stack = []
         for t in tokens:
             if t in "+-*/":
-                val = stack.pop()
+                v = stack.pop()
                 if t == "+":
-                    stack[-1] += val
+                    stack[-1] += v
                 elif t == "-":
-                    stack[-1] -= val
+                    stack[-1] -= v
                 elif t == "*":
-                    stack[-1] *= val
+                    stack[-1] *= v
                 else:
-                    # (1) truncates toward zero, (2) minus
-                    stack[-1] = int(stack[-1] / float(val))
+                    v2 = stack.pop()
+                    val = abs(v2) // abs(v)
+                    if v2*v < 0:
+                        val *= -1
+                    stack.append(val)
             else:
                 stack.append(int(t))
-        
         return stack[0]
