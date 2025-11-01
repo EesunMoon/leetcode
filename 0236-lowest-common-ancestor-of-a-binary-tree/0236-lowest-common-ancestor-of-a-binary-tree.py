@@ -1,34 +1,37 @@
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+        self.parent = None
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-
-        # 1) parents info: from root to the p and q -> TC O(n) SC O(n)
-        parent ={root: None}
+        # 1. parent map
+        parMap = {root:None}
         stack = [root]
-        while p not in parent or q not in parent:
-            curr = stack.pop()
-            if curr.left:
-                parent[curr.left] = curr
-                stack.append(curr.left)
-            if curr.right:
-                parent[curr.right] = curr
-                stack.append(curr.right)
+        while stack:
+            node = stack.pop()
+            if node.left:
+                parMap[node.left] = node
+                stack.append(node.left)
+            if node.right:
+                parMap[node.right] = node
+                stack.append(node.right)
+            if p in parMap and q in parMap:
+                break
         
-        # 2) save p's ancestor set
-        p_anc = set()
+        # 2. p_parent
+        cand = set()
         while p:
-            p_anc.add(p)
-            p = parent[p]
-
-        # 3) find LCA by tracking nodes from q to root
+            cand.add(p)
+            p = parMap[p]
+        
+        # 3. find LCA
         while q:
-            if q in p_anc:
+            if q in cand:
                 return q
-            q = parent[q]
-
+            q = parMap[q]
+        
+        return None
