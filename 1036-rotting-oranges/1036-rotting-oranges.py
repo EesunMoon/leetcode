@@ -13,7 +13,7 @@ class Solution:
 
         fresh = 0
         q = deque()
-        res = -1
+        res = 0
         ROWS, COLS = len(grid), len(grid[0])
         for r in range(ROWS):
             for c in range(COLS):
@@ -28,7 +28,7 @@ class Solution:
             return -1
 
         directions = [(0,1), (0,-1),(1,0),(-1,0)]
-        while q:
+        while q and fresh > 0:
             qLen = len(q)
             for _ in range(qLen):
                 r, c = q.popleft()
