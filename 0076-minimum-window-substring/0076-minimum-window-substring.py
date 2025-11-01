@@ -1,34 +1,33 @@
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         # base case
-        if len(s) < len(t) or t == "":
+        if t =="" or len(s) < len(t):
             return ""
         
+        # 1. hashMap
         countT, window = {}, {}
         for c in t:
             countT[c] = 1 + countT.get(c, 0)
         
-        have, need = 0, len(countT) # unique char
+        have, need = 0, len(countT)
         res, resLen = [-1, -1], float("inf")
         l = 0
+
         for r in range(len(s)):
             c = s[r]
             window[c] = 1 + window.get(c, 0)
-
-            # just satisfy the condition
             if c in countT and window[c] == countT[c]:
                 have += 1
             
-            while have == need:
-                # update result
+            while have == need: 
+                # update out result
                 if (r-l+1) < resLen:
-                    res, resLen = [l, r], (r-l+1)
-
-                # shrinking the window (left)
+                    res = [l, r]
+                    resLen = (r-l+1)
+                # shrink the window - pop from the left
                 window[s[l]] -= 1
                 if s[l] in countT and window[s[l]] < countT[s[l]]:
                     have -= 1
                 l += 1
-        
         l, r = res
         return s[l:r+1] if resLen != float("inf") else ""
