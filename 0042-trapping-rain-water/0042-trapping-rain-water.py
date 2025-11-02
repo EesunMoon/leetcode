@@ -4,19 +4,18 @@ class Solution:
             return 0
         l, r = 0, len(height)-1
         cnt = 0
-        maxL, maxR = 0, 0
+        maxL, maxR = height[l], height[r]
 
-        while l<=r:
+        while l<r:
             if maxL <= maxR:
-                num = min(maxL, maxR) - height[l]
-                cnt += num if num>0 else 0
-                maxL = max(height[l], maxL)
                 l += 1
+                maxL = max(maxL, height[l])
+                cnt += maxL - height[l]
+                
             else:
-                num = min(maxL, maxR) - height[r]
-                cnt += num if num > 0 else 0
-                maxR = max(height[r], maxR)
                 r -= 1
+                maxR = max(maxR, height[r])
+                cnt += maxR - height[r]
         return cnt
 
         
