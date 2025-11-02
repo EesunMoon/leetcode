@@ -9,46 +9,52 @@ class Codec:
 
     def serialize(self, root):
         """Encodes a tree to a single string.
-        
         :type root: TreeNode
         :rtype: str
         """
-        res = []
+        if not root:
+            return ""
 
-        # preorder traversal
-        def dfs(node):
-            if not node:
-                res.append("N")
-                return
-            
-            # preorder
-            res.append(str(node.val))
-            dfs(node.left)
-            dfs(node.right)
-        dfs(root)
-        return ",".join(res)
+        res = ""
+        q = deque([root])
+
+        while q:
+            node = q.popleft()
+            if node:
+                res += (str(node.val)+"#")
+                q.append(node.left)
+                q.append(node.right)
+            else:
+                res += "N#"
+        return res
         
-
     def deserialize(self, data):
         """Decodes your encoded data to tree.
         
         :type data: str
         :rtype: TreeNode
         """
-        vals = data.split(",")
-        self.idx = 0
+        if not data:
+            return None
+        nums = data.split("#")
+        root = TreeNode(int(nums[0]))
+        q = deque([root])
+        i = 1
+        while q and i < len(nums):
+            currNode = q.popleft()
+            # left
+            if nums[i] != "N":
+                leftNode = TreeNode(int(nums[i]))
+                currNode.left = leftNode
+                q.append(leftNode)
+            # right
+            if nums[i+1] != "N":
+                rightNode = TreeNode(int(nums[i+1]))
+                currNode.right = rightNode
+                q.append(rightNode)
+            i += 2
+        return root
 
-        def dfs():
-            if vals[self.idx] == "N":
-                self.idx += 1
-                return None
-            
-            node = TreeNode(int(vals[self.idx]))
-            self.idx += 1
-            node.left = dfs()
-            node.right = dfs()
-            return node
-        return dfs()
 
 # Your Codec object will be instantiated and called as such:
 # ser = Codec()
