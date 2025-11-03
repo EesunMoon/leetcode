@@ -15,7 +15,19 @@ class Codec:
         if not root:
             return ""
 
-        res = ""
+        self.res = ""
+        def dfs(node):
+            if not node:
+                self.res += "N#"
+                return
+            # store curr -> left -> right
+            self.res += (str(node.val) + "#")
+            dfs(node.left)
+            dfs(node.right)
+        dfs(root)
+        return self.res
+        """
+        res=""
         q = deque([root])
 
         while q:
@@ -27,6 +39,7 @@ class Codec:
             else:
                 res += "N#"
         return res
+        """
         
     def deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -37,7 +50,26 @@ class Codec:
         if not data:
             return None
         nums = data.split("#")
+        self.idx = 0
+
+        def dfs():
+            if nums[self.idx] == "N":
+                self.idx += 1
+                return None
+            
+            # make the current node
+            node = TreeNode(int(nums[self.idx]))
+            self.idx += 1
+
+            # left first
+            node.left = dfs()
+            # right then
+            node.right = dfs()
+            return node
+        return dfs()
+        """
         root = TreeNode(int(nums[0]))
+
         q = deque([root])
         i = 1
         while q and i < len(nums):
@@ -54,6 +86,7 @@ class Codec:
                 q.append(rightNode)
             i += 2
         return root
+        """
 
 
 # Your Codec object will be instantiated and called as such:
