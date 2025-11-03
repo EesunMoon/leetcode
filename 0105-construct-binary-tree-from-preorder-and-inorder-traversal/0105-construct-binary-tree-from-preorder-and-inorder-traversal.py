@@ -9,13 +9,13 @@ class Solution:
         # preorder: curr, left, right (first value is always root)
         # inorder: left, curr, right (left index boundary, right index boundary)
         inorder_indices = {val: idx for idx, val in enumerate(inorder)}
+        self.prefix_idx = 0
 
-        self.preorder_idx = 0
-        def dfs(l, r):
+        def dfs(l, r): # inorder index
             if l > r:
                 return None
-            root_val = preorder[self.preorder_idx]
-            self.preorder_idx += 1
+            root_val = preorder[self.prefix_idx]
+            self.prefix_idx += 1
             root = TreeNode(root_val)
 
             mid = inorder_indices[root_val]
