@@ -5,29 +5,21 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
-        head = []
-        stack = [root]
-        while stack:
-            node = stack.pop()
-            if node.val == subRoot.val:
-                head.append(node)
-            if node.left:
-                stack.append(node.left)
-            if node.right:
-                stack.append(node.right)
-        
-        if not head:
+    def isEqual(self, p, q):
+        if not p and not q:
+            return True
+        if not p or not q:
             return False
-
-        def dfs(a, b):
-            if not a and not b:
-                return True
-            if not a or not b:
-                return False
-            return a.val == b.val and dfs(a.left, b.left) and dfs(a.right, b.right)
+        if p.val != q.val:
+            return False
+        return self.isEqual(p.left, q.left) and self.isEqual(p.right, q.right)
+    def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+        if not root:
+            return False
         
-        for cand in head:
-            if dfs(cand, subRoot):
-                return True
-        return False
+        if self.isEqual(root, subRoot):
+            return True
+        return self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
+        
+         
+        
