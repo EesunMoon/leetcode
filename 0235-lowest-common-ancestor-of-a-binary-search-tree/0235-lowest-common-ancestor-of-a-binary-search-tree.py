@@ -18,10 +18,10 @@ class Solution:
                 return curr
 
         # TC O(h) SC O(h)
-        if root.val > p.val and root.val > q.val:
-            return self.lowestCommonAncestor(root.left, p, q)
-        elif root.val < p.val and root.val < q.val:
-            return self.lowestCommonAncestor(root.right, p, q)
-        else:
-            return root
+        # if root.val > p.val and root.val > q.val:
+        #     return self.lowestCommonAncestor(root.left, p, q)
+        # elif root.val < p.val and root.val < q.val:
+        #     return self.lowestCommonAncestor(root.right, p, q)
+        # else:
+        #     return root
         
