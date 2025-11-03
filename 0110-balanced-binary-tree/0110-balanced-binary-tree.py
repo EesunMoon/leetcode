@@ -13,16 +13,17 @@ class Solution:
         if not root:
             return True
         
-        def getHeight(node):
-            # return [balanced_flag, height]
+        def dfs(node): # return height
             if not node:
-                return [True, 0]
+                return 0
             
-            leftFlag, leftHeight = getHeight(node.left)
-            rightFlag, rightHeight = getHeight(node.right)
-
-            flag = leftFlag and rightFlag and abs(leftHeight-rightHeight) <= 1
-
-            return [flag, 1 + max(leftHeight, rightHeight)]
-            
-        return getHeight(root)[0]
+            lHeight = dfs(node.left)
+            if lHeight == -1:
+                return -1
+            rHeight = dfs(node.right)
+            if rHeight == -1:
+                return -1
+            if abs(lHeight-rHeight) > 1:
+                return -1
+            return 1 + max(lHeight, rHeight)
+        return dfs(root) != -1
