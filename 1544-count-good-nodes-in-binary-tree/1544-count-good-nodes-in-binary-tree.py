@@ -6,20 +6,28 @@
 #         self.right = right
 class Solution:
     def goodNodes(self, root: TreeNode) -> int:
-        if not root:
-            return 0
-        res = 1 # root is always considered as good.
-        q = deque() # [maximum value so far, node]
-        q.append((root.val, root))
-        while q:
-            maxVal, node = q.popleft()
-            if node.left:
-                if node.left.val >= maxVal:
-                    res += 1
-                q.append([max(node.left.val, maxVal), node.left])
-            if node.right:
-                if node.right.val >= maxVal:
-                    res += 1
-                q.append([max(node.right.val, maxVal), node.right])
-        return res
+        def dfs(maxVal, node):
+            if not node:
+                return 0
+            res = 1 if node.val >= maxVal else 0
+            maxVal = max(maxVal, node.val)
+            res += dfs(maxVal, node.left) # track left
+            res += dfs(maxVal, node.right) # track right
+            return res
+        
+        return dfs(root.val, root)
 
+
+        # q = deque() # [maximum value so far, node]
+        # q.append((root.val, root))
+        # while q:
+        #     maxVal, node = q.popleft()
+        #     if node.left:
+        #         if node.left.val >= maxVal:
+        #             res += 1
+        #         q.append([max(node.left.val, maxVal), node.left])
+        #     if node.right:
+        #         if node.right.val >= maxVal:
+        #             res += 1
+        #         q.append([max(node.right.val, maxVal), node.right])
+        # return res
