@@ -3,31 +3,23 @@ class Solution:
         # courses node: 0~numCourses-1
         # prerequisites: [pre, nxt]
         # queries: [pre -> nxt?]
-        adj = defaultdict(set)
-        for prev, nxt in prerequisites:
+        adj = defaultdict(set) # SC O(V)
+        indegree = [0] * numCourses # SC O(V)
+        for prev, nxt in prerequisites: # TC O(P)
             adj[prev].add(nxt)
+            indegree[nxt] += 1
+        isPre = [set() for _ in range(numCourses)] # TC O(V) SC O(V+E) crs:set(prev)
         
-        def bfs(u, v):
-            if not u in adj:
-                return False
-            if v in adj[u]:
-                return True
-                
-            q = deque([u])
-            visited = set()
-            visited.add(u)
-            while q:
-                curr = q.popleft()
-                if v in adj[curr]:
-                    return True
-                for nxt in adj[curr]:
-                    if nxt not in visited:
-                        q.append(nxt)
-                        visited.add(nxt)
-            return False
-        res = []
-        for u, v in queries:
-            res.append(bfs(u,v))
-        return res
+        q = deque([crs for crs in range(numCourses) if indegree[crs]==0])
+        while q:
+            crs = q.popleft()
+            for nxt in adj[crs]:
+                isPre[nxt].add(crs)
+                isPre[nxt].update(isPre[crs])
+                indegree[nxt] -= 1
+                if indegree[nxt] == 0:
+                    q.append(nxt)
+
+        return [ u in isPre[v] for u, v in queries]
 
             
