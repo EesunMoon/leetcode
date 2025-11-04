@@ -10,6 +10,9 @@ class Solution:
         def bfs(u, v):
             if not u in adj:
                 return False
+            if v in adj[u]:
+                return True
+                
             q = deque([u])
             visited = set()
             visited.add(u)
