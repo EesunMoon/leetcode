@@ -1,34 +1,29 @@
-class Solution(object):
-    def findRedundantConnection(self, edges):
-        """
-        :type edges: List[List[int]]
-        :rtype: List[int]
-        """
-        par = [i for i in range(len(edges)+1)]
-        rank = [1] * (len(edges)+1)
+class DSU:
+    def __init__(self, n):
+        self.parent = [i for i in range(n+1)]
+        self.rank = [1] * (n+1)
+    def find(self, node):
+        while node != self.parent[node]:
+            self.parent[node] = self.parent[self.parent[node]]
+            node = self.parent[node]
+        return node
+    def union(self, n1, n2):
+        p1, p2 = self.find(n1), self.find(n2)
+        if p1 == p2:
+            return False
+        if self.rank[p1] > self.rank[p2]:
+            self.parent[p2] = p1
+            self.rank[p1] += self.rank[p2]
+        else:
+            self.parent[p1] = p2
+            self.rank[p2] += self.rank[p1]
+        return True
 
-        def find(n):
-            p = par[n]
-            while p != par[p]:
-                par[p] = par[par[p]]
-                p = par[p]
-            return p
-        
-        def union(n1, n2):
-            p1, p2 = find(n1), find(n2)
-
-            if p1 == p2:
-                return False
-            else:
-                if rank[p1] > rank[p2]:
-                    par[p2]=p1
-                    rank[p1] += rank[p2]
-                else:
-                    par[p1]=p2
-                    rank[p2]+=rank[p1]
-            return True
-        
-        for u, v in edges:
-            if not union(u, v):
-                return [u, v]
-        
+class Solution:
+    def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
+        reduantE = []
+        dsu = DSU(len(edges))
+        for n1, n2 in edges:
+            if not dsu.union(n1, n2):
+                reduantE = [n1,n2]
+        return reduantE
