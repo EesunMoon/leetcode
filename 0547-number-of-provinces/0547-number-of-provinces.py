@@ -1,38 +1,29 @@
-class Solution(object):
-    def find(self, x):
-        if x == self.root[x]:
-            return x
-        self.root[x] = self.find(self.root[x])
-        return self.root[x]
-    
-    def union(self, x, y):
-        RootX = self.find(x)
-        RootY = self.find(y)
+class Solution:
+    def findCircleNum(self, isConnected: List[List[int]]) -> int:
+        n = len(isConnected) # num of nodes
+        parent = [i for i in range(n)]
+        rank = [1] * n
 
-        if RootX != RootY:
-            if self.root[RootX] > self.root[RootY]:
-                self.root[RootY] = RootX
-            elif self.root[RootX] < self.root[RootY]:
-                self.root[RootX] = RootY
+        def find(node):
+            while node != parent[node]:
+                parent[node] = parent[parent[node]]
+                node = parent[node]
+            return node
+        def union(node1, node2):
+            par1, par2 = find(node1), find(node2)
+            if par1 == par2:
+                return 0
+            if rank[par1] > rank[par2]: # want to combine based on par1
+                parent[par2] = par1
+                rank[par1] += rank[par2]
             else:
-                self.root[RootX] = RootY
-                self.rank[RootY] += 1
-
-    def findCircleNum(self, isConnected):
-        """
-        :type isConnected: List[List[int]]
-        :rtype: int
-        """
-        n = len(isConnected)
-        self.rank = [1] * n
-        self.root = [i for i in range(n)]
-        num = n
-
+                parent[par1] = par2
+                rank[par2] += rank[par1]
+            return 1
+        
+        res = n
         for i in range(n):
-            for j in range(i+1, n):
-                if isConnected[i][j] == 1 and self.find(i) != self.find(j):
-                    num -= 1
-                    self.union(i, j)
-                    print(self.root)
-
-        return num
+            for j in range(n):
+                if isConnected[i][j] == 1:
+                    res -= union(i,j)
+        return res
