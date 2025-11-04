@@ -21,8 +21,10 @@ class DSU:
 
 class Solution:
     def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
+        # DSU TC O(V+E*aV) SC O(V)
         reduantE = []
         dsu = DSU(len(edges))
+
         for n1, n2 in edges:
             if not dsu.union(n1, n2):
                 reduantE = [n1,n2]
