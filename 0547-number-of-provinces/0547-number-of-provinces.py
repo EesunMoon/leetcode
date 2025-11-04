@@ -1,8 +1,27 @@
 class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
+        # DFS
+        n = len(isConnected)
+        seen = set()
+        def dfs(node):
+            seen.add(node)
+            for nei, connected in enumerate(isConnected[node]):
+                if connected and nei not in seen:
+                    dfs(nei)
+        
+        provinces = 0
+        for node in range(n):
+            if not node in seen:
+                dfs(node)
+                provinces += 1
+
+        return provinces
+        
+        """ Union Find TC O(N**2) SC O(N)
         n = len(isConnected) # num of nodes
-        parent = [i for i in range(n)]
-        rank = [1] * n
+        # TC O(N**2) SC O(N), N: num of nodes
+        parent = [i for i in range(n)] # O(V)
+        rank = [1] * n # O(V)
 
         def find(node):
             while node != parent[node]:
@@ -27,3 +46,4 @@ class Solution:
                 if isConnected[i][j] == 1:
                     res -= union(i,j)
         return res
+        """
