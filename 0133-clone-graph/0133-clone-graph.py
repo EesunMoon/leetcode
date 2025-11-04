@@ -13,7 +13,18 @@ class Solution:
             return None
 
         oldToNew = {} # old: new
-        oldToNew[node] = Node(node.val)
+        def dfs(node):
+            if node in oldToNew:
+                return oldToNew[node]
+            copiedNode = Node(node.val)
+            oldToNew[node] = copiedNode
+            for nei in node.neighbors:
+                copiedNode.neighbors.append(dfs(nei))
+            return copiedNode
+        return dfs(node)
+            
+            
+        """        
         q = deque([node])
 
         while q:
@@ -23,5 +34,5 @@ class Solution:
                     oldToNew[nei] = Node(nei.val)
                     q.append(nei)
                 oldToNew[curr].neighbors.append(oldToNew[nei])
-        
+        """
         return oldToNew[node]
