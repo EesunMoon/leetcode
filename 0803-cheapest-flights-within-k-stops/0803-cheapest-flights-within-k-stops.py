@@ -3,13 +3,15 @@ class Solution:
         prices = [float("INF")] * n
         prices[src] = 0
 
-        for i in range(k+1):
+        for i in range(k+1): # stop
             tmpPrices = prices.copy()
 
-            for s, d, p in flights: # source, destination, prices
+            for s, d, cost in flights:
                 if prices[s] == float("INF"):
                     continue
-                if prices[s] + p < tmpPrices[d]:
-                    tmpPrices[d] = prices[s]+p
+                
+                if prices[s] + cost < tmpPrices[d]: # current prices + reached prices
+                    tmpPrices[d] = prices[s] + cost
             prices = tmpPrices
         return prices[dst] if prices[dst] != float("INF") else -1
+
