@@ -1,28 +1,45 @@
 class Solution:
     def decodeString(self, s: str) -> str:
-        # 1. [: finish digit, start s (digit shoud come out until [, after [, alpha will come out)
-        # 2. ]: can make the encoded string using stack (digitstack, strstack)
+        # k[char]
+        # k[char]k[char]
+        # k[chark[char2]]
+        """
+        ex) 3[a2[c]]3[ab]
+        3,[,a,2,[,c,
+        3,[,a,cc
+        accaccacc, ababab
+            if meeting closing bracket::
+                currChar --> pop elements from stack until appearing [ --> acc
+                then, currK --> pop element stack is not none and not alpha --> 3
+                currDecodedStr = currChar * currK
+                    then, store currDecodedStr
+        --
+        if digit: calculate digit
+        elif [: store k then init, store currStr then init
+        elif ]: pop k then decoded with curr, then pop previous Curr concate
+        else: concate curr digit
+        """
+        numStack = []
+        charStack = []
+        currK = 0
+        currStr = ""
 
-        
-        # if c.isdigit(): digit = digit*10+int(c)
-        # if c == "[", append digit into digit-stack and init sub="" and digit, append sub into sub-stack
-        # if c == "]", digit pop, subsub = sub, 
-        # if c.isalpha(): sub += c
-        
-        k_stack, str_stack = [], []
-        k, curr = 0, ""
-
-        for c in s:
-            if c.isdigit():
-                k = k*10 + int(c)
-            elif c == "[":
-                k_stack.append(k); k = 0 # finish k
-                str_stack.append(curr); curr = "" # start sub
-            elif c == "]":
-                sub = curr
-                curr = str_stack.pop()
-                cnt = k_stack.pop()
-                curr += (sub*cnt)
+        for c in s: # 30[a2[b]]ab
+            if c.isdigit(): 
+                currK = currK*10 + int(c)
+            elif c == "[": # numStack = [30], charStack = [""]ab
+                numStack.append(currK)
+                currK = 0
+                charStack.append(currStr)
+                currStr = ""
+            elif c == "]": # decoded
+                k = numStack.pop() # 30
+                currDecoded = k*currStr # 
+                currStr = charStack.pop()
+                currStr += currDecoded 
             else:
-                curr += c
-        return curr
+                currStr += c # currStr = abb
+
+        return currStr
+        
+
