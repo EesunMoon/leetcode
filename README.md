@@ -342,6 +342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/EesunMoon/leetcode/tree/master/0768-partition-labels) |
 | [0874-backspace-string-compare](https://github.com/EesunMoon/leetcode/tree/master/0874-backspace-string-compare) |
 | [0908-middle-of-the-linked-list](https://github.com/EesunMoon/leetcode/tree/master/0908-middle-of-the-linked-list) |
+| [0961-long-pressed-name](https://github.com/EesunMoon/leetcode/tree/master/0961-long-pressed-name) |
 | [1002-maximum-width-ramp](https://github.com/EesunMoon/leetcode/tree/master/1002-maximum-width-ramp) |
 | [1009-pancake-sorting](https://github.com/EesunMoon/leetcode/tree/master/1009-pancake-sorting) |
 | [1150-two-sum-bsts](https://github.com/EesunMoon/leetcode/tree/master/1150-two-sum-bsts) |
@@ -402,6 +403,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/EesunMoon/leetcode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
 | [0874-backspace-string-compare](https://github.com/EesunMoon/leetcode/tree/master/0874-backspace-string-compare) |
+| [0961-long-pressed-name](https://github.com/EesunMoon/leetcode/tree/master/0961-long-pressed-name) |
 | [0965-unique-email-addresses](https://github.com/EesunMoon/leetcode/tree/master/0965-unique-email-addresses) |
 | [1023-time-based-key-value-store](https://github.com/EesunMoon/leetcode/tree/master/1023-time-based-key-value-store) |
 | [1119-robot-bounded-in-circle](https://github.com/EesunMoon/leetcode/tree/master/1119-robot-bounded-in-circle) |
