@@ -128,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1014-k-closest-points-to-origin](https://github.com/EesunMoon/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1036-rotting-oranges](https://github.com/EesunMoon/leetcode/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/EesunMoon/leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [1049-minimum-domino-rotations-for-equal-row](https://github.com/EesunMoon/leetcode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1094-matrix-cells-in-distance-order](https://github.com/EesunMoon/leetcode/tree/master/1094-matrix-cells-in-distance-order) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/EesunMoon/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1126-minimum-cost-to-connect-sticks](https://github.com/EesunMoon/leetcode/tree/master/1126-minimum-cost-to-connect-sticks) |
@@ -1090,6 +1091,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/EesunMoon/leetcode/tree/master/0778-reorganize-string) |
 | [0876-hand-of-straights](https://github.com/EesunMoon/leetcode/tree/master/0876-hand-of-straights) |
 | [1009-pancake-sorting](https://github.com/EesunMoon/leetcode/tree/master/1009-pancake-sorting) |
+| [1049-minimum-domino-rotations-for-equal-row](https://github.com/EesunMoon/leetcode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1126-minimum-cost-to-connect-sticks](https://github.com/EesunMoon/leetcode/tree/master/1126-minimum-cost-to-connect-sticks) |
 | [1762-furthest-building-you-can-reach](https://github.com/EesunMoon/leetcode/tree/master/1762-furthest-building-you-can-reach) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/EesunMoon/leetcode/tree/master/2026-merge-triplets-to-form-target-triplet) |
