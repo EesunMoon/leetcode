@@ -1,30 +1,23 @@
-class Solution(object):
-    def networkDelayTime(self, times, n, k):
-        """
-        :type times: List[List[int]]
-        :type n: int
-        :type k: int
-        :rtype: int
-        """
-        graph = defaultdict(list)
+class Solution:
+    def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
+        # TC O(VlogE) SC O(V+E)
+        adj = defaultdict(list)
         for u, v, w in times:
-            graph[u].append((v, w))
-
-        heap = [(0,k)]
-        seen = set()
-        max_cost = 0
-
-        while heap:
-            cost, node = heapq.heappop(heap)
-            if node in seen:
+            adj[u].append([v,w])
+        
+        minHeap = [(0,k)] #[w, v]
+        minTime = 0 # return
+        visited = set()
+        while minHeap:
+            currWeight, currNode = heapq.heappop(minHeap)
+            if currNode in visited:
                 continue
             
-            seen.add(node)
-            max_cost = max(max_cost, cost)
-            
-            for cand_node, cand_cost in graph[node]:
-                if cand_node not in seen:
-                    curr_cost = cost + cand_cost
-                    heapq.heappush(heap, (curr_cost, cand_node))
-        
-        return max_cost if len(seen) == n else -1
+            minTime = currWeight
+            visited.add(currNode)
+
+            for neiNode, neiWeight in adj[currNode]:
+                if neiNode not in visited:
+                    heapq.heappush(minHeap, (currWeight+neiWeight, neiNode))
+
+        return minTime if len(visited)==n else -1
