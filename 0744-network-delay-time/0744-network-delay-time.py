@@ -8,7 +8,7 @@ class Solution:
         minHeap = [(0,k)] #[w, v]
         minTime = 0 # return
         visited = set()
-        while minHeap and len(visited) < n:
+        while minHeap and len(visited) <= n:
             currWeight, currNode = heapq.heappop(minHeap)
             if currNode in visited:
                 continue
