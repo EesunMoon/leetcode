@@ -11,7 +11,8 @@ class Solution:
             - length: nameS <= typedS
             - char: same
         """
-
+        if len(name) > len(typed):
+            return False
         lName, rName = 0, 0
         lTyped, rTyped = 0, 0
         while rName < len(name) and rTyped < len(typed):
